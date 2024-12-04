@@ -355,3 +355,28 @@ GROUP BY
     SUBSTR(restaurants.location__address, -4)
 ORDER BY 
     number_of_veggie_dishes DESC;
+
+
+-- Question: How do delivery fees vary across platforms and locations?
+
+-- takeaway
+SELECT
+    locations.postalCode,
+    ROUND(AVG(restaurants.deliveryFee),2) as delivery_fee
+FROM
+    restaurants
+INNER JOIN
+    locations_to_restaurants
+ON
+    restaurants.primarySlug = locations_to_restaurants.restaurant_id
+INNER JOIN
+    locations
+ON
+    locations_to_restaurants.location_id = locations.ID
+WHERE
+    locations.postalCode IS NOT NULL
+    AND restaurants.deliveryFee IS NOT NULL
+GROUP BY
+    locations.postalCode
+ORDER BY
+    delivery_fee DESC;
