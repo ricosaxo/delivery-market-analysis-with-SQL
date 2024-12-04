@@ -107,3 +107,86 @@ FROM menuItems
 WHERE price_float > 1.0
 GROUP BY price_range
 ORDER BY price_range;
+
+
+
+--- Identify the World Hummus Order (WHO); top 3 hummus serving restaurants
+
+-- deliveroo database
+UPDATE menu_items
+SET name = LOWER(name);
+
+SELECT * FROM menu_items;
+
+SELECT 
+    restaurants.name AS restaurant_name,  -- Selects the name of the restaurant and renames it as 'restaurant_name'
+    AVG(restaurants.rating) AS avg_rating,            
+    COUNT(menu_items.name) AS hummus_item_count -- Counts the number of menu items containing 'hummus' and renames it as 'hummus_item_count'
+FROM 
+    menu_items                            -- Refers directly to the 'menu_items' table
+JOIN 
+    restaurants                           -- Refers directly to the 'restaurants' table
+ON 
+    menu_items.restaurant_id = restaurants.id  -- Joins 'menu_items' with 'restaurants' using 'restaurant_id' in 'menu_items' and 'id' in 'restaurants'
+WHERE 
+    menu_items.name LIKE '%hummus%'       -- Filters menu items to include only those where the name contains 'hummus'
+GROUP BY 
+    restaurants.id, restaurants.name, restaurants.rating -- Groups the results by restaurant ID, name, and rating
+ORDER BY 
+    restaurants.rating DESC,             -- Orders the results by restaurant rating in descending order
+    hummus_item_count DESC               -- For restaurants with the same rating, orders by the number of 'hummus' items in descending order
+LIMIT 3;                                 -- Limits the results to the top 3 restaurants
+
+
+
+--takeaway database
+UPDATE menuItems
+SET name = LOWER(name);
+
+SELECT * FROM menuItems;
+
+SELECT 
+    restaurants.name AS restaurant_name,  
+    AVG(restaurants.ratings) AS avg_rating,                   
+    COUNT(menuItems.name) AS hummus_item_count 
+FROM 
+    menuItems                             
+JOIN 
+    restaurants                           
+ON 
+    menuItems.primarySlug = restaurants.primarySlug  
+WHERE 
+    menuItems.name LIKE '%hummus%'        
+GROUP BY 
+    restaurants.primarySlug, restaurants.name, restaurants.ratings 
+ORDER BY 
+    restaurants.ratings DESC,              
+    hummus_item_count DESC                
+LIMIT 3;                                  
+
+
+-- ubereaats database
+
+UPDATE menu_items
+SET name = LOWER(name);
+
+SELECT * FROM menu_items;
+
+SELECT 
+    restaurants.title AS restaurant_name, 
+    AVG(restaurants.rating__rating_value) AS avg_rating,                
+    COUNT(menu_items.name) AS hummus_item_count 
+FROM 
+    menu_items                           
+JOIN 
+    restaurants                         
+ON 
+    menu_items.restaurant_id = restaurants.id  
+WHERE 
+    menu_items.name LIKE '%hummus%'     
+GROUP BY 
+    restaurants.id, restaurants.title, restaurants.rating__rating_value
+ORDER BY 
+    restaurants.rating__rating_value DESC,             
+    hummus_item_count DESC               
+LIMIT 3;                                 
