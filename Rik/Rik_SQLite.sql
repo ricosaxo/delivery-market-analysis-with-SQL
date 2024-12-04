@@ -85,7 +85,13 @@ SELECT
     restaurants.name, 
     ROUND(AVG(menu_items.price), 2) AS avg_price,
     restaurants.rating,
-    ROUND(AVG(menu_items.price) / restaurants.rating, 2) AS price_to_rating_ratio,
+    restaurants.rating_number,
+    ROUND(
+        (restaurants.rating * restaurants.rating_number) / (restaurants.rating_number + 10), 2
+    ) AS weighted_rating,
+    ROUND(AVG(menu_items.price) / 
+          ((restaurants.rating * restaurants.rating_number) / (restaurants.rating_number + 10)), 2
+    ) AS price_to_weighted_rating_ratio,
     CASE 
         WHEN AVG(menu_items.price) < 10 THEN 'Low'
         WHEN AVG(menu_items.price) BETWEEN 10 AND 20 THEN 'Medium'
@@ -103,12 +109,14 @@ WHERE
     AND menu_items.price > 0
     AND restaurants.rating IS NOT NULL
     AND restaurants.rating > 0
+    AND restaurants.rating_number IS NOT NULL
+    AND restaurants.rating_number > 0
 GROUP BY 
-    menu_items.restaurant_id, restaurants.name, restaurants.rating
+    menu_items.restaurant_id, restaurants.name, restaurants.rating, restaurants.rating_number
 HAVING
     price_bucket != 'Low'
 ORDER BY
-    price_to_rating_ratio ASC; 
+    price_to_weighted_rating_ratio ASC;
 
 -- takeaway
 
@@ -117,7 +125,14 @@ SELECT
     restaurants.name,
     ROUND(AVG(menuItems.price), 2) AS avg_price,
     restaurants.ratings,
-    ROUND(AVG(menuItems.price) / restaurants.ratings, 2) AS price_to_rating_ratio,
+    restaurants.ratingsNumber,
+    ROUND(
+        (restaurants.ratings * restaurants.ratingsNumber) / (restaurants.ratingsNumber + 10), 2
+    ) AS weighted_ratings,
+    ROUND(
+        AVG(menuItems.price) /
+        ((restaurants.ratings * restaurants.ratingsNumber) / (restaurants.ratingsNumber + 10)), 2
+    ) AS price_to_weighted_rating_ratio,
     CASE 
         WHEN AVG(menuItems.price) < 10 THEN 'Low'
         WHEN AVG(menuItems.price) BETWEEN 10 AND 20 THEN 'Medium'
@@ -135,15 +150,19 @@ WHERE
     AND menuItems.price > 0 
     AND restaurants.ratings IS NOT NULL
     AND restaurants.ratings > 0
+    AND restaurants.ratingsNumber IS NOT NULL
+    AND restaurants.ratingsNumber > 0
 GROUP BY
     menuItems.primarySlug,
     restaurants.name,
-    restaurants.ratings
+    restaurants.ratings,
+    restaurants.ratingsNumber
 HAVING
-    price_bucket != 'Low'  
+    price_bucket != 'Low'
+    AND price_to_weighted_rating_ratio IS NOT NULL
+    AND avg_price IS NOT NULL  
 ORDER BY
-    price_to_rating_ratio ASC;
-
+    price_to_weighted_rating_ratio ASC;
 
 -- ubereats
 
@@ -152,7 +171,16 @@ SELECT
     restaurants.title,
     CAST(ROUND(AVG(menu_items.price) / 100, 2) AS FLOAT) AS avg_price,
     restaurants.rating__rating_value,
-    CAST(ROUND(AVG(menu_items.price) / 100 / restaurants.rating__rating_value, 2) AS FLOAT) AS price_to_rating_ratio,
+    CAST(REPLACE(restaurants.rating__review_count, '+', '') AS INTEGER) AS numeric_review_count,
+    CAST(ROUND(
+        (restaurants.rating__rating_value * CAST(REPLACE(restaurants.rating__review_count, '+', '') AS INTEGER)) / 
+        (CAST(REPLACE(restaurants.rating__review_count, '+', '') AS INTEGER) + 10), 2
+    ) AS FLOAT) AS weighted_rating,
+    CAST(ROUND(
+        AVG(menu_items.price) / 100 / 
+        ((restaurants.rating__rating_value * CAST(REPLACE(restaurants.rating__review_count, '+', '') AS INTEGER)) / 
+        (CAST(REPLACE(restaurants.rating__review_count, '+', '') AS INTEGER) + 10)), 2
+    ) AS FLOAT) AS price_to_weighted_rating_ratio,
     CASE 
         WHEN AVG(menu_items.price) / 100 < 10 THEN 'Low'
         WHEN AVG(menu_items.price) / 100 BETWEEN 10 AND 20 THEN 'Medium'
@@ -169,13 +197,16 @@ WHERE
     CAST(menu_items.price AS FLOAT) > 0
     AND menu_items.price IS NOT NULL
     AND restaurants.rating__rating_value IS NOT NULL
+    AND restaurants.rating__review_count IS NOT NULL
+    AND CAST(REPLACE(restaurants.rating__review_count, '+', '') AS INTEGER) > 0
 GROUP BY
-    menu_items.restaurant_id, restaurants.title, restaurants.rating__rating_value
+    menu_items.restaurant_id, restaurants.title, restaurants.rating__rating_value, restaurants.rating__review_count
 HAVING
     price_bucket != 'Low'
+    AND price_to_weighted_rating_ratio IS NOT NULL
+    AND avg_price IS NOT NULL
 ORDER BY
-    price_to_rating_ratio ASC;
-
+    price_to_weighted_rating_ratio ASC;
 
 -- Question: Where are the delivery ‘dead zones’—areas with minimal restaurant coverage?
 
