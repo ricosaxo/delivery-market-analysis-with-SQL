@@ -15,7 +15,7 @@ INNER JOIN
 ON 
     restaurants.id = menu_items.restaurant_id
 WHERE 
-    menu_items.name LIKE '%apsalon%' 
+    menu_items.name = 'Kapsalon' 
     AND menu_items.price IS NOT NULL 
     AND menu_items.price > 0
 GROUP BY 
@@ -232,3 +232,126 @@ GROUP BY
     SUBSTR(restaurants.location__address, -4)
 ORDER BY
     COUNT(DISTINCT restaurants.title) ASC;
+
+-- Question: How does the availability of vegetarian and vegan dishes vary by area?
+
+-- Deliveroo
+
+SELECT
+    restaurants.postal_code,
+    COUNT(DISTINCT menu_items.name) AS number_of_veggie_dishes
+    
+FROM
+    restaurants
+INNER JOIN 
+    menu_items
+ON 
+    restaurants.id = menu_items.restaurant_id
+WHERE
+    (
+        LOWER(menu_items.name) LIKE '%vegan%' OR
+        LOWER(menu_items.name) LIKE '%vegetarisch%' OR
+        LOWER(menu_items.name) LIKE '%veggie%' OR
+        LOWER(menu_items.name) LIKE '%plantbased%'OR
+        LOWER(menu_items.name) LIKE '%vegetarian%'
+    )
+    AND NOT (
+        LOWER(menu_items.name) LIKE '%non vegan%' OR
+        LOWER(menu_items.name) LIKE '%non veggie%' OR
+        LOWER(menu_items.name) LIKE '%non vegetarian%'OR
+        LOWER(menu_items.name) LIKE '%niet vegetarisch%' OR
+        LOWER(menu_items.name) LIKE '%niet vegan%' OR
+        LOWER(menu_items.name) LIKE '%niet veggie%' OR
+        LOWER(menu_items.name) LIKE '%zonder plantaardig%'OR
+        LOWER(menu_items.name) LIKE '%not vegan%' OR
+        LOWER(menu_items.name) LIKE '%not veggie%'OR
+        LOWER(menu_items.name) LIKE '%not vegetarian%'
+    )
+    AND restaurants.postal_code IS NOT NULL
+GROUP BY
+    restaurants.postal_code
+ORDER BY
+    number_of_veggie_dishes DESC;
+
+
+-- takeaway
+
+SELECT
+    locations.postalCode,
+    COUNT(DISTINCT menuItems.name) AS number_of_veggie_dishes
+FROM
+    restaurants
+INNER JOIN
+    menuItems
+ON
+    restaurants.primarySlug = menuItems.primarySlug
+INNER JOIN
+    locations_to_restaurants
+ON
+    restaurants.primarySlug = locations_to_restaurants.restaurant_id
+INNER JOIN
+    locations
+ON
+    locations_to_restaurants.location_id = locations.ID
+WHERE
+    (
+        LOWER(menuItems.name) LIKE '%vegan%' OR
+        LOWER(menuItems.name) LIKE '%vegetarisch%' OR
+        LOWER(menuItems.name) LIKE '%veggie%' OR
+        LOWER(menuItems.name) LIKE '%plantbased%' OR
+        LOWER(menuItems.name) LIKE '%vegetarian%'
+    )
+    AND NOT (
+        LOWER(menuItems.name) LIKE '%non vegan%' OR
+        LOWER(menuItems.name) LIKE '%non veggie%' OR
+        LOWER(menuItems.name) LIKE '%non vegetarian%' OR
+        LOWER(menuItems.name) LIKE '%niet vegetarisch%' OR
+        LOWER(menuItems.name) LIKE '%niet vegan%' OR
+        LOWER(menuItems.name) LIKE '%niet veggie%' OR
+        LOWER(menuItems.name) LIKE '%zonder plantaardig%' OR
+        LOWER(menuItems.name) LIKE '%not vegan%' OR
+        LOWER(menuItems.name) LIKE '%not veggie%' OR
+        LOWER(menuItems.name) LIKE '%not vegetarian%'
+    )
+    AND locations.postalCode IS NOT NULL
+GROUP BY
+    locations.postalCode
+ORDER BY
+    number_of_veggie_dishes DESC;
+
+-- Ubereats
+
+SELECT 
+    SUBSTR(restaurants.location__address, -4) AS postal_code, 
+    COUNT(DISTINCT menu_items.name) AS number_of_veggie_dishes
+FROM 
+    menu_items
+INNER JOIN 
+    restaurants 
+ON 
+    menu_items.restaurant_id = restaurants.id
+WHERE 
+    (
+        LOWER(menu_items.name) LIKE '%vegan%' OR
+        LOWER(menu_items.name) LIKE '%vegetarisch%' OR
+        LOWER(menu_items.name) LIKE '%veggie%' OR
+        LOWER(menu_items.name) LIKE '%plantbased%'OR
+        LOWER(menu_items.name) LIKE '%vegetarian%'
+    )
+    AND NOT (
+        LOWER(menu_items.name) LIKE '%non vegan%' OR
+        LOWER(menu_items.name) LIKE '%non veggie%' OR
+        LOWER(menu_items.name) LIKE '%non vegetarian%'OR
+        LOWER(menu_items.name) LIKE '%niet vegetarisch%' OR
+        LOWER(menu_items.name) LIKE '%niet vegan%' OR
+        LOWER(menu_items.name) LIKE '%niet veggie%' OR
+        LOWER(menu_items.name) LIKE '%zonder plantaardig%'OR
+        LOWER(menu_items.name) LIKE '%not vegan%' OR
+        LOWER(menu_items.name) LIKE '%not veggie%'OR
+        LOWER(menu_items.name) LIKE '%not vegetarian%'
+    )
+    AND SUBSTR(restaurants.location__address, -4) IS NOT NULL
+GROUP BY 
+    SUBSTR(restaurants.location__address, -4)
+ORDER BY 
+    number_of_veggie_dishes DESC;
