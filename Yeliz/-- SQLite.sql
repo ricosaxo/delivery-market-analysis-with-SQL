@@ -172,9 +172,20 @@ SET name = LOWER(name);
 
 SELECT * FROM menu_items;
 
+PRAGMA table_info(restaurants);
+
+-- 1. Yeni bir FLOAT tipi kolon oluştur
+ALTER TABLE restaurants
+ADD COLUMN rating_float FLOAT;
+
+-- 2. Mevcut rating__rating_rating değerlerini yeni kolona dönüştür ve taşı
+UPDATE restaurants
+SET rating_float = CAST(rating__rating_value AS FLOAT);
+
+
 SELECT 
     restaurants.title AS restaurant_name, 
-    AVG(restaurants.rating__rating_value) AS avg_rating,                
+    AVG(restaurants.rating_float) AS avg_rating,                
     COUNT(menu_items.name) AS hummus_item_count 
 FROM 
     menu_items                           
@@ -185,8 +196,88 @@ ON
 WHERE 
     menu_items.name LIKE '%hummus%'     
 GROUP BY 
-    restaurants.id, restaurants.title, restaurants.rating__rating_value
+    restaurants.id, restaurants.title, restaurants.rating_float
 ORDER BY 
-    restaurants.rating__rating_value DESC,             
+    restaurants.rating_float DESC,             
     hummus_item_count DESC               
 LIMIT 3;                                 
+
+
+-- Question: How does the availability of vegetarian and vegan dishes vary by area?
+
+-- Deliveroo
+
+SELECT
+    restaurants.postal_code,
+    COUNT(DISTINCT menu_items.name) AS halal_mitems
+FROM
+    restaurants
+INNER JOIN 
+    menu_items
+ON 
+    restaurants.id = menu_items.restaurant_id
+WHERE
+    (
+        LOWER(menu_items.name) LIKE '%hala%' OR
+        LOWER(menu_items.name) LIKE '%helal%'
+    )
+    AND restaurants.postal_code IS NOT NULL
+GROUP BY
+    restaurants.postal_code
+ORDER BY
+    halal_mitems DESC;
+
+
+-- takeaway
+
+SELECT
+    locations.postalCode,
+    COUNT(DISTINCT menuItems.name) AS halal_mitems
+FROM
+    restaurants
+INNER JOIN
+    menuItems
+ON
+    restaurants.primarySlug = menuItems.primarySlug
+INNER JOIN
+    locations_to_restaurants
+ON
+    restaurants.primarySlug = locations_to_restaurants.restaurant_id
+INNER JOIN
+    locations
+ON
+    locations_to_restaurants.location_id = locations.ID
+WHERE
+    (
+        LOWER(menuItems.name) LIKE '%hala%' OR
+        LOWER(menuItems.name) LIKE '%helal%'
+    )
+    AND locations.postalCode IS NOT NULL
+GROUP BY
+    locations.postalCode
+ORDER BY
+    halal_mitems DESC;
+
+
+
+-- Ubereats
+
+SELECT 
+    SUBSTR(restaurants.location__address, -4) AS postal_code, 
+    COUNT(DISTINCT menu_items.name) AS halal_mitems
+FROM 
+    menu_items
+INNER JOIN 
+    restaurants 
+ON 
+    menu_items.restaurant_id = restaurants.id
+WHERE 
+   (
+        LOWER(menu_items.name) LIKE '%hala%' OR
+        LOWER(menu_items.name) LIKE '%helal%'
+    )
+    AND SUBSTR(restaurants.location__address, -4) IS NOT NULL
+GROUP BY 
+    SUBSTR(restaurants.location__address, -4)
+ORDER BY 
+    halal_mitems DESC;
