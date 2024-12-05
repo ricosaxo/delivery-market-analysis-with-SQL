@@ -411,3 +411,19 @@ GROUP BY
     locations.postalCode
 ORDER BY
     delivery_fee DESC;
+
+-- deliveroo
+
+SELECT
+    restaurants.postal_code,
+    ROUND(AVG(restaurants.delivery_fee),2) AS delivery_fee
+    
+FROM
+    restaurants
+WHERE
+    restaurants.delivery_fee IS NOT NULL
+    AND restaurants.postal_code IS NOT NULL
+GROUP BY
+    restaurants.postal_code
+ORDER BY
+    delivery_fee ASC;
