@@ -1,0 +1,2529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bd847a1decf7a9cb8577d52357aacefe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bd847a1decf7a9cb8577d52357aacefe" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bd847a1decf7a9cb8577d52357aacefe = L.map(
+                "map_bd847a1decf7a9cb8577d52357aacefe",
+                {
+                    center: [50.8503, 4.3517],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b4d85db1ed560bc2a3acd119c58df144 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b4d85db1ed560bc2a3acd119c58df144.addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var marker_3ce1bb51e2ecabfb2a6edd6f1de8e8da = L.marker(
+                [51.2217436, 4.4024944],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_fbdd2778f7559c0893c317b36095c122 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_3ce1bb51e2ecabfb2a6edd6f1de8e8da.setIcon(icon_fbdd2778f7559c0893c317b36095c122);
+        
+    
+        var popup_c814f647903628009d2c2eb78920ab4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db1eec5745f3d44c66584281aa20c7f1 = $(`<div id="html_db1eec5745f3d44c66584281aa20c7f1" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2000, Restoran ID: 432838</div>`)[0];
+                popup_c814f647903628009d2c2eb78920ab4e.setContent(html_db1eec5745f3d44c66584281aa20c7f1);
+            
+        
+
+        marker_3ce1bb51e2ecabfb2a6edd6f1de8e8da.bindPopup(popup_c814f647903628009d2c2eb78920ab4e)
+        ;
+
+        
+    
+    
+            var marker_ac6616272cbbb23099cbef79608a166b = L.marker(
+                [51.31190463540222, 4.951765537261963],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_06d8bd28218ac2d20cc00cc5bd74eb88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_ac6616272cbbb23099cbef79608a166b.setIcon(icon_06d8bd28218ac2d20cc00cc5bd74eb88);
+        
+    
+        var popup_a69923af9f78f4d4f4d7338dfb12250e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_619c53ef3926ef724359e96763713592 = $(`<div id="html_619c53ef3926ef724359e96763713592" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2300, Restoran ID: 411617</div>`)[0];
+                popup_a69923af9f78f4d4f4d7338dfb12250e.setContent(html_619c53ef3926ef724359e96763713592);
+            
+        
+
+        marker_ac6616272cbbb23099cbef79608a166b.bindPopup(popup_a69923af9f78f4d4f4d7338dfb12250e)
+        ;
+
+        
+    
+    
+            var marker_f552120910c2d9bec3278f442a71a746 = L.marker(
+                [51.2096769, 4.4522349],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_fa188fb457bf6867168e374ae9286460 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_f552120910c2d9bec3278f442a71a746.setIcon(icon_fa188fb457bf6867168e374ae9286460);
+        
+    
+        var popup_434580f96c4f44ecd995074fae709b6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf136e95d2d432a0ab69478ec0be27b1 = $(`<div id="html_bf136e95d2d432a0ab69478ec0be27b1" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2140, Restoran ID: 476843</div>`)[0];
+                popup_434580f96c4f44ecd995074fae709b6c.setContent(html_bf136e95d2d432a0ab69478ec0be27b1);
+            
+        
+
+        marker_f552120910c2d9bec3278f442a71a746.bindPopup(popup_434580f96c4f44ecd995074fae709b6c)
+        ;
+
+        
+    
+    
+            var marker_3f6ade940b78e064c3cf0086ff09d82b = L.marker(
+                [51.20932, 4.456413899999999],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_46f147650729b65ebf06e8869ffa2cac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_3f6ade940b78e064c3cf0086ff09d82b.setIcon(icon_46f147650729b65ebf06e8869ffa2cac);
+        
+    
+        var popup_898dc1ab3692e8df78c3714f54678899 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_282ec726fa8a551bcdb599b9c2a74949 = $(`<div id="html_282ec726fa8a551bcdb599b9c2a74949" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2100, Restoran ID: 59339</div>`)[0];
+                popup_898dc1ab3692e8df78c3714f54678899.setContent(html_282ec726fa8a551bcdb599b9c2a74949);
+            
+        
+
+        marker_3f6ade940b78e064c3cf0086ff09d82b.bindPopup(popup_898dc1ab3692e8df78c3714f54678899)
+        ;
+
+        
+    
+    
+            var marker_4f7ff8a9e65356f3de341f3d8cd1d686 = L.marker(
+                [51.16362729999999, 4.1392218],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_722e1bbf1e93cc3324d4ce41fd00dad6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_4f7ff8a9e65356f3de341f3d8cd1d686.setIcon(icon_722e1bbf1e93cc3324d4ce41fd00dad6);
+        
+    
+        var popup_a411b931728aa5f1aff4163427eacd0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9077d0c48cd877acc80e8142511eab59 = $(`<div id="html_9077d0c48cd877acc80e8142511eab59" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9100, Restoran ID: 497609</div>`)[0];
+                popup_a411b931728aa5f1aff4163427eacd0e.setContent(html_9077d0c48cd877acc80e8142511eab59);
+            
+        
+
+        marker_4f7ff8a9e65356f3de341f3d8cd1d686.bindPopup(popup_a411b931728aa5f1aff4163427eacd0e)
+        ;
+
+        
+    
+    
+            var marker_2b36b50c22bd760e366a63d77c8b3d68 = L.marker(
+                [50.8956172, 4.3194339],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_8c5d02bc582c091dd51c69fc2ec49fe3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_2b36b50c22bd760e366a63d77c8b3d68.setIcon(icon_8c5d02bc582c091dd51c69fc2ec49fe3);
+        
+    
+        var popup_939b452551e67320b0168ac096038ec1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0b7a78a8fc4f28bc0f62620ca87a0ce = $(`<div id="html_b0b7a78a8fc4f28bc0f62620ca87a0ce" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1780, Restoran ID: 287298</div>`)[0];
+                popup_939b452551e67320b0168ac096038ec1.setContent(html_b0b7a78a8fc4f28bc0f62620ca87a0ce);
+            
+        
+
+        marker_2b36b50c22bd760e366a63d77c8b3d68.bindPopup(popup_939b452551e67320b0168ac096038ec1)
+        ;
+
+        
+    
+    
+            var marker_90a5b23cc342b1cf3c3350c752e85e3a = L.marker(
+                [50.8731942, 4.3289497],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_034fb4d95780d9c19aa784b930fc51c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_90a5b23cc342b1cf3c3350c752e85e3a.setIcon(icon_034fb4d95780d9c19aa784b930fc51c4);
+        
+    
+        var popup_a70078ddba1169bd58ec8ede07b45a5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f14d21b280618c9e1963f4fafd7c870 = $(`<div id="html_5f14d21b280618c9e1963f4fafd7c870" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1090, Restoran ID: 60363</div>`)[0];
+                popup_a70078ddba1169bd58ec8ede07b45a5f.setContent(html_5f14d21b280618c9e1963f4fafd7c870);
+            
+        
+
+        marker_90a5b23cc342b1cf3c3350c752e85e3a.bindPopup(popup_a70078ddba1169bd58ec8ede07b45a5f)
+        ;
+
+        
+    
+    
+            var marker_2cdcc714c3e4ad531e53aff16d006aee = L.marker(
+                [51.2230813, 4.4256195],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_42c23a75d79a8c3d9c98bcf74c8a66d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_2cdcc714c3e4ad531e53aff16d006aee.setIcon(icon_42c23a75d79a8c3d9c98bcf74c8a66d9);
+        
+    
+        var popup_009e14b1adf1c82afb33cbf53b0854cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1802fae26a989f56415d206a0bd7b848 = $(`<div id="html_1802fae26a989f56415d206a0bd7b848" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2060, Restoran ID: 104941</div>`)[0];
+                popup_009e14b1adf1c82afb33cbf53b0854cb.setContent(html_1802fae26a989f56415d206a0bd7b848);
+            
+        
+
+        marker_2cdcc714c3e4ad531e53aff16d006aee.bindPopup(popup_009e14b1adf1c82afb33cbf53b0854cb)
+        ;
+
+        
+    
+    
+            var marker_fbd44362863883cc45e29c9c48ef6c1d = L.marker(
+                [51.1924399, 3.196598],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_0b6dde02fb395c3a379226da967b9123 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_fbd44362863883cc45e29c9c48ef6c1d.setIcon(icon_0b6dde02fb395c3a379226da967b9123);
+        
+    
+        var popup_c795d5ab3de63773472d8effcb3d1168 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_694a08df160d14d4f88e39b691939e98 = $(`<div id="html_694a08df160d14d4f88e39b691939e98" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8200, Restoran ID: 59692</div>`)[0];
+                popup_c795d5ab3de63773472d8effcb3d1168.setContent(html_694a08df160d14d4f88e39b691939e98);
+            
+        
+
+        marker_fbd44362863883cc45e29c9c48ef6c1d.bindPopup(popup_c795d5ab3de63773472d8effcb3d1168)
+        ;
+
+        
+    
+    
+            var marker_c1b750c41c21591a83152c56a6e57d1b = L.marker(
+                [50.9025108, 4.3614917],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_105cbb2436cf9d49363ad4d34a0cdaa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_c1b750c41c21591a83152c56a6e57d1b.setIcon(icon_105cbb2436cf9d49363ad4d34a0cdaa0);
+        
+    
+        var popup_f76bea3d5480ba6b3a7c44a226717b4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96bb9cc7505f88fe7cdb46199dd78c9f = $(`<div id="html_96bb9cc7505f88fe7cdb46199dd78c9f" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1853, Restoran ID: 355014</div>`)[0];
+                popup_f76bea3d5480ba6b3a7c44a226717b4e.setContent(html_96bb9cc7505f88fe7cdb46199dd78c9f);
+            
+        
+
+        marker_c1b750c41c21591a83152c56a6e57d1b.bindPopup(popup_f76bea3d5480ba6b3a7c44a226717b4e)
+        ;
+
+        
+    
+    
+            var marker_6a61868b7116296b8b86099bc2a624e9 = L.marker(
+                [51.057992, 3.7241141],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_fc86f146ef2dc6db19df5ada617e7778 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_6a61868b7116296b8b86099bc2a624e9.setIcon(icon_fc86f146ef2dc6db19df5ada617e7778);
+        
+    
+        var popup_b6e85c11d0e906b0e8bfa27165d15f6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0804eca26db942e81d39f6f403f24f7 = $(`<div id="html_d0804eca26db942e81d39f6f403f24f7" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 332517</div>`)[0];
+                popup_b6e85c11d0e906b0e8bfa27165d15f6f.setContent(html_d0804eca26db942e81d39f6f403f24f7);
+            
+        
+
+        marker_6a61868b7116296b8b86099bc2a624e9.bindPopup(popup_b6e85c11d0e906b0e8bfa27165d15f6f)
+        ;
+
+        
+    
+    
+            var marker_797ac44a98cab1e413b5176b2924823f = L.marker(
+                [50.81125339482433, 5.19228994846344],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_b4ab170624543b9360fb7d7e8232a77c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_797ac44a98cab1e413b5176b2924823f.setIcon(icon_b4ab170624543b9360fb7d7e8232a77c);
+        
+    
+        var popup_ad3678a9c15be3cb9abcaff093ee1d8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb6c2e600eb39d7d8d40e7288826c0a1 = $(`<div id="html_bb6c2e600eb39d7d8d40e7288826c0a1" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3800, Restoran ID: 325584</div>`)[0];
+                popup_ad3678a9c15be3cb9abcaff093ee1d8d.setContent(html_bb6c2e600eb39d7d8d40e7288826c0a1);
+            
+        
+
+        marker_797ac44a98cab1e413b5176b2924823f.bindPopup(popup_ad3678a9c15be3cb9abcaff093ee1d8d)
+        ;
+
+        
+    
+    
+            var marker_9d22ba137b391b1ecb646d28c18be422 = L.marker(
+                [50.93313800000001, 5.3271163],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_d3f892327f378a29adeca5e2657e00db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_9d22ba137b391b1ecb646d28c18be422.setIcon(icon_d3f892327f378a29adeca5e2657e00db);
+        
+    
+        var popup_125f2a0a84b22ac4fc3bbe7ecf53d9a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64d2211d5c78458fb4654641aca24585 = $(`<div id="html_64d2211d5c78458fb4654641aca24585" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3500, Restoran ID: 321746</div>`)[0];
+                popup_125f2a0a84b22ac4fc3bbe7ecf53d9a2.setContent(html_64d2211d5c78458fb4654641aca24585);
+            
+        
+
+        marker_9d22ba137b391b1ecb646d28c18be422.bindPopup(popup_125f2a0a84b22ac4fc3bbe7ecf53d9a2)
+        ;
+
+        
+    
+    
+            var marker_31ede7a890fd6da7b12cf1975b9024ed = L.marker(
+                [51.2003843, 4.4406962],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_b3c18c4d0110e303512b8dca26103bad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_31ede7a890fd6da7b12cf1975b9024ed.setIcon(icon_b3c18c4d0110e303512b8dca26103bad);
+        
+    
+        var popup_4caeef83e56802d24fce2c19986ef3fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56696463ff4cf2aebc56d5d08de38245 = $(`<div id="html_56696463ff4cf2aebc56d5d08de38245" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2600, Restoran ID: 305786</div>`)[0];
+                popup_4caeef83e56802d24fce2c19986ef3fe.setContent(html_56696463ff4cf2aebc56d5d08de38245);
+            
+        
+
+        marker_31ede7a890fd6da7b12cf1975b9024ed.bindPopup(popup_4caeef83e56802d24fce2c19986ef3fe)
+        ;
+
+        
+    
+    
+            var marker_fb2db1fd8159248e49e84a8012aaef35 = L.marker(
+                [50.8065299, 4.2892006],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_d17d0395f637e769b86b5cb4a273b8c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_fb2db1fd8159248e49e84a8012aaef35.setIcon(icon_d17d0395f637e769b86b5cb4a273b8c2);
+        
+    
+        var popup_b5c238e884708e0f19b71113104e5da4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdc9b8e860e65c17f07775ffdfe64e43 = $(`<div id="html_bdc9b8e860e65c17f07775ffdfe64e43" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1600, Restoran ID: 361112</div>`)[0];
+                popup_b5c238e884708e0f19b71113104e5da4.setContent(html_bdc9b8e860e65c17f07775ffdfe64e43);
+            
+        
+
+        marker_fb2db1fd8159248e49e84a8012aaef35.bindPopup(popup_b5c238e884708e0f19b71113104e5da4)
+        ;
+
+        
+    
+    
+            var marker_1adf48654b44ac502ec7127c9c06c0e2 = L.marker(
+                [51.03356729999999, 4.1112731],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_ca0a98762bb6d2f50ce7ef23ea4cf02f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_1adf48654b44ac502ec7127c9c06c0e2.setIcon(icon_ca0a98762bb6d2f50ce7ef23ea4cf02f);
+        
+    
+        var popup_605498c032c228b4a766f298603c4564 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f1969704906167837aa231cab8696ee = $(`<div id="html_9f1969704906167837aa231cab8696ee" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9200, Restoran ID: 431714</div>`)[0];
+                popup_605498c032c228b4a766f298603c4564.setContent(html_9f1969704906167837aa231cab8696ee);
+            
+        
+
+        marker_1adf48654b44ac502ec7127c9c06c0e2.bindPopup(popup_605498c032c228b4a766f298603c4564)
+        ;
+
+        
+    
+    
+            var marker_b1f2985b49288fcc267926a954d9013d = L.marker(
+                [50.8583196, 4.4120986],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_9d9b3481e0fdccf51fc36489cfdae9df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_b1f2985b49288fcc267926a954d9013d.setIcon(icon_9d9b3481e0fdccf51fc36489cfdae9df);
+        
+    
+        var popup_21ebffba38a108e3cfe1560fbe2d29f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21165908222c9a55766aeedaf8b18e51 = $(`<div id="html_21165908222c9a55766aeedaf8b18e51" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1140, Restoran ID: 60365</div>`)[0];
+                popup_21ebffba38a108e3cfe1560fbe2d29f4.setContent(html_21165908222c9a55766aeedaf8b18e51);
+            
+        
+
+        marker_b1f2985b49288fcc267926a954d9013d.bindPopup(popup_21ebffba38a108e3cfe1560fbe2d29f4)
+        ;
+
+        
+    
+    
+            var marker_126bcb5e3ca367b9454c4b1d426b61c8 = L.marker(
+                [50.93304089999999, 5.3372815],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_9ae99217ad9bd0bbb78dbeb604580c6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_126bcb5e3ca367b9454c4b1d426b61c8.setIcon(icon_9ae99217ad9bd0bbb78dbeb604580c6c);
+        
+    
+        var popup_72dc1feefc0720dfcfe72112a511e652 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10249061baeb1eb46ef78bc9225ab355 = $(`<div id="html_10249061baeb1eb46ef78bc9225ab355" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3500, Restoran ID: 379368</div>`)[0];
+                popup_72dc1feefc0720dfcfe72112a511e652.setContent(html_10249061baeb1eb46ef78bc9225ab355);
+            
+        
+
+        marker_126bcb5e3ca367b9454c4b1d426b61c8.bindPopup(popup_72dc1feefc0720dfcfe72112a511e652)
+        ;
+
+        
+    
+    
+            var marker_81a6bc5df5f6e4726767ec0cbca35849 = L.marker(
+                [51.171145, 4.127612],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_48a737d0edb6e5ec5b6bc678d314cbf3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_81a6bc5df5f6e4726767ec0cbca35849.setIcon(icon_48a737d0edb6e5ec5b6bc678d314cbf3);
+        
+    
+        var popup_96f56f8d37e39d4b5ae31df5c4e1a901 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5890f10ed38e9157501e3ea850f7011 = $(`<div id="html_d5890f10ed38e9157501e3ea850f7011" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9100, Restoran ID: 301257</div>`)[0];
+                popup_96f56f8d37e39d4b5ae31df5c4e1a901.setContent(html_d5890f10ed38e9157501e3ea850f7011);
+            
+        
+
+        marker_81a6bc5df5f6e4726767ec0cbca35849.bindPopup(popup_96f56f8d37e39d4b5ae31df5c4e1a901)
+        ;
+
+        
+    
+    
+            var marker_a1bf36352fe44c1cc9b8d03593cf7c35 = L.marker(
+                [51.2103581, 3.2479457],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_16adcb98800113895dc8009efc070d10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_a1bf36352fe44c1cc9b8d03593cf7c35.setIcon(icon_16adcb98800113895dc8009efc070d10);
+        
+    
+        var popup_260dff55687d6b03cfa53406518a10f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d6d26e2f20439c5d77e6364d393c8cb = $(`<div id="html_5d6d26e2f20439c5d77e6364d393c8cb" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8310, Restoran ID: 59353</div>`)[0];
+                popup_260dff55687d6b03cfa53406518a10f7.setContent(html_5d6d26e2f20439c5d77e6364d393c8cb);
+            
+        
+
+        marker_a1bf36352fe44c1cc9b8d03593cf7c35.bindPopup(popup_260dff55687d6b03cfa53406518a10f7)
+        ;
+
+        
+    
+    
+            var marker_e99edb6e895737cf3ae36adcb2623d4b = L.marker(
+                [51.05114062557904, 3.7291663885116577],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_b25f5895c605e51209d5175e4a2128c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_e99edb6e895737cf3ae36adcb2623d4b.setIcon(icon_b25f5895c605e51209d5175e4a2128c3);
+        
+    
+        var popup_3a069c0dd724a5aafc3662c97f171f7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef709df770fce47cc7a130124a753ed7 = $(`<div id="html_ef709df770fce47cc7a130124a753ed7" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 284845</div>`)[0];
+                popup_3a069c0dd724a5aafc3662c97f171f7c.setContent(html_ef709df770fce47cc7a130124a753ed7);
+            
+        
+
+        marker_e99edb6e895737cf3ae36adcb2623d4b.bindPopup(popup_3a069c0dd724a5aafc3662c97f171f7c)
+        ;
+
+        
+    
+    
+            var marker_1d55755927a2b4b72d1084ddc1836ba5 = L.marker(
+                [51.1799803, 4.432885499999999],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_0f642ac8911f27c0ed1a1d3ed6c5ec1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_1d55755927a2b4b72d1084ddc1836ba5.setIcon(icon_0f642ac8911f27c0ed1a1d3ed6c5ec1e);
+        
+    
+        var popup_b429d069a19e187d76e3d1f0ee60a599 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7743df8ba6054f8a97e41062dd18747e = $(`<div id="html_7743df8ba6054f8a97e41062dd18747e" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2600, Restoran ID: 59333</div>`)[0];
+                popup_b429d069a19e187d76e3d1f0ee60a599.setContent(html_7743df8ba6054f8a97e41062dd18747e);
+            
+        
+
+        marker_1d55755927a2b4b72d1084ddc1836ba5.bindPopup(popup_b429d069a19e187d76e3d1f0ee60a599)
+        ;
+
+        
+    
+    
+            var marker_c78811bb058d4f5bf326953d62404305 = L.marker(
+                [51.20713359, 4.429722655],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_60987c3e38c5bbc7648288df9c1858f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_c78811bb058d4f5bf326953d62404305.setIcon(icon_60987c3e38c5bbc7648288df9c1858f9);
+        
+    
+        var popup_5bedfb3abf8b51288c2865b59ec6021e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a076c5b5e56905b135d1366ef6212e36 = $(`<div id="html_a076c5b5e56905b135d1366ef6212e36" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2018, Restoran ID: 195577</div>`)[0];
+                popup_5bedfb3abf8b51288c2865b59ec6021e.setContent(html_a076c5b5e56905b135d1366ef6212e36);
+            
+        
+
+        marker_c78811bb058d4f5bf326953d62404305.bindPopup(popup_5bedfb3abf8b51288c2865b59ec6021e)
+        ;
+
+        
+    
+    
+            var marker_218cf562b82e45284b399a8b2bfaefef = L.marker(
+                [50.82574899999999, 3.2586955],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_3590baa2678769754c1f9f7701cb1604 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_218cf562b82e45284b399a8b2bfaefef.setIcon(icon_3590baa2678769754c1f9f7701cb1604);
+        
+    
+        var popup_0ac1331a77a7a2661b2ed9a77babc3e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b74c5fd855c8674ecad05b460cacb1fe = $(`<div id="html_b74c5fd855c8674ecad05b460cacb1fe" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8500, Restoran ID: 70941</div>`)[0];
+                popup_0ac1331a77a7a2661b2ed9a77babc3e1.setContent(html_b74c5fd855c8674ecad05b460cacb1fe);
+            
+        
+
+        marker_218cf562b82e45284b399a8b2bfaefef.bindPopup(popup_0ac1331a77a7a2661b2ed9a77babc3e1)
+        ;
+
+        
+    
+    
+            var marker_f52c27c969df1ab9321c487659375c46 = L.marker(
+                [51.06538, 3.7189908],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_ea9b413142a1898b5243a6a9cf938349 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_f52c27c969df1ab9321c487659375c46.setIcon(icon_ea9b413142a1898b5243a6a9cf938349);
+        
+    
+        var popup_31ef732be8f90f9112205eb36e9e9404 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5df4f0d7954900de26476a979b23a413 = $(`<div id="html_5df4f0d7954900de26476a979b23a413" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 502664</div>`)[0];
+                popup_31ef732be8f90f9112205eb36e9e9404.setContent(html_5df4f0d7954900de26476a979b23a413);
+            
+        
+
+        marker_f52c27c969df1ab9321c487659375c46.bindPopup(popup_31ef732be8f90f9112205eb36e9e9404)
+        ;
+
+        
+    
+    
+            var marker_4c3cba52b20f6c93973543f9e5b4001c = L.marker(
+                [50.9489351, 3.1294231],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_fe9c25dd3c4e5a4fe04aa4e963b323e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_4c3cba52b20f6c93973543f9e5b4001c.setIcon(icon_fe9c25dd3c4e5a4fe04aa4e963b323e7);
+        
+    
+        var popup_a941dc2d449f7d2fe4b10ca89cdeeedf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ba870d755c03e226c928efd529ca262 = $(`<div id="html_4ba870d755c03e226c928efd529ca262" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8800, Restoran ID: 437493</div>`)[0];
+                popup_a941dc2d449f7d2fe4b10ca89cdeeedf.setContent(html_4ba870d755c03e226c928efd529ca262);
+            
+        
+
+        marker_4c3cba52b20f6c93973543f9e5b4001c.bindPopup(popup_a941dc2d449f7d2fe4b10ca89cdeeedf)
+        ;
+
+        
+    
+    
+            var marker_af030985d2cc32319cdd2c4b7c2ca47d = L.marker(
+                [51.06629059999999, 3.6998902],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_463a8576266bcd9fd7e545b9c194803c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_af030985d2cc32319cdd2c4b7c2ca47d.setIcon(icon_463a8576266bcd9fd7e545b9c194803c);
+        
+    
+        var popup_dc9a5dc358d45add833adee8cc1887ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36a0f8b8d9f7a70ba70281935df2becf = $(`<div id="html_36a0f8b8d9f7a70ba70281935df2becf" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 59342</div>`)[0];
+                popup_dc9a5dc358d45add833adee8cc1887ef.setContent(html_36a0f8b8d9f7a70ba70281935df2becf);
+            
+        
+
+        marker_af030985d2cc32319cdd2c4b7c2ca47d.bindPopup(popup_dc9a5dc358d45add833adee8cc1887ef)
+        ;
+
+        
+    
+    
+            var marker_720eb0840523ab042a57daa17ea9f800 = L.marker(
+                [51.1697644, 4.387095],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_ccd584e5c39923ba0179d8418ac5ed9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_720eb0840523ab042a57daa17ea9f800.setIcon(icon_ccd584e5c39923ba0179d8418ac5ed9e);
+        
+    
+        var popup_bfb655a35dcebf6005487f8ce3679f47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e3acdfd01ad29c5a2967c02eead46db = $(`<div id="html_9e3acdfd01ad29c5a2967c02eead46db" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2610, Restoran ID: 59332</div>`)[0];
+                popup_bfb655a35dcebf6005487f8ce3679f47.setContent(html_9e3acdfd01ad29c5a2967c02eead46db);
+            
+        
+
+        marker_720eb0840523ab042a57daa17ea9f800.bindPopup(popup_bfb655a35dcebf6005487f8ce3679f47)
+        ;
+
+        
+    
+    
+            var marker_7f71c6a1d74805807a3dd34cd7cee6b6 = L.marker(
+                [51.1503721, 4.1324893],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_41d7f31287ed9492a4e12398ff4f05da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_7f71c6a1d74805807a3dd34cd7cee6b6.setIcon(icon_41d7f31287ed9492a4e12398ff4f05da);
+        
+    
+        var popup_7082eccdc77897f3508d47ef77b8f2c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe2f06d012744156e4ad42ea80029d94 = $(`<div id="html_fe2f06d012744156e4ad42ea80029d94" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9100, Restoran ID: 295693</div>`)[0];
+                popup_7082eccdc77897f3508d47ef77b8f2c3.setContent(html_fe2f06d012744156e4ad42ea80029d94);
+            
+        
+
+        marker_7f71c6a1d74805807a3dd34cd7cee6b6.bindPopup(popup_7082eccdc77897f3508d47ef77b8f2c3)
+        ;
+
+        
+    
+    
+            var marker_0e2f0f3e63223a6e7b46dfef24210656 = L.marker(
+                [50.8253157, 3.2576591],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_7c35baa9d94da91c96d84158c046912c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_0e2f0f3e63223a6e7b46dfef24210656.setIcon(icon_7c35baa9d94da91c96d84158c046912c);
+        
+    
+        var popup_e68b0fee0dff02e14ead7a8ca6938d6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8eefe72b0abdeab72da7986df44b2cc4 = $(`<div id="html_8eefe72b0abdeab72da7986df44b2cc4" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8500, Restoran ID: 88732</div>`)[0];
+                popup_e68b0fee0dff02e14ead7a8ca6938d6e.setContent(html_8eefe72b0abdeab72da7986df44b2cc4);
+            
+        
+
+        marker_0e2f0f3e63223a6e7b46dfef24210656.bindPopup(popup_e68b0fee0dff02e14ead7a8ca6938d6e)
+        ;
+
+        
+    
+    
+            var marker_8c4c1704d15484a921c33236373299e0 = L.marker(
+                [50.8801109, 4.705564799999999],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_244b2d89032edd161ac874facc44ca2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_8c4c1704d15484a921c33236373299e0.setIcon(icon_244b2d89032edd161ac874facc44ca2f);
+        
+    
+        var popup_a492466ac46596199c034d26782b9719 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f5e20a93604f48c8f96d296cfafb699 = $(`<div id="html_3f5e20a93604f48c8f96d296cfafb699" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3000, Restoran ID: 437518</div>`)[0];
+                popup_a492466ac46596199c034d26782b9719.setContent(html_3f5e20a93604f48c8f96d296cfafb699);
+            
+        
+
+        marker_8c4c1704d15484a921c33236373299e0.bindPopup(popup_a492466ac46596199c034d26782b9719)
+        ;
+
+        
+    
+    
+            var marker_c38b48161563fb363c543f7b3ef346ff = L.marker(
+                [50.93209880000001, 5.3477673],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_68623acb083d086f1046ea2a20ca4a27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_c38b48161563fb363c543f7b3ef346ff.setIcon(icon_68623acb083d086f1046ea2a20ca4a27);
+        
+    
+        var popup_eb74051b9f43af63c82edb5508a3633d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a285b12014c095842135e78ccfec89c = $(`<div id="html_4a285b12014c095842135e78ccfec89c" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3500, Restoran ID: 173844</div>`)[0];
+                popup_eb74051b9f43af63c82edb5508a3633d.setContent(html_4a285b12014c095842135e78ccfec89c);
+            
+        
+
+        marker_c38b48161563fb363c543f7b3ef346ff.bindPopup(popup_eb74051b9f43af63c82edb5508a3633d)
+        ;
+
+        
+    
+    
+            var marker_c878a34cc5d5191c1c703ba656f84d3a = L.marker(
+                [51.3222768, 4.9439107],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_99509847b58f46820a48c7072631b634 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_c878a34cc5d5191c1c703ba656f84d3a.setIcon(icon_99509847b58f46820a48c7072631b634);
+        
+    
+        var popup_12f9c97717c489af551e57fe31e46106 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_306a182eaf1b362d06875dfc231ee66c = $(`<div id="html_306a182eaf1b362d06875dfc231ee66c" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2300, Restoran ID: 476341</div>`)[0];
+                popup_12f9c97717c489af551e57fe31e46106.setContent(html_306a182eaf1b362d06875dfc231ee66c);
+            
+        
+
+        marker_c878a34cc5d5191c1c703ba656f84d3a.bindPopup(popup_12f9c97717c489af551e57fe31e46106)
+        ;
+
+        
+    
+    
+            var marker_1d558e973ec1a53c0887c5c2bc54e320 = L.marker(
+                [50.85543939999999, 4.3152015],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_46f06cd258559e6461c663aeef767764 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_1d558e973ec1a53c0887c5c2bc54e320.setIcon(icon_46f06cd258559e6461c663aeef767764);
+        
+    
+        var popup_fb386fdbf986bd97571ffabc0fa2cd60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb9d2e591d9b065d2d2b172ec4998f21 = $(`<div id="html_eb9d2e591d9b065d2d2b172ec4998f21" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1080, Restoran ID: 457479</div>`)[0];
+                popup_fb386fdbf986bd97571ffabc0fa2cd60.setContent(html_eb9d2e591d9b065d2d2b172ec4998f21);
+            
+        
+
+        marker_1d558e973ec1a53c0887c5c2bc54e320.bindPopup(popup_fb386fdbf986bd97571ffabc0fa2cd60)
+        ;
+
+        
+    
+    
+            var marker_b10d7a9dfc6afad9ae4a208fe10769ee = L.marker(
+                [51.20036409999999, 4.4406549],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_cf9b45c10861bd6c02ae9c1d39adf87a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_b10d7a9dfc6afad9ae4a208fe10769ee.setIcon(icon_cf9b45c10861bd6c02ae9c1d39adf87a);
+        
+    
+        var popup_f3e2bcf1a41e0712b8afd17e93ae7323 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7612d898e49dff3fab12057446305356 = $(`<div id="html_7612d898e49dff3fab12057446305356" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2600, Restoran ID: 139372</div>`)[0];
+                popup_f3e2bcf1a41e0712b8afd17e93ae7323.setContent(html_7612d898e49dff3fab12057446305356);
+            
+        
+
+        marker_b10d7a9dfc6afad9ae4a208fe10769ee.bindPopup(popup_f3e2bcf1a41e0712b8afd17e93ae7323)
+        ;
+
+        
+    
+    
+            var marker_8e05758c02fb44bb7b21dde72b26c81e = L.marker(
+                [51.2216837, 2.908504],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_dc3eae4fb3df38c900885217c7c9245b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_8e05758c02fb44bb7b21dde72b26c81e.setIcon(icon_dc3eae4fb3df38c900885217c7c9245b);
+        
+    
+        var popup_12ac72431c8555be766dd2dc21bb07f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94881fc24f5fb982b22792f2e9cf75f9 = $(`<div id="html_94881fc24f5fb982b22792f2e9cf75f9" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8400, Restoran ID: 259306</div>`)[0];
+                popup_12ac72431c8555be766dd2dc21bb07f5.setContent(html_94881fc24f5fb982b22792f2e9cf75f9);
+            
+        
+
+        marker_8e05758c02fb44bb7b21dde72b26c81e.bindPopup(popup_12ac72431c8555be766dd2dc21bb07f5)
+        ;
+
+        
+    
+    
+            var marker_300eb98abcfacdc4f8b123a4ee23ad16 = L.marker(
+                [51.038816, 3.7262825],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_c38c1cd8fbe6ce37cac9d517beafbded = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_300eb98abcfacdc4f8b123a4ee23ad16.setIcon(icon_c38c1cd8fbe6ce37cac9d517beafbded);
+        
+    
+        var popup_f177897e0341056b69ee9aea9630fcc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac94c4d812aec55d98e3d261ab95edba = $(`<div id="html_ac94c4d812aec55d98e3d261ab95edba" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 159159</div>`)[0];
+                popup_f177897e0341056b69ee9aea9630fcc4.setContent(html_ac94c4d812aec55d98e3d261ab95edba);
+            
+        
+
+        marker_300eb98abcfacdc4f8b123a4ee23ad16.bindPopup(popup_f177897e0341056b69ee9aea9630fcc4)
+        ;
+
+        
+    
+    
+            var marker_6413cd8f2d737feb028416495c5f405a = L.marker(
+                [50.9496684, 4.0412412],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_bae22234de1a99af54cca19128c976f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_6413cd8f2d737feb028416495c5f405a.setIcon(icon_bae22234de1a99af54cca19128c976f0);
+        
+    
+        var popup_d2b6b57f65b3dfd6de3e8b438c406e25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dea5edd3c41e861236ec7fd7e9e0a0b8 = $(`<div id="html_dea5edd3c41e861236ec7fd7e9e0a0b8" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9300, Restoran ID: 295694</div>`)[0];
+                popup_d2b6b57f65b3dfd6de3e8b438c406e25.setContent(html_dea5edd3c41e861236ec7fd7e9e0a0b8);
+            
+        
+
+        marker_6413cd8f2d737feb028416495c5f405a.bindPopup(popup_d2b6b57f65b3dfd6de3e8b438c406e25)
+        ;
+
+        
+    
+    
+            var marker_3aba0da5d6d64bf6cf75fdd87413c400 = L.marker(
+                [51.049253, 3.7310976],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_f2e161ec68c36a83ad2f8f353bb9b331 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_3aba0da5d6d64bf6cf75fdd87413c400.setIcon(icon_f2e161ec68c36a83ad2f8f353bb9b331);
+        
+    
+        var popup_7b9f2875b3ba98ab3ded1500cd1bf2ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57882af07976675ea4bf0742051be7c6 = $(`<div id="html_57882af07976675ea4bf0742051be7c6" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 320209</div>`)[0];
+                popup_7b9f2875b3ba98ab3ded1500cd1bf2ff.setContent(html_57882af07976675ea4bf0742051be7c6);
+            
+        
+
+        marker_3aba0da5d6d64bf6cf75fdd87413c400.bindPopup(popup_7b9f2875b3ba98ab3ded1500cd1bf2ff)
+        ;
+
+        
+    
+    
+            var marker_3c23007987f98f6def47bfaba19990d5 = L.marker(
+                [51.2013423, 4.4334783],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_a304307eb47d9d7cbbaac5abdcd3754b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_3c23007987f98f6def47bfaba19990d5.setIcon(icon_a304307eb47d9d7cbbaac5abdcd3754b);
+        
+    
+        var popup_83a9353f440bda9de13862778b3b0f64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1e3217c587fd62c4471d663cc374138 = $(`<div id="html_c1e3217c587fd62c4471d663cc374138" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2600, Restoran ID: 276602</div>`)[0];
+                popup_83a9353f440bda9de13862778b3b0f64.setContent(html_c1e3217c587fd62c4471d663cc374138);
+            
+        
+
+        marker_3c23007987f98f6def47bfaba19990d5.bindPopup(popup_83a9353f440bda9de13862778b3b0f64)
+        ;
+
+        
+    
+    
+            var marker_5e2cd72c4923db9a97f512d6f1982677 = L.marker(
+                [50.8690961, 4.6979052],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_5d4d8d78696989ea1faff4179102f885 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_5e2cd72c4923db9a97f512d6f1982677.setIcon(icon_5d4d8d78696989ea1faff4179102f885);
+        
+    
+        var popup_35a1e52a9f94d6de630f5b8cfeb80314 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db124d6ea3d779fa67b6b8345178ca3a = $(`<div id="html_db124d6ea3d779fa67b6b8345178ca3a" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3000, Restoran ID: 59502</div>`)[0];
+                popup_35a1e52a9f94d6de630f5b8cfeb80314.setContent(html_db124d6ea3d779fa67b6b8345178ca3a);
+            
+        
+
+        marker_5e2cd72c4923db9a97f512d6f1982677.bindPopup(popup_35a1e52a9f94d6de630f5b8cfeb80314)
+        ;
+
+        
+    
+    
+            var marker_dafa00921bc3fa0f568771a62f5f5153 = L.marker(
+                [51.0218412, 4.4732163],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_0b68946c35786993fa68bc8e326c417b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_dafa00921bc3fa0f568771a62f5f5153.setIcon(icon_0b68946c35786993fa68bc8e326c417b);
+        
+    
+        var popup_65f76f024bc8dcd6c94416d47fa24f7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6741c11fd2de1c5969a8f1123fdd743c = $(`<div id="html_6741c11fd2de1c5969a8f1123fdd743c" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2800, Restoran ID: 59348</div>`)[0];
+                popup_65f76f024bc8dcd6c94416d47fa24f7a.setContent(html_6741c11fd2de1c5969a8f1123fdd743c);
+            
+        
+
+        marker_dafa00921bc3fa0f568771a62f5f5153.bindPopup(popup_65f76f024bc8dcd6c94416d47fa24f7a)
+        ;
+
+        
+    
+    
+            var marker_4bea828e3c07c2ba4635896eb0840fd6 = L.marker(
+                [51.2257392, 4.417025499999999],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_dfff11043c7769b812bbb3c0f2e7ad84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_4bea828e3c07c2ba4635896eb0840fd6.setIcon(icon_dfff11043c7769b812bbb3c0f2e7ad84);
+        
+    
+        var popup_59cbd394a2666546a64b4ffa5672a60e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84f5fb21aa9827defe60f8e6f43de4c2 = $(`<div id="html_84f5fb21aa9827defe60f8e6f43de4c2" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2060, Restoran ID: 119238</div>`)[0];
+                popup_59cbd394a2666546a64b4ffa5672a60e.setContent(html_84f5fb21aa9827defe60f8e6f43de4c2);
+            
+        
+
+        marker_4bea828e3c07c2ba4635896eb0840fd6.bindPopup(popup_59cbd394a2666546a64b4ffa5672a60e)
+        ;
+
+        
+    
+    
+            var marker_16c7b67f5afee60625f65f7524209631 = L.marker(
+                [51.0398778, 3.7232142],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_f1ec7c6bca4e47f1d1e77554c872627f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_16c7b67f5afee60625f65f7524209631.setIcon(icon_f1ec7c6bca4e47f1d1e77554c872627f);
+        
+    
+        var popup_1d48eafa43705bee16185e0f0d97f06a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2fa4b03ea419d0359d3a7b8365650cf = $(`<div id="html_a2fa4b03ea419d0359d3a7b8365650cf" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 59845</div>`)[0];
+                popup_1d48eafa43705bee16185e0f0d97f06a.setContent(html_a2fa4b03ea419d0359d3a7b8365650cf);
+            
+        
+
+        marker_16c7b67f5afee60625f65f7524209631.bindPopup(popup_1d48eafa43705bee16185e0f0d97f06a)
+        ;
+
+        
+    
+    
+            var marker_6e2eaeec26defcd08312e706906fd9e9 = L.marker(
+                [51.0402795, 3.7254889],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_e9722b4eb249d1fdf2d438e2c84a236d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_6e2eaeec26defcd08312e706906fd9e9.setIcon(icon_e9722b4eb249d1fdf2d438e2c84a236d);
+        
+    
+        var popup_ad2d1250df9537bed98bc4aa62104767 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_722e194a396fb7dc5e6a2178e80919c5 = $(`<div id="html_722e194a396fb7dc5e6a2178e80919c5" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 249596</div>`)[0];
+                popup_ad2d1250df9537bed98bc4aa62104767.setContent(html_722e194a396fb7dc5e6a2178e80919c5);
+            
+        
+
+        marker_6e2eaeec26defcd08312e706906fd9e9.bindPopup(popup_ad2d1250df9537bed98bc4aa62104767)
+        ;
+
+        
+    
+    
+            var marker_e0d0de8a8768d213a668fee55f2662a4 = L.marker(
+                [51.02693660000001, 4.4724278],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_eafa42091f37bb1292358b93388252ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_e0d0de8a8768d213a668fee55f2662a4.setIcon(icon_eafa42091f37bb1292358b93388252ad);
+        
+    
+        var popup_0b207c64daec51338a9d26aae9a8c533 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf0ddcb61432101b279f417eb10eb9b4 = $(`<div id="html_bf0ddcb61432101b279f417eb10eb9b4" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2800, Restoran ID: 235357</div>`)[0];
+                popup_0b207c64daec51338a9d26aae9a8c533.setContent(html_bf0ddcb61432101b279f417eb10eb9b4);
+            
+        
+
+        marker_e0d0de8a8768d213a668fee55f2662a4.bindPopup(popup_0b207c64daec51338a9d26aae9a8c533)
+        ;
+
+        
+    
+    
+            var marker_bd69efa67fa818d3ee739c13330a0e08 = L.marker(
+                [50.93801247, 5.316961539],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_70eaee5a4c55548f7c7b12d34340bb56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_bd69efa67fa818d3ee739c13330a0e08.setIcon(icon_70eaee5a4c55548f7c7b12d34340bb56);
+        
+    
+        var popup_fdaebebaeeb293d97bb7e889659b8053 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a486e982226e728d262920f0bf598d3b = $(`<div id="html_a486e982226e728d262920f0bf598d3b" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3500, Restoran ID: 276418</div>`)[0];
+                popup_fdaebebaeeb293d97bb7e889659b8053.setContent(html_a486e982226e728d262920f0bf598d3b);
+            
+        
+
+        marker_bd69efa67fa818d3ee739c13330a0e08.bindPopup(popup_fdaebebaeeb293d97bb7e889659b8053)
+        ;
+
+        
+    
+    
+            var marker_f44b2205cf2577fef981213351e49e4b = L.marker(
+                [50.71989840000001, 4.3975062],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_605e4d2bd1c456f74bdd67eecf024db5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_f44b2205cf2577fef981213351e49e4b.setIcon(icon_605e4d2bd1c456f74bdd67eecf024db5);
+        
+    
+        var popup_a6d4b52b97cb7c4277b0d8306e25ad57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1d9fa779b26c71544a3d452093695ba = $(`<div id="html_c1d9fa779b26c71544a3d452093695ba" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1410, Restoran ID: 60041</div>`)[0];
+                popup_a6d4b52b97cb7c4277b0d8306e25ad57.setContent(html_c1d9fa779b26c71544a3d452093695ba);
+            
+        
+
+        marker_f44b2205cf2577fef981213351e49e4b.bindPopup(popup_a6d4b52b97cb7c4277b0d8306e25ad57)
+        ;
+
+        
+    
+    
+            var marker_002e2bac2bb9c9c5a628fcfffcf9a9c9 = L.marker(
+                [50.8686357, 4.3122373],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_01b6c8e2ecb747a15da094f03273cf79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_002e2bac2bb9c9c5a628fcfffcf9a9c9.setIcon(icon_01b6c8e2ecb747a15da094f03273cf79);
+        
+    
+        var popup_668d658e5f7176718c695abac08ba324 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd3634e4e6552f746df8110aa1c61881 = $(`<div id="html_cd3634e4e6552f746df8110aa1c61881" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1083, Restoran ID: 72179</div>`)[0];
+                popup_668d658e5f7176718c695abac08ba324.setContent(html_cd3634e4e6552f746df8110aa1c61881);
+            
+        
+
+        marker_002e2bac2bb9c9c5a628fcfffcf9a9c9.bindPopup(popup_668d658e5f7176718c695abac08ba324)
+        ;
+
+        
+    
+    
+            var marker_3be11ee74bc011422e538941fbec9437 = L.marker(
+                [50.88584789999999, 4.718980999999999],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_82aaa561a960a7b16a3b6698ae9e1cc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_3be11ee74bc011422e538941fbec9437.setIcon(icon_82aaa561a960a7b16a3b6698ae9e1cc1);
+        
+    
+        var popup_2aeb41efa570f20b762196a820f2c8e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3536b273ad246e7e5785d41a086a744 = $(`<div id="html_f3536b273ad246e7e5785d41a086a744" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3010, Restoran ID: 59504</div>`)[0];
+                popup_2aeb41efa570f20b762196a820f2c8e1.setContent(html_f3536b273ad246e7e5785d41a086a744);
+            
+        
+
+        marker_3be11ee74bc011422e538941fbec9437.bindPopup(popup_2aeb41efa570f20b762196a820f2c8e1)
+        ;
+
+        
+    
+    
+            var marker_446bdd8aba39d505dd21d66d3971741a = L.marker(
+                [50.79449169999999, 4.3652704],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_c9719be64d9a629930fe6a2d08bb50dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_446bdd8aba39d505dd21d66d3971741a.setIcon(icon_c9719be64d9a629930fe6a2d08bb50dc);
+        
+    
+        var popup_ffae53830254cf74b61208fbe9fe14f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eda05d03b34a18bf9ec197506f1cbc28 = $(`<div id="html_eda05d03b34a18bf9ec197506f1cbc28" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1180, Restoran ID: 60034</div>`)[0];
+                popup_ffae53830254cf74b61208fbe9fe14f3.setContent(html_eda05d03b34a18bf9ec197506f1cbc28);
+            
+        
+
+        marker_446bdd8aba39d505dd21d66d3971741a.bindPopup(popup_ffae53830254cf74b61208fbe9fe14f3)
+        ;
+
+        
+    
+    
+            var marker_c3bdc2267611dcef9c70aee6811bb9c3 = L.marker(
+                [50.9469159, 3.122641],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_126d5e4c04793e1f462d7d3d999e3ea7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_c3bdc2267611dcef9c70aee6811bb9c3.setIcon(icon_126d5e4c04793e1f462d7d3d999e3ea7);
+        
+    
+        var popup_da54640745cb07b8c77452b11eb6e2fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3a00bd58021c2498dcd2fd7475346a0 = $(`<div id="html_a3a00bd58021c2498dcd2fd7475346a0" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8800, Restoran ID: 343571</div>`)[0];
+                popup_da54640745cb07b8c77452b11eb6e2fa.setContent(html_a3a00bd58021c2498dcd2fd7475346a0);
+            
+        
+
+        marker_c3bdc2267611dcef9c70aee6811bb9c3.bindPopup(popup_da54640745cb07b8c77452b11eb6e2fa)
+        ;
+
+        
+    
+    
+            var marker_efc1a77d47ce9a563fc05814747ab81b = L.marker(
+                [51.210254, 4.4098698],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_c509a3c612affe047a848b517b615239 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_efc1a77d47ce9a563fc05814747ab81b.setIcon(icon_c509a3c612affe047a848b517b615239);
+        
+    
+        var popup_81d68b18c8308d94967b89f87d94a6e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfbdc7a2f919652f6c60a628428b582d = $(`<div id="html_cfbdc7a2f919652f6c60a628428b582d" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2018, Restoran ID: 59337</div>`)[0];
+                popup_81d68b18c8308d94967b89f87d94a6e6.setContent(html_cfbdc7a2f919652f6c60a628428b582d);
+            
+        
+
+        marker_efc1a77d47ce9a563fc05814747ab81b.bindPopup(popup_81d68b18c8308d94967b89f87d94a6e6)
+        ;
+
+        
+    
+    
+            var marker_087e2101a0ce84a732ec0b932577173a = L.marker(
+                [50.8312407, 4.4527344],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_ddb74f92232d98c48a1e45d3b407969e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_087e2101a0ce84a732ec0b932577173a.setIcon(icon_ddb74f92232d98c48a1e45d3b407969e);
+        
+    
+        var popup_0c001b1388bf1f8990ee3650b5f74655 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01c2234b9bb6db26228970962883f5d1 = $(`<div id="html_01c2234b9bb6db26228970962883f5d1" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1150, Restoran ID: 437046</div>`)[0];
+                popup_0c001b1388bf1f8990ee3650b5f74655.setContent(html_01c2234b9bb6db26228970962883f5d1);
+            
+        
+
+        marker_087e2101a0ce84a732ec0b932577173a.bindPopup(popup_0c001b1388bf1f8990ee3650b5f74655)
+        ;
+
+        
+    
+    
+            var marker_77a792439456f5ed9dd03130cf1166a9 = L.marker(
+                [50.8968895, 4.358578899999999],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_b6fd94a72f53a008ec157e356545080c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_77a792439456f5ed9dd03130cf1166a9.setIcon(icon_b6fd94a72f53a008ec157e356545080c);
+        
+    
+        var popup_0084c98192e1cff6edbdf52a535ad579 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8dd7339b4874ea0d16bd093ca9229931 = $(`<div id="html_8dd7339b4874ea0d16bd093ca9229931" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1020, Restoran ID: 482432</div>`)[0];
+                popup_0084c98192e1cff6edbdf52a535ad579.setContent(html_8dd7339b4874ea0d16bd093ca9229931);
+            
+        
+
+        marker_77a792439456f5ed9dd03130cf1166a9.bindPopup(popup_0084c98192e1cff6edbdf52a535ad579)
+        ;
+
+        
+    
+    
+            var marker_63f955818750c3e93a0abfb9ae6e7e9f = L.marker(
+                [50.816322, 4.4281378],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_4d77644f8db1d0b018ab95c73df2dd9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "turquoise", "prefix": "fa"}
+            );
+            marker_63f955818750c3e93a0abfb9ae6e7e9f.setIcon(icon_4d77644f8db1d0b018ab95c73df2dd9f);
+        
+    
+        var popup_ea3eb84d26a3d25e88cd4a78335e1305 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f59669f40f4decde74a1e5fc9980f9e = $(`<div id="html_4f59669f40f4decde74a1e5fc9980f9e" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1160, Restoran ID: 494940</div>`)[0];
+                popup_ea3eb84d26a3d25e88cd4a78335e1305.setContent(html_4f59669f40f4decde74a1e5fc9980f9e);
+            
+        
+
+        marker_63f955818750c3e93a0abfb9ae6e7e9f.bindPopup(popup_ea3eb84d26a3d25e88cd4a78335e1305)
+        ;
+
+        
+    
+    
+            var marker_78a4fbf0f4cfe381b3a71d8832a21d76 = L.marker(
+                [51.32214, 4.9439],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_6ee3b7c32362a7ccee654ea0721acc84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_78a4fbf0f4cfe381b3a71d8832a21d76.setIcon(icon_6ee3b7c32362a7ccee654ea0721acc84);
+        
+    
+        var popup_c2deaaf9d4b0e6d3bf770fc429a89451 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_deb115b192935b71923efad90f32388a = $(`<div id="html_deb115b192935b71923efad90f32388a" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 44142058-6bc8-51ae-ab93-140f20b5f2a5</div>`)[0];
+                popup_c2deaaf9d4b0e6d3bf770fc429a89451.setContent(html_deb115b192935b71923efad90f32388a);
+            
+        
+
+        marker_78a4fbf0f4cfe381b3a71d8832a21d76.bindPopup(popup_c2deaaf9d4b0e6d3bf770fc429a89451)
+        ;
+
+        
+    
+    
+            var marker_385476e593eb204ae82d95a644b712c2 = L.marker(
+                [51.0266, 4.48426],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_d6bb943306d272591ccc01f277e6f6f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_385476e593eb204ae82d95a644b712c2.setIcon(icon_d6bb943306d272591ccc01f277e6f6f2);
+        
+    
+        var popup_32d1771db82a4de1bbff96e05e480e74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78ad2cc2d3d39bd49900ce60a03ab8f0 = $(`<div id="html_78ad2cc2d3d39bd49900ce60a03ab8f0" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 44db6606-cdf8-447f-a8f8-69452372140f</div>`)[0];
+                popup_32d1771db82a4de1bbff96e05e480e74.setContent(html_78ad2cc2d3d39bd49900ce60a03ab8f0);
+            
+        
+
+        marker_385476e593eb204ae82d95a644b712c2.bindPopup(popup_32d1771db82a4de1bbff96e05e480e74)
+        ;
+
+        
+    
+    
+            var marker_6c4ebbe5723dac7f9913ba8dd2fb3eb9 = L.marker(
+                [50.89689, 4.35851],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_8543255346741b294d145e9dd409198e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6c4ebbe5723dac7f9913ba8dd2fb3eb9.setIcon(icon_8543255346741b294d145e9dd409198e);
+        
+    
+        var popup_77fca1acb3b83668aa348690018d94f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_546f7c56ff473e25eed510f3e5fdfb24 = $(`<div id="html_546f7c56ff473e25eed510f3e5fdfb24" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: bf43a88c-1c2c-5840-8624-137caa73adc4</div>`)[0];
+                popup_77fca1acb3b83668aa348690018d94f6.setContent(html_546f7c56ff473e25eed510f3e5fdfb24);
+            
+        
+
+        marker_6c4ebbe5723dac7f9913ba8dd2fb3eb9.bindPopup(popup_77fca1acb3b83668aa348690018d94f6)
+        ;
+
+        
+    
+    
+            var marker_0724487cb3c56d1b86550b024e1fba16 = L.marker(
+                [51.23106, 4.45565],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_76ed61c16fb9b975cfadd90a9e602694 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0724487cb3c56d1b86550b024e1fba16.setIcon(icon_76ed61c16fb9b975cfadd90a9e602694);
+        
+    
+        var popup_2fa62a90ce057c94788c3e3fdda4bc05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2f41b173db7ceaba1e285543dbba123 = $(`<div id="html_c2f41b173db7ceaba1e285543dbba123" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 692eb480-0423-4935-8e41-4dd5a8d115c5</div>`)[0];
+                popup_2fa62a90ce057c94788c3e3fdda4bc05.setContent(html_c2f41b173db7ceaba1e285543dbba123);
+            
+        
+
+        marker_0724487cb3c56d1b86550b024e1fba16.bindPopup(popup_2fa62a90ce057c94788c3e3fdda4bc05)
+        ;
+
+        
+    
+    
+            var marker_c3aeaea9026890cfb36e369f6ddb0a28 = L.marker(
+                [51.15316, 4.15351],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_d2c89275d9570d9b33298e564c7d90a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c3aeaea9026890cfb36e369f6ddb0a28.setIcon(icon_d2c89275d9570d9b33298e564c7d90a8);
+        
+    
+        var popup_16cf091bc644b3ffe9dfa012ce235858 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0bdab9ec57a89102c8544c7b3957da3 = $(`<div id="html_f0bdab9ec57a89102c8544c7b3957da3" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: b5672619-fa59-5816-b0ee-e6e6726b2d76</div>`)[0];
+                popup_16cf091bc644b3ffe9dfa012ce235858.setContent(html_f0bdab9ec57a89102c8544c7b3957da3);
+            
+        
+
+        marker_c3aeaea9026890cfb36e369f6ddb0a28.bindPopup(popup_16cf091bc644b3ffe9dfa012ce235858)
+        ;
+
+        
+    
+    
+            var marker_e733b83277b892ba4f5bd016a3677eaf = L.marker(
+                [50.9315, 5.33807],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_c70a222c92f28c526591b691b721c7a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e733b83277b892ba4f5bd016a3677eaf.setIcon(icon_c70a222c92f28c526591b691b721c7a6);
+        
+    
+        var popup_13e0958beb646683b0736cafbfc7e46b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4afb063ffe00190e3facd9e470793bde = $(`<div id="html_4afb063ffe00190e3facd9e470793bde" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 1a4da101-8fc9-5bcd-acd2-e34784580bef</div>`)[0];
+                popup_13e0958beb646683b0736cafbfc7e46b.setContent(html_4afb063ffe00190e3facd9e470793bde);
+            
+        
+
+        marker_e733b83277b892ba4f5bd016a3677eaf.bindPopup(popup_13e0958beb646683b0736cafbfc7e46b)
+        ;
+
+        
+    
+    
+            var marker_de75ff22fc071974296357eec965b7cd = L.marker(
+                [51.20368, 4.3918],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_07c1b5ac77af9c69a54210236fa3d192 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_de75ff22fc071974296357eec965b7cd.setIcon(icon_07c1b5ac77af9c69a54210236fa3d192);
+        
+    
+        var popup_85495764c224c37c75c5988b43148e54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_975403a9aaf1cc5cf0c63405e02be7d1 = $(`<div id="html_975403a9aaf1cc5cf0c63405e02be7d1" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 5f47e751-d6cf-4e51-9db8-6f4f20d53ae8</div>`)[0];
+                popup_85495764c224c37c75c5988b43148e54.setContent(html_975403a9aaf1cc5cf0c63405e02be7d1);
+            
+        
+
+        marker_de75ff22fc071974296357eec965b7cd.bindPopup(popup_85495764c224c37c75c5988b43148e54)
+        ;
+
+        
+    
+    
+            var marker_2942c83aa7cc7c28cfd125b7d063e10c = L.marker(
+                [51.27741, 4.42083],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_54ed58cf6058282a58a7c77a7d7e8e5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2942c83aa7cc7c28cfd125b7d063e10c.setIcon(icon_54ed58cf6058282a58a7c77a7d7e8e5d);
+        
+    
+        var popup_2cbbe2c6a80e49baee9c2d6d98c363d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80b3e7cffab83d10f574318602ebe2b3 = $(`<div id="html_80b3e7cffab83d10f574318602ebe2b3" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 96c0eb42-8fb2-49ed-80e4-0f181dcd547f</div>`)[0];
+                popup_2cbbe2c6a80e49baee9c2d6d98c363d3.setContent(html_80b3e7cffab83d10f574318602ebe2b3);
+            
+        
+
+        marker_2942c83aa7cc7c28cfd125b7d063e10c.bindPopup(popup_2cbbe2c6a80e49baee9c2d6d98c363d3)
+        ;
+
+        
+    
+    
+            var marker_0f437bcef83a16d1760bab0491e6b26f = L.marker(
+                [50.68814, 4.31418],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_5bc0821145811edae8798774df72fad9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0f437bcef83a16d1760bab0491e6b26f.setIcon(icon_5bc0821145811edae8798774df72fad9);
+        
+    
+        var popup_4dde825386afb505365c077fddf91cff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_480e23c4cad037c0faf93a1130cdbdcf = $(`<div id="html_480e23c4cad037c0faf93a1130cdbdcf" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 9181d6d5-7db9-59e1-b56e-c7ef2cbab2cc</div>`)[0];
+                popup_4dde825386afb505365c077fddf91cff.setContent(html_480e23c4cad037c0faf93a1130cdbdcf);
+            
+        
+
+        marker_0f437bcef83a16d1760bab0491e6b26f.bindPopup(popup_4dde825386afb505365c077fddf91cff)
+        ;
+
+        
+    
+    
+            var marker_a651ce61377452ff7bd1da2f823e278a = L.marker(
+                [50.86977, 4.38934],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_89dfb21e616890405c18a7cd5a39fb5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a651ce61377452ff7bd1da2f823e278a.setIcon(icon_89dfb21e616890405c18a7cd5a39fb5c);
+        
+    
+        var popup_e0dd002d45b24fba1c0a3aefdcc75156 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_713b338719a9a8ff3002524cfde3bf2b = $(`<div id="html_713b338719a9a8ff3002524cfde3bf2b" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 38288aee-30a7-53f5-9d85-31b29d616c36</div>`)[0];
+                popup_e0dd002d45b24fba1c0a3aefdcc75156.setContent(html_713b338719a9a8ff3002524cfde3bf2b);
+            
+        
+
+        marker_a651ce61377452ff7bd1da2f823e278a.bindPopup(popup_e0dd002d45b24fba1c0a3aefdcc75156)
+        ;
+
+        
+    
+    
+            var marker_ba67e1c449fca0ae446848564b0f393b = L.marker(
+                [51.2070987, 4.4297993],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_0ca9f6c570db6ea7bbda107a34c2e3ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ba67e1c449fca0ae446848564b0f393b.setIcon(icon_0ca9f6c570db6ea7bbda107a34c2e3ed);
+        
+    
+        var popup_4a5bc9264e5d528492ac296d033223db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4dc703518561b6052dec7131413ad3e9 = $(`<div id="html_4dc703518561b6052dec7131413ad3e9" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: c31b6835-4739-434c-8dcd-c7362877919f</div>`)[0];
+                popup_4a5bc9264e5d528492ac296d033223db.setContent(html_4dc703518561b6052dec7131413ad3e9);
+            
+        
+
+        marker_ba67e1c449fca0ae446848564b0f393b.bindPopup(popup_4a5bc9264e5d528492ac296d033223db)
+        ;
+
+        
+    
+    
+            var marker_ac04218400bc43432e74f6457e2bd38a = L.marker(
+                [50.81900564275405, 4.2855400490559195],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_6fe64c8128e4c59a69912d19a47ca856 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ac04218400bc43432e74f6457e2bd38a.setIcon(icon_6fe64c8128e4c59a69912d19a47ca856);
+        
+    
+        var popup_176307305b38c0ae256cfb8e7e5da44f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3720f28a075c60f992ff2da120056f04 = $(`<div id="html_3720f28a075c60f992ff2da120056f04" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: e23f3ff1-53a3-50dd-9f3d-4ba1b558b228</div>`)[0];
+                popup_176307305b38c0ae256cfb8e7e5da44f.setContent(html_3720f28a075c60f992ff2da120056f04);
+            
+        
+
+        marker_ac04218400bc43432e74f6457e2bd38a.bindPopup(popup_176307305b38c0ae256cfb8e7e5da44f)
+        ;
+
+        
+    
+    
+            var marker_0f361030ed8ae26dfb2cff07302f8529 = L.marker(
+                [50.93305, 5.32715],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_4c03d5f88f77c5db7bb582bd739ad53d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0f361030ed8ae26dfb2cff07302f8529.setIcon(icon_4c03d5f88f77c5db7bb582bd739ad53d);
+        
+    
+        var popup_f3d2db2a5e93a638a2f8cb9a91968a00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc9c389bea7bcf6b0a30028272eaa4a8 = $(`<div id="html_dc9c389bea7bcf6b0a30028272eaa4a8" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 032d57f5-d900-5275-b0c5-264225527c31</div>`)[0];
+                popup_f3d2db2a5e93a638a2f8cb9a91968a00.setContent(html_dc9c389bea7bcf6b0a30028272eaa4a8);
+            
+        
+
+        marker_0f361030ed8ae26dfb2cff07302f8529.bindPopup(popup_f3d2db2a5e93a638a2f8cb9a91968a00)
+        ;
+
+        
+    
+    
+            var marker_61df4f8c875da6dd8460f1b45adafdd6 = L.marker(
+                [51.02698, 4.48198],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_3ce70b53a9a87a06fb915d18a3c7c402 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_61df4f8c875da6dd8460f1b45adafdd6.setIcon(icon_3ce70b53a9a87a06fb915d18a3c7c402);
+        
+    
+        var popup_c9665b78f7a3f03b2e3f9cc6bf3e07b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99fc84fadf3275f3ee89b8a68d87f9f1 = $(`<div id="html_99fc84fadf3275f3ee89b8a68d87f9f1" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: ac63ca7d-a9b4-413c-b6e9-e40ef0c5a42b</div>`)[0];
+                popup_c9665b78f7a3f03b2e3f9cc6bf3e07b3.setContent(html_99fc84fadf3275f3ee89b8a68d87f9f1);
+            
+        
+
+        marker_61df4f8c875da6dd8460f1b45adafdd6.bindPopup(popup_c9665b78f7a3f03b2e3f9cc6bf3e07b3)
+        ;
+
+        
+    
+    
+            var marker_9a17be1dea136f8bdd2ab645c52d62ab = L.marker(
+                [51.32214, 4.94389],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_3441c3019a2026589a6d93a02c259e4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9a17be1dea136f8bdd2ab645c52d62ab.setIcon(icon_3441c3019a2026589a6d93a02c259e4a);
+        
+    
+        var popup_cd97a29982001ff70d508d825155df59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2deb4a020605863080ed19f9c13b6ede = $(`<div id="html_2deb4a020605863080ed19f9c13b6ede" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 185d78ce-1928-5a87-8fac-a5420727332c</div>`)[0];
+                popup_cd97a29982001ff70d508d825155df59.setContent(html_2deb4a020605863080ed19f9c13b6ede);
+            
+        
+
+        marker_9a17be1dea136f8bdd2ab645c52d62ab.bindPopup(popup_cd97a29982001ff70d508d825155df59)
+        ;
+
+        
+    
+    
+            var marker_383101888858ca7baead0af574b93297 = L.marker(
+                [50.8591, 4.41523],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_aaf0ff99ddfbb09df4353b9eafc49d98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_383101888858ca7baead0af574b93297.setIcon(icon_aaf0ff99ddfbb09df4353b9eafc49d98);
+        
+    
+        var popup_0465a28eec1b77d91a4c98a021d32511 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e06363344e3f5b77cf75134c6a05256 = $(`<div id="html_3e06363344e3f5b77cf75134c6a05256" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: c4dcfe75-e2b8-56ec-b034-e50e70ed6242</div>`)[0];
+                popup_0465a28eec1b77d91a4c98a021d32511.setContent(html_3e06363344e3f5b77cf75134c6a05256);
+            
+        
+
+        marker_383101888858ca7baead0af574b93297.bindPopup(popup_0465a28eec1b77d91a4c98a021d32511)
+        ;
+
+        
+    
+    
+            var marker_aedd57568d9e552a2a4910b755f68ba1 = L.marker(
+                [50.81074428967117, 4.326708701842685],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_9be48d9c8873ae01113be9e6c68e3dc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_aedd57568d9e552a2a4910b755f68ba1.setIcon(icon_9be48d9c8873ae01113be9e6c68e3dc1);
+        
+    
+        var popup_26687b43e8de705fef1d66e3dfef90c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e190f524099a252dd932850c22739286 = $(`<div id="html_e190f524099a252dd932850c22739286" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: f9a9f0a3-1a5e-5995-879b-93ae04771404</div>`)[0];
+                popup_26687b43e8de705fef1d66e3dfef90c3.setContent(html_e190f524099a252dd932850c22739286);
+            
+        
+
+        marker_aedd57568d9e552a2a4910b755f68ba1.bindPopup(popup_26687b43e8de705fef1d66e3dfef90c3)
+        ;
+
+        
+    
+    
+            var marker_db42c06d14014b842be4c88856584a89 = L.marker(
+                [51.2222, 4.50178],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_d7ccafe0553f1032f29a4f183675387d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_db42c06d14014b842be4c88856584a89.setIcon(icon_d7ccafe0553f1032f29a4f183675387d);
+        
+    
+        var popup_f7d85b21459fd46cb84373fc54f648fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48af06ca134fc0a397a97017e796b171 = $(`<div id="html_48af06ca134fc0a397a97017e796b171" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: b8f0bed8-5071-4fb3-a89c-4ae47c77103c</div>`)[0];
+                popup_f7d85b21459fd46cb84373fc54f648fc.setContent(html_48af06ca134fc0a397a97017e796b171);
+            
+        
+
+        marker_db42c06d14014b842be4c88856584a89.bindPopup(popup_f7d85b21459fd46cb84373fc54f648fc)
+        ;
+
+        
+    
+    
+            var marker_9d134185c5dbe41683eceba677603f57 = L.marker(
+                [51.25736, 4.43795],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_9b269267d44f1648d62dc1cce7659555 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9d134185c5dbe41683eceba677603f57.setIcon(icon_9b269267d44f1648d62dc1cce7659555);
+        
+    
+        var popup_71cd152748b1fd024f47627ecc0f0e7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30331720b7b0af1410ac025360fbe61d = $(`<div id="html_30331720b7b0af1410ac025360fbe61d" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: a599154a-36e8-4696-851b-09c13e13bd26</div>`)[0];
+                popup_71cd152748b1fd024f47627ecc0f0e7e.setContent(html_30331720b7b0af1410ac025360fbe61d);
+            
+        
+
+        marker_9d134185c5dbe41683eceba677603f57.bindPopup(popup_71cd152748b1fd024f47627ecc0f0e7e)
+        ;
+
+        
+    
+    
+            var marker_66a82f356c702f201a41959526fdee56 = L.marker(
+                [50.8497791, 4.3670471],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_dd1afd93c6fe148a0b8ca79843e26134 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_66a82f356c702f201a41959526fdee56.setIcon(icon_dd1afd93c6fe148a0b8ca79843e26134);
+        
+    
+        var popup_d1cc2a628ac76ac7edf8d3cc8d7776fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31eae5e7147e6d201aabc3cc6e4f4b49 = $(`<div id="html_31eae5e7147e6d201aabc3cc6e4f4b49" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 3a15ea84-d2d3-45a1-b1af-511e7e4d3d0b</div>`)[0];
+                popup_d1cc2a628ac76ac7edf8d3cc8d7776fc.setContent(html_31eae5e7147e6d201aabc3cc6e4f4b49);
+            
+        
+
+        marker_66a82f356c702f201a41959526fdee56.bindPopup(popup_d1cc2a628ac76ac7edf8d3cc8d7776fc)
+        ;
+
+        
+    
+    
+            var marker_6c293bacdae74b35d08df2287776614a = L.marker(
+                [51.02713, 4.4799],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_706fc788c497f630038db0ae415acbf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6c293bacdae74b35d08df2287776614a.setIcon(icon_706fc788c497f630038db0ae415acbf8);
+        
+    
+        var popup_4de6c1b9bd096449dd9dfc8595ed9370 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_870a39b6250f290aea2584d5853cfde5 = $(`<div id="html_870a39b6250f290aea2584d5853cfde5" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: c6f1da3f-3c54-5881-8cf8-13662e67e80c</div>`)[0];
+                popup_4de6c1b9bd096449dd9dfc8595ed9370.setContent(html_870a39b6250f290aea2584d5853cfde5);
+            
+        
+
+        marker_6c293bacdae74b35d08df2287776614a.bindPopup(popup_4de6c1b9bd096449dd9dfc8595ed9370)
+        ;
+
+        
+    
+    
+            var marker_8dcd69e229d0d0db088b137f651f2d52 = L.marker(
+                [51.2437065, 4.4433324],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_6ef12eac61061048709ed7f1a5459075 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8dcd69e229d0d0db088b137f651f2d52.setIcon(icon_6ef12eac61061048709ed7f1a5459075);
+        
+    
+        var popup_1bc0d0aa934387be0c3b4b8e59039680 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c49efd2fd452976f530e3e7dbb5c5472 = $(`<div id="html_c49efd2fd452976f530e3e7dbb5c5472" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 09d17dd3-82ea-40f4-876e-c1d33b248e2b</div>`)[0];
+                popup_1bc0d0aa934387be0c3b4b8e59039680.setContent(html_c49efd2fd452976f530e3e7dbb5c5472);
+            
+        
+
+        marker_8dcd69e229d0d0db088b137f651f2d52.bindPopup(popup_1bc0d0aa934387be0c3b4b8e59039680)
+        ;
+
+        
+    
+    
+            var marker_ac44c9f80de1a54648978d55537b0dcb = L.marker(
+                [50.89689, 4.35851],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_9f4cc8ec39d2d3a7636ad5c3a7d0eb87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ac44c9f80de1a54648978d55537b0dcb.setIcon(icon_9f4cc8ec39d2d3a7636ad5c3a7d0eb87);
+        
+    
+        var popup_a631350b4f362b21a6faea76bc3b5540 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c603b7cde516cb491a0ec863d0c596d6 = $(`<div id="html_c603b7cde516cb491a0ec863d0c596d6" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: b57ce573-75cb-52bc-b9b5-094073fcc559</div>`)[0];
+                popup_a631350b4f362b21a6faea76bc3b5540.setContent(html_c603b7cde516cb491a0ec863d0c596d6);
+            
+        
+
+        marker_ac44c9f80de1a54648978d55537b0dcb.bindPopup(popup_a631350b4f362b21a6faea76bc3b5540)
+        ;
+
+        
+    
+    
+            var marker_ff5cfeaac0bdce5d43c7e913194d6cbd = L.marker(
+                [50.81625, 4.30641],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_b77db486d0eecefeb577906872d3b6c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ff5cfeaac0bdce5d43c7e913194d6cbd.setIcon(icon_b77db486d0eecefeb577906872d3b6c6);
+        
+    
+        var popup_ee301290248799211337a3b62ecf04a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a8173ecb87c592453a6ba7cf56166f6 = $(`<div id="html_3a8173ecb87c592453a6ba7cf56166f6" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 654a1f77-85e1-575d-8ca1-d8a3d645c264</div>`)[0];
+                popup_ee301290248799211337a3b62ecf04a9.setContent(html_3a8173ecb87c592453a6ba7cf56166f6);
+            
+        
+
+        marker_ff5cfeaac0bdce5d43c7e913194d6cbd.bindPopup(popup_ee301290248799211337a3b62ecf04a9)
+        ;
+
+        
+    
+    
+            var marker_217c4b61a80953166ff8403019f427f4 = L.marker(
+                [50.8186284, 4.3793152],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_c3152a4486634cb8e1491584bad9763b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_217c4b61a80953166ff8403019f427f4.setIcon(icon_c3152a4486634cb8e1491584bad9763b);
+        
+    
+        var popup_b8a55ef8e2d66ec8f7e3d22d174ff7fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_deeb57307fec4cd5e8e89bbcad65a8c5 = $(`<div id="html_deeb57307fec4cd5e8e89bbcad65a8c5" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: a6de02ab-ce9b-42fb-a029-5d9195e586b2</div>`)[0];
+                popup_b8a55ef8e2d66ec8f7e3d22d174ff7fb.setContent(html_deeb57307fec4cd5e8e89bbcad65a8c5);
+            
+        
+
+        marker_217c4b61a80953166ff8403019f427f4.bindPopup(popup_b8a55ef8e2d66ec8f7e3d22d174ff7fb)
+        ;
+
+        
+    
+    
+            var marker_7f77328a5a8d90728ce111b2367b91ee = L.marker(
+                [50.81936, 4.27905],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_6f67e2d2963a87c37071960675db6dbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7f77328a5a8d90728ce111b2367b91ee.setIcon(icon_6f67e2d2963a87c37071960675db6dbd);
+        
+    
+        var popup_d3d888f33aef860776abb963bfa28518 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b44a88c4ee3847b865076ccd10bb268a = $(`<div id="html_b44a88c4ee3847b865076ccd10bb268a" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: c1d1bea0-2bf4-5468-9af0-f5db9cd62ac1</div>`)[0];
+                popup_d3d888f33aef860776abb963bfa28518.setContent(html_b44a88c4ee3847b865076ccd10bb268a);
+            
+        
+
+        marker_7f77328a5a8d90728ce111b2367b91ee.bindPopup(popup_d3d888f33aef860776abb963bfa28518)
+        ;
+
+        
+    
+    
+            var marker_fff341e96322018c8864385560328f30 = L.marker(
+                [50.83121, 4.45268],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_503a0460f5190c1ff4550ab0abc756c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fff341e96322018c8864385560328f30.setIcon(icon_503a0460f5190c1ff4550ab0abc756c0);
+        
+    
+        var popup_938088ca8d2f18c45a9bbf145efd34b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da53796e622c7d85d15d546a706009c2 = $(`<div id="html_da53796e622c7d85d15d546a706009c2" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 88347783-6286-5f8f-9120-ea56a65f3fa3</div>`)[0];
+                popup_938088ca8d2f18c45a9bbf145efd34b6.setContent(html_da53796e622c7d85d15d546a706009c2);
+            
+        
+
+        marker_fff341e96322018c8864385560328f30.bindPopup(popup_938088ca8d2f18c45a9bbf145efd34b6)
+        ;
+
+        
+    
+    
+            var marker_c0cc58afc8d9d44c7c004b004f4c5e6e = L.marker(
+                [51.04931, 3.73105],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_75f5ba8b33cf209e55a37a9930316515 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c0cc58afc8d9d44c7c004b004f4c5e6e.setIcon(icon_75f5ba8b33cf209e55a37a9930316515);
+        
+    
+        var popup_65f8a77abfcee13d2bb5a89442298472 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4add81dff108a9bc35868aa9d97ba428 = $(`<div id="html_4add81dff108a9bc35868aa9d97ba428" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 749d3d62-1ada-43d5-82d7-34e03ba13b06</div>`)[0];
+                popup_65f8a77abfcee13d2bb5a89442298472.setContent(html_4add81dff108a9bc35868aa9d97ba428);
+            
+        
+
+        marker_c0cc58afc8d9d44c7c004b004f4c5e6e.bindPopup(popup_65f8a77abfcee13d2bb5a89442298472)
+        ;
+
+        
+    
+    
+            var marker_c2657afa6a4b7e17f1085b1b086960c4 = L.marker(
+                [51.15313, 4.15351],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_22b4fcef83c15e261f65df3b6fc38df6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c2657afa6a4b7e17f1085b1b086960c4.setIcon(icon_22b4fcef83c15e261f65df3b6fc38df6);
+        
+    
+        var popup_4373af7456403e4289fe3912071a3c9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b614b518435cf28b7e547f6f75753fbb = $(`<div id="html_b614b518435cf28b7e547f6f75753fbb" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: a6438c71-93d3-578d-9dc7-a462d1a7dacb</div>`)[0];
+                popup_4373af7456403e4289fe3912071a3c9d.setContent(html_b614b518435cf28b7e547f6f75753fbb);
+            
+        
+
+        marker_c2657afa6a4b7e17f1085b1b086960c4.bindPopup(popup_4373af7456403e4289fe3912071a3c9d)
+        ;
+
+        
+    
+    
+            var marker_db23aa1ccfd6d29fc10b20a83357bdd8 = L.marker(
+                [50.8684606, 4.31202],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_5164c14f91f5b14a871c0c0f7d69a138 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_db23aa1ccfd6d29fc10b20a83357bdd8.setIcon(icon_5164c14f91f5b14a871c0c0f7d69a138);
+        
+    
+        var popup_c0201121574065248f7ee512b39eae92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46e914f2fb14663410cf056fc82a7640 = $(`<div id="html_46e914f2fb14663410cf056fc82a7640" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: fe4cae7c-9885-4e41-b94f-2b234d85bfe5</div>`)[0];
+                popup_c0201121574065248f7ee512b39eae92.setContent(html_46e914f2fb14663410cf056fc82a7640);
+            
+        
+
+        marker_db23aa1ccfd6d29fc10b20a83357bdd8.bindPopup(popup_c0201121574065248f7ee512b39eae92)
+        ;
+
+        
+    
+    
+            var marker_24bc841a75769d6d7a30a9e7ec9cb48f = L.marker(
+                [51.03033, 4.49075],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_9dd6d4e4d4f579dae5307015b0960a61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_24bc841a75769d6d7a30a9e7ec9cb48f.setIcon(icon_9dd6d4e4d4f579dae5307015b0960a61);
+        
+    
+        var popup_42423922538e67fd8c0ed1a4039dfcbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffd32630ee582a2b5ffaee99d761bf17 = $(`<div id="html_ffd32630ee582a2b5ffaee99d761bf17" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: fbe228b3-9be7-5fc5-a08a-43be64f9bfb8</div>`)[0];
+                popup_42423922538e67fd8c0ed1a4039dfcbe.setContent(html_ffd32630ee582a2b5ffaee99d761bf17);
+            
+        
+
+        marker_24bc841a75769d6d7a30a9e7ec9cb48f.bindPopup(popup_42423922538e67fd8c0ed1a4039dfcbe)
+        ;
+
+        
+    
+    
+            var marker_b7d1fe715d7371a957bcccfe0abb9a1e = L.marker(
+                [51.200447, 4.441138],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_fb5931ff82c4923f9c62300891cffa31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b7d1fe715d7371a957bcccfe0abb9a1e.setIcon(icon_fb5931ff82c4923f9c62300891cffa31);
+        
+    
+        var popup_9338d9d373c56d97c57ff2721586a8ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f91c28a0a6ec45229bd867244622106e = $(`<div id="html_f91c28a0a6ec45229bd867244622106e" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: ae2c30ab-142d-4052-a592-cd314c9815bd</div>`)[0];
+                popup_9338d9d373c56d97c57ff2721586a8ea.setContent(html_f91c28a0a6ec45229bd867244622106e);
+            
+        
+
+        marker_b7d1fe715d7371a957bcccfe0abb9a1e.bindPopup(popup_9338d9d373c56d97c57ff2721586a8ea)
+        ;
+
+        
+    
+    
+            var marker_8e05f99d8e54503099236f91f72e2c5c = L.marker(
+                [50.85545, 4.31521],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_162709c8709da8ed18974a73c80a4651 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8e05f99d8e54503099236f91f72e2c5c.setIcon(icon_162709c8709da8ed18974a73c80a4651);
+        
+    
+        var popup_37939e77afe6e26b9abc79c1765c52aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c17b43cc82e2ca704fa692affb2acc68 = $(`<div id="html_c17b43cc82e2ca704fa692affb2acc68" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: ddc83b0e-9da6-5e79-96e2-f646e800542b</div>`)[0];
+                popup_37939e77afe6e26b9abc79c1765c52aa.setContent(html_c17b43cc82e2ca704fa692affb2acc68);
+            
+        
+
+        marker_8e05f99d8e54503099236f91f72e2c5c.bindPopup(popup_37939e77afe6e26b9abc79c1765c52aa)
+        ;
+
+        
+    
+    
+            var marker_bdd0800d968c6a10ef5b08d509fa9eb3 = L.marker(
+                [50.68814, 4.31418],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_1c9d8a8b195eea8ddc3748721272a414 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bdd0800d968c6a10ef5b08d509fa9eb3.setIcon(icon_1c9d8a8b195eea8ddc3748721272a414);
+        
+    
+        var popup_a1ab2312478ee8b381987a098d2f96ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c249a64ff5596ce71dadbfe57d0dbd9 = $(`<div id="html_8c249a64ff5596ce71dadbfe57d0dbd9" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 084b2c14-d32c-4f41-ba93-72edd24b0a38</div>`)[0];
+                popup_a1ab2312478ee8b381987a098d2f96ea.setContent(html_8c249a64ff5596ce71dadbfe57d0dbd9);
+            
+        
+
+        marker_bdd0800d968c6a10ef5b08d509fa9eb3.bindPopup(popup_a1ab2312478ee8b381987a098d2f96ea)
+        ;
+
+        
+    
+    
+            var marker_e7c962ab4ab3915d6f9e82e40e12cb6e = L.marker(
+                [51.05796838, 3.724066615],
+                {}
+            ).addTo(map_bd847a1decf7a9cb8577d52357aacefe);
+        
+    
+            var icon_ad1498164615db801afb7fdd4c62f754 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e7c962ab4ab3915d6f9e82e40e12cb6e.setIcon(icon_ad1498164615db801afb7fdd4c62f754);
+        
+    
+        var popup_36d842866ac8e2b8a05dae2e293ab7f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e55366efa7bd585a90885af8f2c60b6 = $(`<div id="html_5e55366efa7bd585a90885af8f2c60b6" style="width: 100.0%; height: 100.0%;"><strong>Uber</strong><br>Restoran ID: 8d525f76-3a05-4e37-9ae6-e87c0a06437b</div>`)[0];
+                popup_36d842866ac8e2b8a05dae2e293ab7f5.setContent(html_5e55366efa7bd585a90885af8f2c60b6);
+            
+        
+
+        marker_e7c962ab4ab3915d6f9e82e40e12cb6e.bindPopup(popup_36d842866ac8e2b8a05dae2e293ab7f5)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,4004 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_348c59fc0fcdddb2aad999f79c5d4f00 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_348c59fc0fcdddb2aad999f79c5d4f00" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_348c59fc0fcdddb2aad999f79c5d4f00 = L.map(
+                "map_348c59fc0fcdddb2aad999f79c5d4f00",
+                {
+                    center: [50.8503, 4.3517],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e35dfb73713d33404ead02291be137ed = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e35dfb73713d33404ead02291be137ed.addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+        function geo_json_7c26ad0f4308653b9668c4d724629c2e_styler(feature) {
+            switch(feature.properties.name) {
+                default:
+                    return {"color": "red", "fillColor": "#f2f2f2", "fillOpacity": 0.3, "weight": 2};
+            }
+        }
+
+        function geo_json_7c26ad0f4308653b9668c4d724629c2e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7c26ad0f4308653b9668c4d724629c2e = L.geoJson(null, {
+                onEachFeature: geo_json_7c26ad0f4308653b9668c4d724629c2e_onEachFeature,
+            
+                style: geo_json_7c26ad0f4308653b9668c4d724629c2e_styler,
+        });
+
+        function geo_json_7c26ad0f4308653b9668c4d724629c2e_add (data) {
+            geo_json_7c26ad0f4308653b9668c4d724629c2e
+                .addData(data);
+        }
+            geo_json_7c26ad0f4308653b9668c4d724629c2e_add({"features": [{"geometry": {"coordinates": [[[2.513573, 51.148506], [6.156658, 50.803721], [5.897759, 49.442667], [4.286022, 49.907497], [3.314971, 50.803721], [2.513573, 51.148506]]], "type": "Polygon"}, "properties": {"name": "Belgium"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_7c26ad0f4308653b9668c4d724629c2e.addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var marker_d7480b61fa4e7e8f8db5a0faf667ef12 = L.marker(
+                [51.2217436, 4.4024944],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_ae18ed29fa1fe7867adb0b6d4e396d50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d7480b61fa4e7e8f8db5a0faf667ef12.setIcon(icon_ae18ed29fa1fe7867adb0b6d4e396d50);
+        
+    
+        var popup_1665f20fbd6902f0305f5f2970b1084b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7f191aa4d0df2c98b8b1919773ea8f1 = $(`<div id="html_b7f191aa4d0df2c98b8b1919773ea8f1" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2000, Restoran ID: 432838</div>`)[0];
+                popup_1665f20fbd6902f0305f5f2970b1084b.setContent(html_b7f191aa4d0df2c98b8b1919773ea8f1);
+            
+        
+
+        marker_d7480b61fa4e7e8f8db5a0faf667ef12.bindPopup(popup_1665f20fbd6902f0305f5f2970b1084b)
+        ;
+
+        
+    
+    
+            var marker_6624790ba9b170fbd56ba9f68ef02b8d = L.marker(
+                [51.31190463540222, 4.951765537261963],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_a9baf73de2430f0d02021b384cf606bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6624790ba9b170fbd56ba9f68ef02b8d.setIcon(icon_a9baf73de2430f0d02021b384cf606bd);
+        
+    
+        var popup_51dd0b0721b72be263364a8be4b320ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe4cb036df97abcd048c1bc8991f8e08 = $(`<div id="html_fe4cb036df97abcd048c1bc8991f8e08" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2300, Restoran ID: 411617</div>`)[0];
+                popup_51dd0b0721b72be263364a8be4b320ec.setContent(html_fe4cb036df97abcd048c1bc8991f8e08);
+            
+        
+
+        marker_6624790ba9b170fbd56ba9f68ef02b8d.bindPopup(popup_51dd0b0721b72be263364a8be4b320ec)
+        ;
+
+        
+    
+    
+            var marker_6a55795ebfe646c29e040629899f65be = L.marker(
+                [51.2096769, 4.4522349],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_a8087673f36b3e2aac81b76643cdca40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6a55795ebfe646c29e040629899f65be.setIcon(icon_a8087673f36b3e2aac81b76643cdca40);
+        
+    
+        var popup_ce634299123a58bb2d3b8d39f7b79946 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e395fcb0012371166b8952e96723d31 = $(`<div id="html_7e395fcb0012371166b8952e96723d31" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2140, Restoran ID: 476843</div>`)[0];
+                popup_ce634299123a58bb2d3b8d39f7b79946.setContent(html_7e395fcb0012371166b8952e96723d31);
+            
+        
+
+        marker_6a55795ebfe646c29e040629899f65be.bindPopup(popup_ce634299123a58bb2d3b8d39f7b79946)
+        ;
+
+        
+    
+    
+            var marker_7ad7b7985330b8f3e8e0c5527e25742b = L.marker(
+                [51.20932, 4.456413899999999],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_0dcf5f1e6a1d6fc99276e96b29b2c7e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7ad7b7985330b8f3e8e0c5527e25742b.setIcon(icon_0dcf5f1e6a1d6fc99276e96b29b2c7e6);
+        
+    
+        var popup_4f1cad5ff4b3c14bd4d562229aee6e68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8f0c3a21aada73835fecde3fb78e9f3 = $(`<div id="html_c8f0c3a21aada73835fecde3fb78e9f3" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2100, Restoran ID: 59339</div>`)[0];
+                popup_4f1cad5ff4b3c14bd4d562229aee6e68.setContent(html_c8f0c3a21aada73835fecde3fb78e9f3);
+            
+        
+
+        marker_7ad7b7985330b8f3e8e0c5527e25742b.bindPopup(popup_4f1cad5ff4b3c14bd4d562229aee6e68)
+        ;
+
+        
+    
+    
+            var marker_9cadbf456793feac4935f5e61217acd6 = L.marker(
+                [51.16362729999999, 4.1392218],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_a14b4d22ac8c93f755f02bec8891511a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9cadbf456793feac4935f5e61217acd6.setIcon(icon_a14b4d22ac8c93f755f02bec8891511a);
+        
+    
+        var popup_f6c7af02dbc1c5718336e1a19e797ca9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4dfe9e090fb2591af33e2cd1ac5d07b4 = $(`<div id="html_4dfe9e090fb2591af33e2cd1ac5d07b4" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9100, Restoran ID: 497609</div>`)[0];
+                popup_f6c7af02dbc1c5718336e1a19e797ca9.setContent(html_4dfe9e090fb2591af33e2cd1ac5d07b4);
+            
+        
+
+        marker_9cadbf456793feac4935f5e61217acd6.bindPopup(popup_f6c7af02dbc1c5718336e1a19e797ca9)
+        ;
+
+        
+    
+    
+            var marker_6564d1d5783e1e90db6c41fd475544f8 = L.marker(
+                [50.8956172, 4.3194339],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_3d42af89865c00accbcf7ea119a764da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6564d1d5783e1e90db6c41fd475544f8.setIcon(icon_3d42af89865c00accbcf7ea119a764da);
+        
+    
+        var popup_fd87bbbdccc392862b6a2db812537120 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63488c53f93ea117128587edc2c65c7f = $(`<div id="html_63488c53f93ea117128587edc2c65c7f" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1780, Restoran ID: 287298</div>`)[0];
+                popup_fd87bbbdccc392862b6a2db812537120.setContent(html_63488c53f93ea117128587edc2c65c7f);
+            
+        
+
+        marker_6564d1d5783e1e90db6c41fd475544f8.bindPopup(popup_fd87bbbdccc392862b6a2db812537120)
+        ;
+
+        
+    
+    
+            var marker_83b362a900e91ec886ffec9d118cfae0 = L.marker(
+                [50.8731942, 4.3289497],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_7c3bf1cb6812077c59bd5366bddb5cf4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_83b362a900e91ec886ffec9d118cfae0.setIcon(icon_7c3bf1cb6812077c59bd5366bddb5cf4);
+        
+    
+        var popup_8b574def0bb7ad48d4e8c51d202de716 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd2f7b642c72119feb024c2b8bb341f5 = $(`<div id="html_dd2f7b642c72119feb024c2b8bb341f5" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1090, Restoran ID: 60363</div>`)[0];
+                popup_8b574def0bb7ad48d4e8c51d202de716.setContent(html_dd2f7b642c72119feb024c2b8bb341f5);
+            
+        
+
+        marker_83b362a900e91ec886ffec9d118cfae0.bindPopup(popup_8b574def0bb7ad48d4e8c51d202de716)
+        ;
+
+        
+    
+    
+            var marker_04855434d89a7d9d5b4c563b8857d31b = L.marker(
+                [51.2230813, 4.4256195],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_23b812c45390e20fdfc82cf5d4c423f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_04855434d89a7d9d5b4c563b8857d31b.setIcon(icon_23b812c45390e20fdfc82cf5d4c423f6);
+        
+    
+        var popup_55d7c28799fa5f478f2d443b71aa2791 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca2dc07d84964c9d79c55865b84a2037 = $(`<div id="html_ca2dc07d84964c9d79c55865b84a2037" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2060, Restoran ID: 104941</div>`)[0];
+                popup_55d7c28799fa5f478f2d443b71aa2791.setContent(html_ca2dc07d84964c9d79c55865b84a2037);
+            
+        
+
+        marker_04855434d89a7d9d5b4c563b8857d31b.bindPopup(popup_55d7c28799fa5f478f2d443b71aa2791)
+        ;
+
+        
+    
+    
+            var marker_ede5f020a61506c63558a3554d259bd1 = L.marker(
+                [51.1924399, 3.196598],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_9291beb4bdf1bfd4ef6cd44fc75f548a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ede5f020a61506c63558a3554d259bd1.setIcon(icon_9291beb4bdf1bfd4ef6cd44fc75f548a);
+        
+    
+        var popup_c73fc2a89a5ced8c76c9a19d099274f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d58959a5a2d0087a09405568a0ecfb7 = $(`<div id="html_1d58959a5a2d0087a09405568a0ecfb7" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8200, Restoran ID: 59692</div>`)[0];
+                popup_c73fc2a89a5ced8c76c9a19d099274f0.setContent(html_1d58959a5a2d0087a09405568a0ecfb7);
+            
+        
+
+        marker_ede5f020a61506c63558a3554d259bd1.bindPopup(popup_c73fc2a89a5ced8c76c9a19d099274f0)
+        ;
+
+        
+    
+    
+            var marker_bb28c9aba67d7f282787cf251fad17ce = L.marker(
+                [50.9025108, 4.3614917],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_bbf463c677057afc707e724ca51f2840 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bb28c9aba67d7f282787cf251fad17ce.setIcon(icon_bbf463c677057afc707e724ca51f2840);
+        
+    
+        var popup_3ad2f0a17226c224d9236ad60823cf9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a3e48c453addda346117e6af9be0ee7 = $(`<div id="html_7a3e48c453addda346117e6af9be0ee7" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1853, Restoran ID: 355014</div>`)[0];
+                popup_3ad2f0a17226c224d9236ad60823cf9b.setContent(html_7a3e48c453addda346117e6af9be0ee7);
+            
+        
+
+        marker_bb28c9aba67d7f282787cf251fad17ce.bindPopup(popup_3ad2f0a17226c224d9236ad60823cf9b)
+        ;
+
+        
+    
+    
+            var marker_ece0404028118e6843d833c3ccc54b33 = L.marker(
+                [51.057992, 3.7241141],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_b8563ab59ea96e8f3290ef58d5a32766 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ece0404028118e6843d833c3ccc54b33.setIcon(icon_b8563ab59ea96e8f3290ef58d5a32766);
+        
+    
+        var popup_061e942a878b79506ff7b180a7e45eb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57575d678e84ec8fa01a76b703b012c8 = $(`<div id="html_57575d678e84ec8fa01a76b703b012c8" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 332517</div>`)[0];
+                popup_061e942a878b79506ff7b180a7e45eb6.setContent(html_57575d678e84ec8fa01a76b703b012c8);
+            
+        
+
+        marker_ece0404028118e6843d833c3ccc54b33.bindPopup(popup_061e942a878b79506ff7b180a7e45eb6)
+        ;
+
+        
+    
+    
+            var marker_ccf39738f3bf12e735de829f0c596d5e = L.marker(
+                [50.81125339482433, 5.19228994846344],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_5d5a725a05bc1ebaf10482aedb7e4958 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ccf39738f3bf12e735de829f0c596d5e.setIcon(icon_5d5a725a05bc1ebaf10482aedb7e4958);
+        
+    
+        var popup_1c05d25b7011e21238893f0a73594316 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_545aabe24d45dd8e1448e02e65ff7965 = $(`<div id="html_545aabe24d45dd8e1448e02e65ff7965" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3800, Restoran ID: 325584</div>`)[0];
+                popup_1c05d25b7011e21238893f0a73594316.setContent(html_545aabe24d45dd8e1448e02e65ff7965);
+            
+        
+
+        marker_ccf39738f3bf12e735de829f0c596d5e.bindPopup(popup_1c05d25b7011e21238893f0a73594316)
+        ;
+
+        
+    
+    
+            var marker_797ccf40335c0a983774c77b3e03adfe = L.marker(
+                [50.93313800000001, 5.3271163],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_6d2db8bef79bea1cce6a46bdb38c28d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_797ccf40335c0a983774c77b3e03adfe.setIcon(icon_6d2db8bef79bea1cce6a46bdb38c28d8);
+        
+    
+        var popup_53af50b00431653e8d1dc53d93337aa7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35e1e5cd2ba1a4a6056c0d6753cbb07c = $(`<div id="html_35e1e5cd2ba1a4a6056c0d6753cbb07c" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3500, Restoran ID: 321746</div>`)[0];
+                popup_53af50b00431653e8d1dc53d93337aa7.setContent(html_35e1e5cd2ba1a4a6056c0d6753cbb07c);
+            
+        
+
+        marker_797ccf40335c0a983774c77b3e03adfe.bindPopup(popup_53af50b00431653e8d1dc53d93337aa7)
+        ;
+
+        
+    
+    
+            var marker_a84c2afa4bccb102ac2fbdc4ee291ea9 = L.marker(
+                [51.2003843, 4.4406962],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_83e7f8134c1aceb045216b2aa1eec382 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a84c2afa4bccb102ac2fbdc4ee291ea9.setIcon(icon_83e7f8134c1aceb045216b2aa1eec382);
+        
+    
+        var popup_9eab46bedf35a7153c4eb3ddaab860ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04716fff7af238b8d860193630c33866 = $(`<div id="html_04716fff7af238b8d860193630c33866" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2600, Restoran ID: 305786</div>`)[0];
+                popup_9eab46bedf35a7153c4eb3ddaab860ff.setContent(html_04716fff7af238b8d860193630c33866);
+            
+        
+
+        marker_a84c2afa4bccb102ac2fbdc4ee291ea9.bindPopup(popup_9eab46bedf35a7153c4eb3ddaab860ff)
+        ;
+
+        
+    
+    
+            var marker_08590bb353dc15a125292232ea3b0d9b = L.marker(
+                [50.8065299, 4.2892006],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_f0920181e161e12122b67d9518af97f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_08590bb353dc15a125292232ea3b0d9b.setIcon(icon_f0920181e161e12122b67d9518af97f9);
+        
+    
+        var popup_d7cb9360cf1796f8179d6e71424f6339 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6280cd683d3e30a69524e49b0e1649b = $(`<div id="html_f6280cd683d3e30a69524e49b0e1649b" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1600, Restoran ID: 361112</div>`)[0];
+                popup_d7cb9360cf1796f8179d6e71424f6339.setContent(html_f6280cd683d3e30a69524e49b0e1649b);
+            
+        
+
+        marker_08590bb353dc15a125292232ea3b0d9b.bindPopup(popup_d7cb9360cf1796f8179d6e71424f6339)
+        ;
+
+        
+    
+    
+            var marker_bb099e0c093384d1dd5f4c03960d1c05 = L.marker(
+                [51.03356729999999, 4.1112731],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_3f423566d62cec1b2d5925d48be07fec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bb099e0c093384d1dd5f4c03960d1c05.setIcon(icon_3f423566d62cec1b2d5925d48be07fec);
+        
+    
+        var popup_e88cee1f726d99094e8d91ffcbe26c91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0a693dba41998fb3db8075c331a6332 = $(`<div id="html_d0a693dba41998fb3db8075c331a6332" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9200, Restoran ID: 431714</div>`)[0];
+                popup_e88cee1f726d99094e8d91ffcbe26c91.setContent(html_d0a693dba41998fb3db8075c331a6332);
+            
+        
+
+        marker_bb099e0c093384d1dd5f4c03960d1c05.bindPopup(popup_e88cee1f726d99094e8d91ffcbe26c91)
+        ;
+
+        
+    
+    
+            var marker_c83ada736af47fa03021c45f95b2c9e7 = L.marker(
+                [50.8583196, 4.4120986],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_cedc242201ba4341b0cb230ff821ad6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c83ada736af47fa03021c45f95b2c9e7.setIcon(icon_cedc242201ba4341b0cb230ff821ad6f);
+        
+    
+        var popup_c667b19142f40a88f881c05f085c55c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7fb1d57658beef14997e9c2779ea0d5 = $(`<div id="html_e7fb1d57658beef14997e9c2779ea0d5" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1140, Restoran ID: 60365</div>`)[0];
+                popup_c667b19142f40a88f881c05f085c55c9.setContent(html_e7fb1d57658beef14997e9c2779ea0d5);
+            
+        
+
+        marker_c83ada736af47fa03021c45f95b2c9e7.bindPopup(popup_c667b19142f40a88f881c05f085c55c9)
+        ;
+
+        
+    
+    
+            var marker_52056f060758603185c1cd1f89f63596 = L.marker(
+                [50.93304089999999, 5.3372815],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_016c0b06e79260c9d36390fb6a8d6d43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_52056f060758603185c1cd1f89f63596.setIcon(icon_016c0b06e79260c9d36390fb6a8d6d43);
+        
+    
+        var popup_3b3fc37faa79a4da008a4ea39bece830 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3b0c77af213b706de60bffa05f4fe0c = $(`<div id="html_b3b0c77af213b706de60bffa05f4fe0c" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3500, Restoran ID: 379368</div>`)[0];
+                popup_3b3fc37faa79a4da008a4ea39bece830.setContent(html_b3b0c77af213b706de60bffa05f4fe0c);
+            
+        
+
+        marker_52056f060758603185c1cd1f89f63596.bindPopup(popup_3b3fc37faa79a4da008a4ea39bece830)
+        ;
+
+        
+    
+    
+            var marker_8839e3ec1ea09cfad3c523feb12cd6a6 = L.marker(
+                [51.171145, 4.127612],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_11f97758240308bc9fa6435bbb09c5a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8839e3ec1ea09cfad3c523feb12cd6a6.setIcon(icon_11f97758240308bc9fa6435bbb09c5a1);
+        
+    
+        var popup_8ba5e988db5220e983410d1eb64d146b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8bfc875de326cc78ade37626b055f84 = $(`<div id="html_d8bfc875de326cc78ade37626b055f84" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9100, Restoran ID: 301257</div>`)[0];
+                popup_8ba5e988db5220e983410d1eb64d146b.setContent(html_d8bfc875de326cc78ade37626b055f84);
+            
+        
+
+        marker_8839e3ec1ea09cfad3c523feb12cd6a6.bindPopup(popup_8ba5e988db5220e983410d1eb64d146b)
+        ;
+
+        
+    
+    
+            var marker_861f642f5400c6d2f1b24fb989ba0111 = L.marker(
+                [51.2103581, 3.2479457],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_19f10e30e5c56013f1d1b16327188bc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_861f642f5400c6d2f1b24fb989ba0111.setIcon(icon_19f10e30e5c56013f1d1b16327188bc8);
+        
+    
+        var popup_ae6aec833372a839658a2013d642eaff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb4ae067b698a423d0f6910ef88a8485 = $(`<div id="html_cb4ae067b698a423d0f6910ef88a8485" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8310, Restoran ID: 59353</div>`)[0];
+                popup_ae6aec833372a839658a2013d642eaff.setContent(html_cb4ae067b698a423d0f6910ef88a8485);
+            
+        
+
+        marker_861f642f5400c6d2f1b24fb989ba0111.bindPopup(popup_ae6aec833372a839658a2013d642eaff)
+        ;
+
+        
+    
+    
+            var marker_15587669184bb2cb85f8f41b81e77e74 = L.marker(
+                [51.05114062557904, 3.7291663885116577],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_36255a73441be64aa267a1e878a4b486 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_15587669184bb2cb85f8f41b81e77e74.setIcon(icon_36255a73441be64aa267a1e878a4b486);
+        
+    
+        var popup_30075ab88c22c0c8030c733bcd00cdd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17e85efc6116f756cea91c09746ca974 = $(`<div id="html_17e85efc6116f756cea91c09746ca974" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 284845</div>`)[0];
+                popup_30075ab88c22c0c8030c733bcd00cdd6.setContent(html_17e85efc6116f756cea91c09746ca974);
+            
+        
+
+        marker_15587669184bb2cb85f8f41b81e77e74.bindPopup(popup_30075ab88c22c0c8030c733bcd00cdd6)
+        ;
+
+        
+    
+    
+            var marker_e9efbc59052a223f07bef310fc6ff464 = L.marker(
+                [51.1799803, 4.432885499999999],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_64f1078d3c28e08b184c5f845ab173db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e9efbc59052a223f07bef310fc6ff464.setIcon(icon_64f1078d3c28e08b184c5f845ab173db);
+        
+    
+        var popup_363a242545dc3c032ab9a6bd60142139 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ed3220d0af1dff5a19f8f0288f10f94 = $(`<div id="html_3ed3220d0af1dff5a19f8f0288f10f94" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2600, Restoran ID: 59333</div>`)[0];
+                popup_363a242545dc3c032ab9a6bd60142139.setContent(html_3ed3220d0af1dff5a19f8f0288f10f94);
+            
+        
+
+        marker_e9efbc59052a223f07bef310fc6ff464.bindPopup(popup_363a242545dc3c032ab9a6bd60142139)
+        ;
+
+        
+    
+    
+            var marker_0011cbcaf4aa0487fd9f2292a0ca0806 = L.marker(
+                [51.20713359, 4.429722655],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_de5ffdad30cc2c1006470108fa7ccf19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0011cbcaf4aa0487fd9f2292a0ca0806.setIcon(icon_de5ffdad30cc2c1006470108fa7ccf19);
+        
+    
+        var popup_d602da5f8fe112173d3d6f61cbe240a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d9d7a781dd27dabff0bdcf33a040bc3 = $(`<div id="html_6d9d7a781dd27dabff0bdcf33a040bc3" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2018, Restoran ID: 195577</div>`)[0];
+                popup_d602da5f8fe112173d3d6f61cbe240a1.setContent(html_6d9d7a781dd27dabff0bdcf33a040bc3);
+            
+        
+
+        marker_0011cbcaf4aa0487fd9f2292a0ca0806.bindPopup(popup_d602da5f8fe112173d3d6f61cbe240a1)
+        ;
+
+        
+    
+    
+            var marker_44255eab12f2b5f8425d939b910638a4 = L.marker(
+                [50.82574899999999, 3.2586955],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_13e78c9f6a8d662d5ac95b1eff1bca4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_44255eab12f2b5f8425d939b910638a4.setIcon(icon_13e78c9f6a8d662d5ac95b1eff1bca4c);
+        
+    
+        var popup_fe8663e759386a7e1be20c43d67dddf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f81b621625e04c2dc05875adc9a26a9 = $(`<div id="html_5f81b621625e04c2dc05875adc9a26a9" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8500, Restoran ID: 70941</div>`)[0];
+                popup_fe8663e759386a7e1be20c43d67dddf0.setContent(html_5f81b621625e04c2dc05875adc9a26a9);
+            
+        
+
+        marker_44255eab12f2b5f8425d939b910638a4.bindPopup(popup_fe8663e759386a7e1be20c43d67dddf0)
+        ;
+
+        
+    
+    
+            var marker_157c74bb7a4310117f5e9678365d5a1f = L.marker(
+                [51.06538, 3.7189908],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_72279cead876cd2a36e186d5e78dfe07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_157c74bb7a4310117f5e9678365d5a1f.setIcon(icon_72279cead876cd2a36e186d5e78dfe07);
+        
+    
+        var popup_980252fb0636add065183de3fffdfeb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08590b2a4b98b78ccd37cd31b0988d42 = $(`<div id="html_08590b2a4b98b78ccd37cd31b0988d42" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 502664</div>`)[0];
+                popup_980252fb0636add065183de3fffdfeb2.setContent(html_08590b2a4b98b78ccd37cd31b0988d42);
+            
+        
+
+        marker_157c74bb7a4310117f5e9678365d5a1f.bindPopup(popup_980252fb0636add065183de3fffdfeb2)
+        ;
+
+        
+    
+    
+            var marker_a9e4f642eaccefd316653f7173fec8c5 = L.marker(
+                [50.9489351, 3.1294231],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_bab3a7e501ed89aa81d7c4f8eba23fcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a9e4f642eaccefd316653f7173fec8c5.setIcon(icon_bab3a7e501ed89aa81d7c4f8eba23fcd);
+        
+    
+        var popup_d56d645f1e1b5cf73b925f05a1d823f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c074102943837196f1943f34b6c39832 = $(`<div id="html_c074102943837196f1943f34b6c39832" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8800, Restoran ID: 437493</div>`)[0];
+                popup_d56d645f1e1b5cf73b925f05a1d823f5.setContent(html_c074102943837196f1943f34b6c39832);
+            
+        
+
+        marker_a9e4f642eaccefd316653f7173fec8c5.bindPopup(popup_d56d645f1e1b5cf73b925f05a1d823f5)
+        ;
+
+        
+    
+    
+            var marker_228d98336044fd4eabfedd6ec9fc68d4 = L.marker(
+                [51.06629059999999, 3.6998902],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_52d6ded1a35a8d3d32a09b74817baa35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_228d98336044fd4eabfedd6ec9fc68d4.setIcon(icon_52d6ded1a35a8d3d32a09b74817baa35);
+        
+    
+        var popup_7bd592c726617988bf5d6708d54cc5fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f805e65b5f2dd2e79c93dfd0ce42a0ac = $(`<div id="html_f805e65b5f2dd2e79c93dfd0ce42a0ac" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 59342</div>`)[0];
+                popup_7bd592c726617988bf5d6708d54cc5fe.setContent(html_f805e65b5f2dd2e79c93dfd0ce42a0ac);
+            
+        
+
+        marker_228d98336044fd4eabfedd6ec9fc68d4.bindPopup(popup_7bd592c726617988bf5d6708d54cc5fe)
+        ;
+
+        
+    
+    
+            var marker_e8245d8035a17ed75ae919264b9fe930 = L.marker(
+                [51.1697644, 4.387095],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_15ce1bca5161f3ac29aa3a9f5a5c8703 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e8245d8035a17ed75ae919264b9fe930.setIcon(icon_15ce1bca5161f3ac29aa3a9f5a5c8703);
+        
+    
+        var popup_3758f4e517121680ea9b7d647d283609 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28023726d8e9a54c17109e15238aac18 = $(`<div id="html_28023726d8e9a54c17109e15238aac18" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2610, Restoran ID: 59332</div>`)[0];
+                popup_3758f4e517121680ea9b7d647d283609.setContent(html_28023726d8e9a54c17109e15238aac18);
+            
+        
+
+        marker_e8245d8035a17ed75ae919264b9fe930.bindPopup(popup_3758f4e517121680ea9b7d647d283609)
+        ;
+
+        
+    
+    
+            var marker_1a993fa74b444a33d34ca1ad5f14c856 = L.marker(
+                [51.1503721, 4.1324893],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_06443963c4f76d823b3ef3841a09a2a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1a993fa74b444a33d34ca1ad5f14c856.setIcon(icon_06443963c4f76d823b3ef3841a09a2a9);
+        
+    
+        var popup_492c61d4292d82b807c1ae6b5f30dafc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbafe9c938152c10eb8ddcff4d64e473 = $(`<div id="html_fbafe9c938152c10eb8ddcff4d64e473" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9100, Restoran ID: 295693</div>`)[0];
+                popup_492c61d4292d82b807c1ae6b5f30dafc.setContent(html_fbafe9c938152c10eb8ddcff4d64e473);
+            
+        
+
+        marker_1a993fa74b444a33d34ca1ad5f14c856.bindPopup(popup_492c61d4292d82b807c1ae6b5f30dafc)
+        ;
+
+        
+    
+    
+            var marker_da15b49cadeebf4712cad6c248198d54 = L.marker(
+                [50.8253157, 3.2576591],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_15f9125b970b137fafec4bc4d31706cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_da15b49cadeebf4712cad6c248198d54.setIcon(icon_15f9125b970b137fafec4bc4d31706cc);
+        
+    
+        var popup_5d02c73987af3132a16a1d587e55c49b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a3a1a0b2eab719fde4b187ebb9fcdc5 = $(`<div id="html_9a3a1a0b2eab719fde4b187ebb9fcdc5" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8500, Restoran ID: 88732</div>`)[0];
+                popup_5d02c73987af3132a16a1d587e55c49b.setContent(html_9a3a1a0b2eab719fde4b187ebb9fcdc5);
+            
+        
+
+        marker_da15b49cadeebf4712cad6c248198d54.bindPopup(popup_5d02c73987af3132a16a1d587e55c49b)
+        ;
+
+        
+    
+    
+            var marker_988d608c9a0bd7ab171fb6d14fa2f693 = L.marker(
+                [50.8801109, 4.705564799999999],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_18f140609326d9594d79db0ab10b0c77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_988d608c9a0bd7ab171fb6d14fa2f693.setIcon(icon_18f140609326d9594d79db0ab10b0c77);
+        
+    
+        var popup_04ffcb40549751487dc0f03ba47da6bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eeb07052fa9ac866f5c41eeaa119bf45 = $(`<div id="html_eeb07052fa9ac866f5c41eeaa119bf45" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3000, Restoran ID: 437518</div>`)[0];
+                popup_04ffcb40549751487dc0f03ba47da6bd.setContent(html_eeb07052fa9ac866f5c41eeaa119bf45);
+            
+        
+
+        marker_988d608c9a0bd7ab171fb6d14fa2f693.bindPopup(popup_04ffcb40549751487dc0f03ba47da6bd)
+        ;
+
+        
+    
+    
+            var marker_a5ecb2f070388eb8ad10ffb512e8c117 = L.marker(
+                [50.93209880000001, 5.3477673],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_14af0aa3b0c33f95c70e6b25b29e441f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a5ecb2f070388eb8ad10ffb512e8c117.setIcon(icon_14af0aa3b0c33f95c70e6b25b29e441f);
+        
+    
+        var popup_2c79838f2caba3b8514e9a60f368b17b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa89ad6f751ed5b5aa552960ef57ce2b = $(`<div id="html_aa89ad6f751ed5b5aa552960ef57ce2b" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3500, Restoran ID: 173844</div>`)[0];
+                popup_2c79838f2caba3b8514e9a60f368b17b.setContent(html_aa89ad6f751ed5b5aa552960ef57ce2b);
+            
+        
+
+        marker_a5ecb2f070388eb8ad10ffb512e8c117.bindPopup(popup_2c79838f2caba3b8514e9a60f368b17b)
+        ;
+
+        
+    
+    
+            var marker_21c04e16f721cf3c17c5227ea78e4dfb = L.marker(
+                [51.3222768, 4.9439107],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_453926b0a846608089abbbf56c5a687b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_21c04e16f721cf3c17c5227ea78e4dfb.setIcon(icon_453926b0a846608089abbbf56c5a687b);
+        
+    
+        var popup_4a65900484cc24507b6f3aaacba6c7fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e98608812faed3cf142002fb1bce818 = $(`<div id="html_2e98608812faed3cf142002fb1bce818" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2300, Restoran ID: 476341</div>`)[0];
+                popup_4a65900484cc24507b6f3aaacba6c7fb.setContent(html_2e98608812faed3cf142002fb1bce818);
+            
+        
+
+        marker_21c04e16f721cf3c17c5227ea78e4dfb.bindPopup(popup_4a65900484cc24507b6f3aaacba6c7fb)
+        ;
+
+        
+    
+    
+            var marker_8dd939120cb32987a26a5846836d728d = L.marker(
+                [50.85543939999999, 4.3152015],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_72ba478ecadd9d867c9224e38136e5d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8dd939120cb32987a26a5846836d728d.setIcon(icon_72ba478ecadd9d867c9224e38136e5d0);
+        
+    
+        var popup_ab17eaf8d1a822afc1223e194eaad77f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b16523db4554dde55ecb06d3127045d2 = $(`<div id="html_b16523db4554dde55ecb06d3127045d2" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1080, Restoran ID: 457479</div>`)[0];
+                popup_ab17eaf8d1a822afc1223e194eaad77f.setContent(html_b16523db4554dde55ecb06d3127045d2);
+            
+        
+
+        marker_8dd939120cb32987a26a5846836d728d.bindPopup(popup_ab17eaf8d1a822afc1223e194eaad77f)
+        ;
+
+        
+    
+    
+            var marker_3b0a2e15203d7a242239e121f7f3934e = L.marker(
+                [51.20036409999999, 4.4406549],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_dc60e37f15435588576c7f0815f62ec6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3b0a2e15203d7a242239e121f7f3934e.setIcon(icon_dc60e37f15435588576c7f0815f62ec6);
+        
+    
+        var popup_126c9cc9d925187789f8f65f27c5c4f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fe48bc2a3a35b138e36bf4df69135cd = $(`<div id="html_3fe48bc2a3a35b138e36bf4df69135cd" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2600, Restoran ID: 139372</div>`)[0];
+                popup_126c9cc9d925187789f8f65f27c5c4f8.setContent(html_3fe48bc2a3a35b138e36bf4df69135cd);
+            
+        
+
+        marker_3b0a2e15203d7a242239e121f7f3934e.bindPopup(popup_126c9cc9d925187789f8f65f27c5c4f8)
+        ;
+
+        
+    
+    
+            var marker_6fc04b849b6e6a2710c8c5acb73916d4 = L.marker(
+                [51.2216837, 2.908504],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_9d5e27c4c1d9d3838fa91f415ecadc76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6fc04b849b6e6a2710c8c5acb73916d4.setIcon(icon_9d5e27c4c1d9d3838fa91f415ecadc76);
+        
+    
+        var popup_68761455c5299fffb658006bfa92e44f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e72db8ed2874b10fd7feab3958c4e2e6 = $(`<div id="html_e72db8ed2874b10fd7feab3958c4e2e6" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8400, Restoran ID: 259306</div>`)[0];
+                popup_68761455c5299fffb658006bfa92e44f.setContent(html_e72db8ed2874b10fd7feab3958c4e2e6);
+            
+        
+
+        marker_6fc04b849b6e6a2710c8c5acb73916d4.bindPopup(popup_68761455c5299fffb658006bfa92e44f)
+        ;
+
+        
+    
+    
+            var marker_ef11d162a2d65ab74d4428dacdafebe3 = L.marker(
+                [51.038816, 3.7262825],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_7d65fec2557f0504253d26b8afd0530f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ef11d162a2d65ab74d4428dacdafebe3.setIcon(icon_7d65fec2557f0504253d26b8afd0530f);
+        
+    
+        var popup_c04febd5de5915b3de6379e35bc45134 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1f03452b899bbdbe556bfdb8a93e408 = $(`<div id="html_b1f03452b899bbdbe556bfdb8a93e408" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 159159</div>`)[0];
+                popup_c04febd5de5915b3de6379e35bc45134.setContent(html_b1f03452b899bbdbe556bfdb8a93e408);
+            
+        
+
+        marker_ef11d162a2d65ab74d4428dacdafebe3.bindPopup(popup_c04febd5de5915b3de6379e35bc45134)
+        ;
+
+        
+    
+    
+            var marker_8f553493036caddfdaf82a2cfbc970d7 = L.marker(
+                [50.9496684, 4.0412412],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_26539f750f53fd153aab393538cbf837 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8f553493036caddfdaf82a2cfbc970d7.setIcon(icon_26539f750f53fd153aab393538cbf837);
+        
+    
+        var popup_334fb71c512810d7155d93033f01dea7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cb786371c558f09a7745f6eeaedee71 = $(`<div id="html_1cb786371c558f09a7745f6eeaedee71" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9300, Restoran ID: 295694</div>`)[0];
+                popup_334fb71c512810d7155d93033f01dea7.setContent(html_1cb786371c558f09a7745f6eeaedee71);
+            
+        
+
+        marker_8f553493036caddfdaf82a2cfbc970d7.bindPopup(popup_334fb71c512810d7155d93033f01dea7)
+        ;
+
+        
+    
+    
+            var marker_e9745f149ef743663ad5c7bf8c10bd65 = L.marker(
+                [51.049253, 3.7310976],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_65d9d9de96f85c93f4acfea28f87524b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e9745f149ef743663ad5c7bf8c10bd65.setIcon(icon_65d9d9de96f85c93f4acfea28f87524b);
+        
+    
+        var popup_41396280fbdba7bb2070c33c619d52c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd3c150381fbe175b60ef6ef150c0809 = $(`<div id="html_cd3c150381fbe175b60ef6ef150c0809" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 320209</div>`)[0];
+                popup_41396280fbdba7bb2070c33c619d52c8.setContent(html_cd3c150381fbe175b60ef6ef150c0809);
+            
+        
+
+        marker_e9745f149ef743663ad5c7bf8c10bd65.bindPopup(popup_41396280fbdba7bb2070c33c619d52c8)
+        ;
+
+        
+    
+    
+            var marker_a1708570a88145bcac4dcc6d3c7f38c4 = L.marker(
+                [51.2013423, 4.4334783],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_3b1515bf6c62d47d1505f95bd64bf196 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a1708570a88145bcac4dcc6d3c7f38c4.setIcon(icon_3b1515bf6c62d47d1505f95bd64bf196);
+        
+    
+        var popup_5d705686d4d91ec214fc8a0da8fc863e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ec9328926cc4920559acbd10c266689 = $(`<div id="html_4ec9328926cc4920559acbd10c266689" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2600, Restoran ID: 276602</div>`)[0];
+                popup_5d705686d4d91ec214fc8a0da8fc863e.setContent(html_4ec9328926cc4920559acbd10c266689);
+            
+        
+
+        marker_a1708570a88145bcac4dcc6d3c7f38c4.bindPopup(popup_5d705686d4d91ec214fc8a0da8fc863e)
+        ;
+
+        
+    
+    
+            var marker_e1840efb201d44f4c769dfb89066ab11 = L.marker(
+                [50.8690961, 4.6979052],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_dbd87d71d10b6e673c81953d9fdcb930 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e1840efb201d44f4c769dfb89066ab11.setIcon(icon_dbd87d71d10b6e673c81953d9fdcb930);
+        
+    
+        var popup_828b6a171075572db60462be329cf0ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfa64b43518d5837dd72a213de67bc7c = $(`<div id="html_dfa64b43518d5837dd72a213de67bc7c" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3000, Restoran ID: 59502</div>`)[0];
+                popup_828b6a171075572db60462be329cf0ff.setContent(html_dfa64b43518d5837dd72a213de67bc7c);
+            
+        
+
+        marker_e1840efb201d44f4c769dfb89066ab11.bindPopup(popup_828b6a171075572db60462be329cf0ff)
+        ;
+
+        
+    
+    
+            var marker_6a02b8c5898d8f5aa6793a8d56b3140c = L.marker(
+                [51.0218412, 4.4732163],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_f0a227b46d361307fe537145b8e691bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6a02b8c5898d8f5aa6793a8d56b3140c.setIcon(icon_f0a227b46d361307fe537145b8e691bc);
+        
+    
+        var popup_f196433037915bd3138ae756e51439e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e40e113e5941b16f3191fe300280653 = $(`<div id="html_2e40e113e5941b16f3191fe300280653" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2800, Restoran ID: 59348</div>`)[0];
+                popup_f196433037915bd3138ae756e51439e1.setContent(html_2e40e113e5941b16f3191fe300280653);
+            
+        
+
+        marker_6a02b8c5898d8f5aa6793a8d56b3140c.bindPopup(popup_f196433037915bd3138ae756e51439e1)
+        ;
+
+        
+    
+    
+            var marker_79689bd10a59e3d1627b1fa230a13be9 = L.marker(
+                [51.2257392, 4.417025499999999],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_c9dfc972c80caa7a016e22bfc0e63d0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_79689bd10a59e3d1627b1fa230a13be9.setIcon(icon_c9dfc972c80caa7a016e22bfc0e63d0f);
+        
+    
+        var popup_aa8d9e8e8dd07ce6e47b963460d37919 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e4c684b9d40e95980afa98470af2288 = $(`<div id="html_9e4c684b9d40e95980afa98470af2288" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2060, Restoran ID: 119238</div>`)[0];
+                popup_aa8d9e8e8dd07ce6e47b963460d37919.setContent(html_9e4c684b9d40e95980afa98470af2288);
+            
+        
+
+        marker_79689bd10a59e3d1627b1fa230a13be9.bindPopup(popup_aa8d9e8e8dd07ce6e47b963460d37919)
+        ;
+
+        
+    
+    
+            var marker_935c27abcec8696a7fe5e20940b2f1ea = L.marker(
+                [51.0398778, 3.7232142],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_b56430f2e5a8567635a0f56d3ff3833e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_935c27abcec8696a7fe5e20940b2f1ea.setIcon(icon_b56430f2e5a8567635a0f56d3ff3833e);
+        
+    
+        var popup_821cdc3da46c8ed2d843d3e43f05792b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89527b2a3cad22244e4c07d043b51e31 = $(`<div id="html_89527b2a3cad22244e4c07d043b51e31" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 59845</div>`)[0];
+                popup_821cdc3da46c8ed2d843d3e43f05792b.setContent(html_89527b2a3cad22244e4c07d043b51e31);
+            
+        
+
+        marker_935c27abcec8696a7fe5e20940b2f1ea.bindPopup(popup_821cdc3da46c8ed2d843d3e43f05792b)
+        ;
+
+        
+    
+    
+            var marker_1683701bc9af79841c4d2352616e3214 = L.marker(
+                [51.0402795, 3.7254889],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_8365d5cff6b08702df6cb3752109d0bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1683701bc9af79841c4d2352616e3214.setIcon(icon_8365d5cff6b08702df6cb3752109d0bc);
+        
+    
+        var popup_99c33c313137a22c1c2655847daebfcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43343b42a3cc2ef48a68165d30f7b496 = $(`<div id="html_43343b42a3cc2ef48a68165d30f7b496" style="width: 100.0%; height: 100.0%;">Posta Kodu: 9000, Restoran ID: 249596</div>`)[0];
+                popup_99c33c313137a22c1c2655847daebfcd.setContent(html_43343b42a3cc2ef48a68165d30f7b496);
+            
+        
+
+        marker_1683701bc9af79841c4d2352616e3214.bindPopup(popup_99c33c313137a22c1c2655847daebfcd)
+        ;
+
+        
+    
+    
+            var marker_3029bf9ee229746c4e4740cfb920d807 = L.marker(
+                [51.02693660000001, 4.4724278],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_e04ffeb08d94b73a2215f5bbd60e915c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3029bf9ee229746c4e4740cfb920d807.setIcon(icon_e04ffeb08d94b73a2215f5bbd60e915c);
+        
+    
+        var popup_8820a45a89bb833a79c9cc09d29c1a61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_055bd40baf44ecee2e8508c52ec6cbaa = $(`<div id="html_055bd40baf44ecee2e8508c52ec6cbaa" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2800, Restoran ID: 235357</div>`)[0];
+                popup_8820a45a89bb833a79c9cc09d29c1a61.setContent(html_055bd40baf44ecee2e8508c52ec6cbaa);
+            
+        
+
+        marker_3029bf9ee229746c4e4740cfb920d807.bindPopup(popup_8820a45a89bb833a79c9cc09d29c1a61)
+        ;
+
+        
+    
+    
+            var marker_92d03fd625bce984bdc37e6dfcb86900 = L.marker(
+                [50.93801247, 5.316961539],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_4b3d09a78945f668b1b1188bb86b9dab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_92d03fd625bce984bdc37e6dfcb86900.setIcon(icon_4b3d09a78945f668b1b1188bb86b9dab);
+        
+    
+        var popup_70ceb31ac28676a80224cecebba936e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53ee88b416ff16f06e27d6dd3c4c5291 = $(`<div id="html_53ee88b416ff16f06e27d6dd3c4c5291" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3500, Restoran ID: 276418</div>`)[0];
+                popup_70ceb31ac28676a80224cecebba936e7.setContent(html_53ee88b416ff16f06e27d6dd3c4c5291);
+            
+        
+
+        marker_92d03fd625bce984bdc37e6dfcb86900.bindPopup(popup_70ceb31ac28676a80224cecebba936e7)
+        ;
+
+        
+    
+    
+            var marker_3d2d58d7136689cb393be4534d6e3a67 = L.marker(
+                [50.71989840000001, 4.3975062],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_de2d5c0587158176e98797f423afdabb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3d2d58d7136689cb393be4534d6e3a67.setIcon(icon_de2d5c0587158176e98797f423afdabb);
+        
+    
+        var popup_8effec360adb857cee27fade1fb3d3a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8b336332cb218bdf9a143e3632ea338 = $(`<div id="html_a8b336332cb218bdf9a143e3632ea338" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1410, Restoran ID: 60041</div>`)[0];
+                popup_8effec360adb857cee27fade1fb3d3a0.setContent(html_a8b336332cb218bdf9a143e3632ea338);
+            
+        
+
+        marker_3d2d58d7136689cb393be4534d6e3a67.bindPopup(popup_8effec360adb857cee27fade1fb3d3a0)
+        ;
+
+        
+    
+    
+            var marker_bd23801886367ee7dcd01081a6efd302 = L.marker(
+                [50.8686357, 4.3122373],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_3ea8fa4cb6634ac7e7176790050b7a83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bd23801886367ee7dcd01081a6efd302.setIcon(icon_3ea8fa4cb6634ac7e7176790050b7a83);
+        
+    
+        var popup_7016ca466df587541a7b886df14551d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9290d12bb630ca4d892bca2768792e5c = $(`<div id="html_9290d12bb630ca4d892bca2768792e5c" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1083, Restoran ID: 72179</div>`)[0];
+                popup_7016ca466df587541a7b886df14551d9.setContent(html_9290d12bb630ca4d892bca2768792e5c);
+            
+        
+
+        marker_bd23801886367ee7dcd01081a6efd302.bindPopup(popup_7016ca466df587541a7b886df14551d9)
+        ;
+
+        
+    
+    
+            var marker_7cb694bf6eb912a1d8882b669dcaba6f = L.marker(
+                [50.88584789999999, 4.718980999999999],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_b49be45174657e16403800b7a04a1665 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7cb694bf6eb912a1d8882b669dcaba6f.setIcon(icon_b49be45174657e16403800b7a04a1665);
+        
+    
+        var popup_52e605dcab1481ad25dc45a408031425 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b2030b13159afe4e762537e1db38cdb = $(`<div id="html_1b2030b13159afe4e762537e1db38cdb" style="width: 100.0%; height: 100.0%;">Posta Kodu: 3010, Restoran ID: 59504</div>`)[0];
+                popup_52e605dcab1481ad25dc45a408031425.setContent(html_1b2030b13159afe4e762537e1db38cdb);
+            
+        
+
+        marker_7cb694bf6eb912a1d8882b669dcaba6f.bindPopup(popup_52e605dcab1481ad25dc45a408031425)
+        ;
+
+        
+    
+    
+            var marker_98b26b2dcd528b60eedd0adb4de5ffc8 = L.marker(
+                [50.79449169999999, 4.3652704],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_5f4b97c173bfc7e3896a115f55ff2487 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_98b26b2dcd528b60eedd0adb4de5ffc8.setIcon(icon_5f4b97c173bfc7e3896a115f55ff2487);
+        
+    
+        var popup_230b48e17a974061bd96458a9333a8f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0de72b9234c3cb053822668076ca2fcd = $(`<div id="html_0de72b9234c3cb053822668076ca2fcd" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1180, Restoran ID: 60034</div>`)[0];
+                popup_230b48e17a974061bd96458a9333a8f1.setContent(html_0de72b9234c3cb053822668076ca2fcd);
+            
+        
+
+        marker_98b26b2dcd528b60eedd0adb4de5ffc8.bindPopup(popup_230b48e17a974061bd96458a9333a8f1)
+        ;
+
+        
+    
+    
+            var marker_69fdb754638cbb8be6f2aa35e558c3e8 = L.marker(
+                [50.9469159, 3.122641],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_24c71352d1cd2d038f8395ff69c4d3f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_69fdb754638cbb8be6f2aa35e558c3e8.setIcon(icon_24c71352d1cd2d038f8395ff69c4d3f2);
+        
+    
+        var popup_54b79c80fc1c2f27c385741459a27cb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9aa7aece14e683574cc1659e49236716 = $(`<div id="html_9aa7aece14e683574cc1659e49236716" style="width: 100.0%; height: 100.0%;">Posta Kodu: 8800, Restoran ID: 343571</div>`)[0];
+                popup_54b79c80fc1c2f27c385741459a27cb6.setContent(html_9aa7aece14e683574cc1659e49236716);
+            
+        
+
+        marker_69fdb754638cbb8be6f2aa35e558c3e8.bindPopup(popup_54b79c80fc1c2f27c385741459a27cb6)
+        ;
+
+        
+    
+    
+            var marker_80943eae888f826db706d2f3cdefb545 = L.marker(
+                [51.210254, 4.4098698],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_d11e5f8a65833a7bac804ca530e3c761 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_80943eae888f826db706d2f3cdefb545.setIcon(icon_d11e5f8a65833a7bac804ca530e3c761);
+        
+    
+        var popup_14971f80ce5a294585fa27b16f6fdda4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea7bf2c7b6d65ebcbf3906ab18b6cf74 = $(`<div id="html_ea7bf2c7b6d65ebcbf3906ab18b6cf74" style="width: 100.0%; height: 100.0%;">Posta Kodu: 2018, Restoran ID: 59337</div>`)[0];
+                popup_14971f80ce5a294585fa27b16f6fdda4.setContent(html_ea7bf2c7b6d65ebcbf3906ab18b6cf74);
+            
+        
+
+        marker_80943eae888f826db706d2f3cdefb545.bindPopup(popup_14971f80ce5a294585fa27b16f6fdda4)
+        ;
+
+        
+    
+    
+            var marker_5979be6696b8eea93f3c0dcd6fe5f35a = L.marker(
+                [50.8312407, 4.4527344],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_9c3ac3c6d0971ddf5940b3262ec1e699 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5979be6696b8eea93f3c0dcd6fe5f35a.setIcon(icon_9c3ac3c6d0971ddf5940b3262ec1e699);
+        
+    
+        var popup_be845506ec384c58a41e4bdbddad60c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c95332276b31ed60ba4203690ace5941 = $(`<div id="html_c95332276b31ed60ba4203690ace5941" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1150, Restoran ID: 437046</div>`)[0];
+                popup_be845506ec384c58a41e4bdbddad60c1.setContent(html_c95332276b31ed60ba4203690ace5941);
+            
+        
+
+        marker_5979be6696b8eea93f3c0dcd6fe5f35a.bindPopup(popup_be845506ec384c58a41e4bdbddad60c1)
+        ;
+
+        
+    
+    
+            var marker_eaa5ea827661b00629ce1911201428ac = L.marker(
+                [50.8968895, 4.358578899999999],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_5c62b095e84198975763474c2456cfe7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_eaa5ea827661b00629ce1911201428ac.setIcon(icon_5c62b095e84198975763474c2456cfe7);
+        
+    
+        var popup_b2f579ffaba51ce90bba38207ab30d59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f305e152fc094f74f5276a635e2f078b = $(`<div id="html_f305e152fc094f74f5276a635e2f078b" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1020, Restoran ID: 482432</div>`)[0];
+                popup_b2f579ffaba51ce90bba38207ab30d59.setContent(html_f305e152fc094f74f5276a635e2f078b);
+            
+        
+
+        marker_eaa5ea827661b00629ce1911201428ac.bindPopup(popup_b2f579ffaba51ce90bba38207ab30d59)
+        ;
+
+        
+    
+    
+            var marker_c0269047d7b638ec80f3977e6e68b75b = L.marker(
+                [50.816322, 4.4281378],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_54030fa3fa1254964d384d632387d14a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c0269047d7b638ec80f3977e6e68b75b.setIcon(icon_54030fa3fa1254964d384d632387d14a);
+        
+    
+        var popup_e8b2b85257779825b2cfa3fba1d8929d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bf059384e66ecd99e042488c34ca6cb = $(`<div id="html_9bf059384e66ecd99e042488c34ca6cb" style="width: 100.0%; height: 100.0%;">Posta Kodu: 1160, Restoran ID: 494940</div>`)[0];
+                popup_e8b2b85257779825b2cfa3fba1d8929d.setContent(html_9bf059384e66ecd99e042488c34ca6cb);
+            
+        
+
+        marker_c0269047d7b638ec80f3977e6e68b75b.bindPopup(popup_e8b2b85257779825b2cfa3fba1d8929d)
+        ;
+
+        
+    
+    
+            var marker_244eb0a4bfdafa56ca548ed9b9ff6dc2 = L.marker(
+                [51.32214, 4.9439],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_8768be0f3570e1af6d69ae6b4cce7bfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_244eb0a4bfdafa56ca548ed9b9ff6dc2.setIcon(icon_8768be0f3570e1af6d69ae6b4cce7bfb);
+        
+    
+        var popup_06a03dab50d6a85ed2f23e97720ffa18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_627a676873c6ffc31081573125a3303e = $(`<div id="html_627a676873c6ffc31081573125a3303e" style="width: 100.0%; height: 100.0%;">Restoran ID: 44142058-6bc8-51ae-ab93-140f20b5f2a5</div>`)[0];
+                popup_06a03dab50d6a85ed2f23e97720ffa18.setContent(html_627a676873c6ffc31081573125a3303e);
+            
+        
+
+        marker_244eb0a4bfdafa56ca548ed9b9ff6dc2.bindPopup(popup_06a03dab50d6a85ed2f23e97720ffa18)
+        ;
+
+        
+    
+    
+            var marker_2d7b057aa3188c33aa60f12efe831dd8 = L.marker(
+                [51.0266, 4.48426],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_52f5de379bfa3cf62d562c830a300ef1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2d7b057aa3188c33aa60f12efe831dd8.setIcon(icon_52f5de379bfa3cf62d562c830a300ef1);
+        
+    
+        var popup_1d6a6353a1d6582fe0b86664c13f3cb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dad6ec04d52c4540e31f4f321ca64051 = $(`<div id="html_dad6ec04d52c4540e31f4f321ca64051" style="width: 100.0%; height: 100.0%;">Restoran ID: 44db6606-cdf8-447f-a8f8-69452372140f</div>`)[0];
+                popup_1d6a6353a1d6582fe0b86664c13f3cb7.setContent(html_dad6ec04d52c4540e31f4f321ca64051);
+            
+        
+
+        marker_2d7b057aa3188c33aa60f12efe831dd8.bindPopup(popup_1d6a6353a1d6582fe0b86664c13f3cb7)
+        ;
+
+        
+    
+    
+            var marker_81b491e4e09bc1967f3d0c3085d77496 = L.marker(
+                [50.89689, 4.35851],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_6676a35c7a9abc922fc8dce558692748 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_81b491e4e09bc1967f3d0c3085d77496.setIcon(icon_6676a35c7a9abc922fc8dce558692748);
+        
+    
+        var popup_ce22f76202fdb3db0d7c29371eaf1a41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44db3b191b65c75c6272579dbf9ad7bd = $(`<div id="html_44db3b191b65c75c6272579dbf9ad7bd" style="width: 100.0%; height: 100.0%;">Restoran ID: bf43a88c-1c2c-5840-8624-137caa73adc4</div>`)[0];
+                popup_ce22f76202fdb3db0d7c29371eaf1a41.setContent(html_44db3b191b65c75c6272579dbf9ad7bd);
+            
+        
+
+        marker_81b491e4e09bc1967f3d0c3085d77496.bindPopup(popup_ce22f76202fdb3db0d7c29371eaf1a41)
+        ;
+
+        
+    
+    
+            var marker_b29949bb7aa80f60bf942b5ed256b3fc = L.marker(
+                [51.23106, 4.45565],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_9a9bceedf96fbed32a824e1b4d905924 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b29949bb7aa80f60bf942b5ed256b3fc.setIcon(icon_9a9bceedf96fbed32a824e1b4d905924);
+        
+    
+        var popup_8637f50c595df5a0ae64a7cf792e8b82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_586ba5d5e41c79c34936adbfcf39f39d = $(`<div id="html_586ba5d5e41c79c34936adbfcf39f39d" style="width: 100.0%; height: 100.0%;">Restoran ID: 692eb480-0423-4935-8e41-4dd5a8d115c5</div>`)[0];
+                popup_8637f50c595df5a0ae64a7cf792e8b82.setContent(html_586ba5d5e41c79c34936adbfcf39f39d);
+            
+        
+
+        marker_b29949bb7aa80f60bf942b5ed256b3fc.bindPopup(popup_8637f50c595df5a0ae64a7cf792e8b82)
+        ;
+
+        
+    
+    
+            var marker_8f975b071e485fbe725e2918e02821d4 = L.marker(
+                [51.15316, 4.15351],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_9512fde07ae7cda19df259ec1fdeedb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8f975b071e485fbe725e2918e02821d4.setIcon(icon_9512fde07ae7cda19df259ec1fdeedb4);
+        
+    
+        var popup_1744b8b8f2e9fac5d84f5e6ea30fdc81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d395eee4cb7f04759105ed78ac64151c = $(`<div id="html_d395eee4cb7f04759105ed78ac64151c" style="width: 100.0%; height: 100.0%;">Restoran ID: b5672619-fa59-5816-b0ee-e6e6726b2d76</div>`)[0];
+                popup_1744b8b8f2e9fac5d84f5e6ea30fdc81.setContent(html_d395eee4cb7f04759105ed78ac64151c);
+            
+        
+
+        marker_8f975b071e485fbe725e2918e02821d4.bindPopup(popup_1744b8b8f2e9fac5d84f5e6ea30fdc81)
+        ;
+
+        
+    
+    
+            var marker_60472dde1d335af08fb61ab5de1d776b = L.marker(
+                [50.9315, 5.33807],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_3700b66f9c972b9cc69f914f19282066 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_60472dde1d335af08fb61ab5de1d776b.setIcon(icon_3700b66f9c972b9cc69f914f19282066);
+        
+    
+        var popup_0b5726aac8864309a27c46dff83fad23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a7ffd6cbed98737f6891ae5b20db148 = $(`<div id="html_8a7ffd6cbed98737f6891ae5b20db148" style="width: 100.0%; height: 100.0%;">Restoran ID: 1a4da101-8fc9-5bcd-acd2-e34784580bef</div>`)[0];
+                popup_0b5726aac8864309a27c46dff83fad23.setContent(html_8a7ffd6cbed98737f6891ae5b20db148);
+            
+        
+
+        marker_60472dde1d335af08fb61ab5de1d776b.bindPopup(popup_0b5726aac8864309a27c46dff83fad23)
+        ;
+
+        
+    
+    
+            var marker_47a0dea436cc161b77c04dba3c16dae7 = L.marker(
+                [51.20368, 4.3918],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_7405ce749a8d55993ed47d6a5b1546f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_47a0dea436cc161b77c04dba3c16dae7.setIcon(icon_7405ce749a8d55993ed47d6a5b1546f2);
+        
+    
+        var popup_aeccf28f407d6aad59df0ce4299263b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b3e79f22f5cb81903a23778a5ff46c7 = $(`<div id="html_5b3e79f22f5cb81903a23778a5ff46c7" style="width: 100.0%; height: 100.0%;">Restoran ID: 5f47e751-d6cf-4e51-9db8-6f4f20d53ae8</div>`)[0];
+                popup_aeccf28f407d6aad59df0ce4299263b1.setContent(html_5b3e79f22f5cb81903a23778a5ff46c7);
+            
+        
+
+        marker_47a0dea436cc161b77c04dba3c16dae7.bindPopup(popup_aeccf28f407d6aad59df0ce4299263b1)
+        ;
+
+        
+    
+    
+            var marker_a3537aa005c1314895c809edf4d8c3a5 = L.marker(
+                [51.27741, 4.42083],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_b83dc7f3a9bdf471df934f2dd7a8eac4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a3537aa005c1314895c809edf4d8c3a5.setIcon(icon_b83dc7f3a9bdf471df934f2dd7a8eac4);
+        
+    
+        var popup_bfb47a9f01595a2b1325e41cb1e25820 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1df27e1dba62970a93d1d10bd92512e8 = $(`<div id="html_1df27e1dba62970a93d1d10bd92512e8" style="width: 100.0%; height: 100.0%;">Restoran ID: 96c0eb42-8fb2-49ed-80e4-0f181dcd547f</div>`)[0];
+                popup_bfb47a9f01595a2b1325e41cb1e25820.setContent(html_1df27e1dba62970a93d1d10bd92512e8);
+            
+        
+
+        marker_a3537aa005c1314895c809edf4d8c3a5.bindPopup(popup_bfb47a9f01595a2b1325e41cb1e25820)
+        ;
+
+        
+    
+    
+            var marker_2ef48a91e4bad724697ff9273db6d041 = L.marker(
+                [50.68814, 4.31418],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_961c3c9f38b6a0dcff6b5b10912865d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2ef48a91e4bad724697ff9273db6d041.setIcon(icon_961c3c9f38b6a0dcff6b5b10912865d9);
+        
+    
+        var popup_71c92d7cf490418c9e0b25db4aa128fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45b907d38f24b23b213745dede98e47b = $(`<div id="html_45b907d38f24b23b213745dede98e47b" style="width: 100.0%; height: 100.0%;">Restoran ID: 9181d6d5-7db9-59e1-b56e-c7ef2cbab2cc</div>`)[0];
+                popup_71c92d7cf490418c9e0b25db4aa128fe.setContent(html_45b907d38f24b23b213745dede98e47b);
+            
+        
+
+        marker_2ef48a91e4bad724697ff9273db6d041.bindPopup(popup_71c92d7cf490418c9e0b25db4aa128fe)
+        ;
+
+        
+    
+    
+            var marker_bf23627e04a63535c89dd420aeab24fb = L.marker(
+                [50.86977, 4.38934],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_eae83dd7947df6a506676ee626fa17d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bf23627e04a63535c89dd420aeab24fb.setIcon(icon_eae83dd7947df6a506676ee626fa17d6);
+        
+    
+        var popup_c56a3cd1b7adf948b21c96103a0a1722 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f73256bb7a5369d973f4d89910a572a = $(`<div id="html_6f73256bb7a5369d973f4d89910a572a" style="width: 100.0%; height: 100.0%;">Restoran ID: 38288aee-30a7-53f5-9d85-31b29d616c36</div>`)[0];
+                popup_c56a3cd1b7adf948b21c96103a0a1722.setContent(html_6f73256bb7a5369d973f4d89910a572a);
+            
+        
+
+        marker_bf23627e04a63535c89dd420aeab24fb.bindPopup(popup_c56a3cd1b7adf948b21c96103a0a1722)
+        ;
+
+        
+    
+    
+            var marker_4e8dd06153bbb266d17c586f0eaee045 = L.marker(
+                [51.2070987, 4.4297993],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_95871f21df438ab5cc3428f2d5810f00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4e8dd06153bbb266d17c586f0eaee045.setIcon(icon_95871f21df438ab5cc3428f2d5810f00);
+        
+    
+        var popup_1e4c85e323567cbab257840be84c850b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c2cf54c571b181bf8cd05ef6c47f0eb = $(`<div id="html_9c2cf54c571b181bf8cd05ef6c47f0eb" style="width: 100.0%; height: 100.0%;">Restoran ID: c31b6835-4739-434c-8dcd-c7362877919f</div>`)[0];
+                popup_1e4c85e323567cbab257840be84c850b.setContent(html_9c2cf54c571b181bf8cd05ef6c47f0eb);
+            
+        
+
+        marker_4e8dd06153bbb266d17c586f0eaee045.bindPopup(popup_1e4c85e323567cbab257840be84c850b)
+        ;
+
+        
+    
+    
+            var marker_ff48b48a29e9a37350451699ea41c77a = L.marker(
+                [50.81900564275405, 4.2855400490559195],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_f72dd7c999682d85717e9a24d46adf2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ff48b48a29e9a37350451699ea41c77a.setIcon(icon_f72dd7c999682d85717e9a24d46adf2d);
+        
+    
+        var popup_5c4ed5a52d36097957206512817ec8b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c961fb5f2db13531349632345e27537 = $(`<div id="html_2c961fb5f2db13531349632345e27537" style="width: 100.0%; height: 100.0%;">Restoran ID: e23f3ff1-53a3-50dd-9f3d-4ba1b558b228</div>`)[0];
+                popup_5c4ed5a52d36097957206512817ec8b2.setContent(html_2c961fb5f2db13531349632345e27537);
+            
+        
+
+        marker_ff48b48a29e9a37350451699ea41c77a.bindPopup(popup_5c4ed5a52d36097957206512817ec8b2)
+        ;
+
+        
+    
+    
+            var marker_531686f79edccf38c33e249dee0603df = L.marker(
+                [50.93305, 5.32715],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_06f324cff603a87734cd7f09e18d6cc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_531686f79edccf38c33e249dee0603df.setIcon(icon_06f324cff603a87734cd7f09e18d6cc3);
+        
+    
+        var popup_4fd48d3071434b4cb866f7a7a9ca98c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c996f7f901baebe2789f80cface3edf = $(`<div id="html_1c996f7f901baebe2789f80cface3edf" style="width: 100.0%; height: 100.0%;">Restoran ID: 032d57f5-d900-5275-b0c5-264225527c31</div>`)[0];
+                popup_4fd48d3071434b4cb866f7a7a9ca98c4.setContent(html_1c996f7f901baebe2789f80cface3edf);
+            
+        
+
+        marker_531686f79edccf38c33e249dee0603df.bindPopup(popup_4fd48d3071434b4cb866f7a7a9ca98c4)
+        ;
+
+        
+    
+    
+            var marker_fe601ff760935a36da3e985c0c6c13c0 = L.marker(
+                [51.02698, 4.48198],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_968aa16c6bc7f53e8dc47eeb381c7739 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fe601ff760935a36da3e985c0c6c13c0.setIcon(icon_968aa16c6bc7f53e8dc47eeb381c7739);
+        
+    
+        var popup_9c272fb2a005c9e9138cdb3dd06e4b3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2aec20878069e32fe5626a8fa6ff4905 = $(`<div id="html_2aec20878069e32fe5626a8fa6ff4905" style="width: 100.0%; height: 100.0%;">Restoran ID: ac63ca7d-a9b4-413c-b6e9-e40ef0c5a42b</div>`)[0];
+                popup_9c272fb2a005c9e9138cdb3dd06e4b3a.setContent(html_2aec20878069e32fe5626a8fa6ff4905);
+            
+        
+
+        marker_fe601ff760935a36da3e985c0c6c13c0.bindPopup(popup_9c272fb2a005c9e9138cdb3dd06e4b3a)
+        ;
+
+        
+    
+    
+            var marker_ed6f2fd72c4cb3242ed5c438f2c49d01 = L.marker(
+                [51.32214, 4.94389],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_bd677cef9451b48652d6d6f3797f1964 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ed6f2fd72c4cb3242ed5c438f2c49d01.setIcon(icon_bd677cef9451b48652d6d6f3797f1964);
+        
+    
+        var popup_d01e77366f05f1c6e6c2edabefe57bdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b71b975e375aa9fadcf21d0637d7357 = $(`<div id="html_3b71b975e375aa9fadcf21d0637d7357" style="width: 100.0%; height: 100.0%;">Restoran ID: 185d78ce-1928-5a87-8fac-a5420727332c</div>`)[0];
+                popup_d01e77366f05f1c6e6c2edabefe57bdc.setContent(html_3b71b975e375aa9fadcf21d0637d7357);
+            
+        
+
+        marker_ed6f2fd72c4cb3242ed5c438f2c49d01.bindPopup(popup_d01e77366f05f1c6e6c2edabefe57bdc)
+        ;
+
+        
+    
+    
+            var marker_b6a6fff9b5aabde9ee9669056407bf88 = L.marker(
+                [50.8591, 4.41523],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_174b783db3f3bad6bd3a7e480f0a530b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b6a6fff9b5aabde9ee9669056407bf88.setIcon(icon_174b783db3f3bad6bd3a7e480f0a530b);
+        
+    
+        var popup_ea6d92c3e9c3cbbe8b0dbd86457d3ea6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4dca3df5319ba98471f238db15bed4b = $(`<div id="html_f4dca3df5319ba98471f238db15bed4b" style="width: 100.0%; height: 100.0%;">Restoran ID: c4dcfe75-e2b8-56ec-b034-e50e70ed6242</div>`)[0];
+                popup_ea6d92c3e9c3cbbe8b0dbd86457d3ea6.setContent(html_f4dca3df5319ba98471f238db15bed4b);
+            
+        
+
+        marker_b6a6fff9b5aabde9ee9669056407bf88.bindPopup(popup_ea6d92c3e9c3cbbe8b0dbd86457d3ea6)
+        ;
+
+        
+    
+    
+            var marker_9e0908849d7fe14282b9bf7f174f0c89 = L.marker(
+                [50.81074428967117, 4.326708701842685],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_a9a7a7351ad3a058ebc9a794f5672660 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9e0908849d7fe14282b9bf7f174f0c89.setIcon(icon_a9a7a7351ad3a058ebc9a794f5672660);
+        
+    
+        var popup_21915c66ad90fa19453817f98a5c31ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c3ff57e474376a87367ac99235e9a09 = $(`<div id="html_4c3ff57e474376a87367ac99235e9a09" style="width: 100.0%; height: 100.0%;">Restoran ID: f9a9f0a3-1a5e-5995-879b-93ae04771404</div>`)[0];
+                popup_21915c66ad90fa19453817f98a5c31ce.setContent(html_4c3ff57e474376a87367ac99235e9a09);
+            
+        
+
+        marker_9e0908849d7fe14282b9bf7f174f0c89.bindPopup(popup_21915c66ad90fa19453817f98a5c31ce)
+        ;
+
+        
+    
+    
+            var marker_264ed28f2d6b9ce4284a0280455470d9 = L.marker(
+                [51.2222, 4.50178],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_00e80222e5147e388b2114eca8ab0184 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_264ed28f2d6b9ce4284a0280455470d9.setIcon(icon_00e80222e5147e388b2114eca8ab0184);
+        
+    
+        var popup_ec8d78d8d7a2a2201e19c4272406d9dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5c3bb0927e173aca3b64d687422cd41 = $(`<div id="html_a5c3bb0927e173aca3b64d687422cd41" style="width: 100.0%; height: 100.0%;">Restoran ID: b8f0bed8-5071-4fb3-a89c-4ae47c77103c</div>`)[0];
+                popup_ec8d78d8d7a2a2201e19c4272406d9dc.setContent(html_a5c3bb0927e173aca3b64d687422cd41);
+            
+        
+
+        marker_264ed28f2d6b9ce4284a0280455470d9.bindPopup(popup_ec8d78d8d7a2a2201e19c4272406d9dc)
+        ;
+
+        
+    
+    
+            var marker_bf5d2433a4c5713e69cac78d9a8d9d57 = L.marker(
+                [51.25736, 4.43795],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_6e8ea7e0db192774fcdb9f38f1214124 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bf5d2433a4c5713e69cac78d9a8d9d57.setIcon(icon_6e8ea7e0db192774fcdb9f38f1214124);
+        
+    
+        var popup_87e3fed76bb785ba04598f9eaafaa2ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfe3d8c9fa74084b7ed9a67cd7db41a5 = $(`<div id="html_bfe3d8c9fa74084b7ed9a67cd7db41a5" style="width: 100.0%; height: 100.0%;">Restoran ID: a599154a-36e8-4696-851b-09c13e13bd26</div>`)[0];
+                popup_87e3fed76bb785ba04598f9eaafaa2ad.setContent(html_bfe3d8c9fa74084b7ed9a67cd7db41a5);
+            
+        
+
+        marker_bf5d2433a4c5713e69cac78d9a8d9d57.bindPopup(popup_87e3fed76bb785ba04598f9eaafaa2ad)
+        ;
+
+        
+    
+    
+            var marker_2fffaa88b8f9b31b5e57acc2b4624bb6 = L.marker(
+                [50.8497791, 4.3670471],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_5fdc838385e39568be89f0798c66c2a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2fffaa88b8f9b31b5e57acc2b4624bb6.setIcon(icon_5fdc838385e39568be89f0798c66c2a6);
+        
+    
+        var popup_4d78c4f867c3617c130d25c5b713b27f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dde48cc677cc9acfdaa7e7a0d73d2fe0 = $(`<div id="html_dde48cc677cc9acfdaa7e7a0d73d2fe0" style="width: 100.0%; height: 100.0%;">Restoran ID: 3a15ea84-d2d3-45a1-b1af-511e7e4d3d0b</div>`)[0];
+                popup_4d78c4f867c3617c130d25c5b713b27f.setContent(html_dde48cc677cc9acfdaa7e7a0d73d2fe0);
+            
+        
+
+        marker_2fffaa88b8f9b31b5e57acc2b4624bb6.bindPopup(popup_4d78c4f867c3617c130d25c5b713b27f)
+        ;
+
+        
+    
+    
+            var marker_a99bba852dfb7ff67843e0d8b1a9d1ac = L.marker(
+                [51.02713, 4.4799],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_423425e7b4ecfc51fe2c2e4ee334ee01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a99bba852dfb7ff67843e0d8b1a9d1ac.setIcon(icon_423425e7b4ecfc51fe2c2e4ee334ee01);
+        
+    
+        var popup_44cb3fe91de4f0c9024ccf490b9227f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f392bd60b0b0c20dea5418a93737fe2 = $(`<div id="html_3f392bd60b0b0c20dea5418a93737fe2" style="width: 100.0%; height: 100.0%;">Restoran ID: c6f1da3f-3c54-5881-8cf8-13662e67e80c</div>`)[0];
+                popup_44cb3fe91de4f0c9024ccf490b9227f2.setContent(html_3f392bd60b0b0c20dea5418a93737fe2);
+            
+        
+
+        marker_a99bba852dfb7ff67843e0d8b1a9d1ac.bindPopup(popup_44cb3fe91de4f0c9024ccf490b9227f2)
+        ;
+
+        
+    
+    
+            var marker_e236322a687002d9a93178d2d899d5ca = L.marker(
+                [51.2437065, 4.4433324],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_90adfbdca0fa43c41f058a78ba7bb1c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e236322a687002d9a93178d2d899d5ca.setIcon(icon_90adfbdca0fa43c41f058a78ba7bb1c9);
+        
+    
+        var popup_a94a678844ca37c5ad31d9891bd95a15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f182b4b7805022bcc3f133337d0a75a = $(`<div id="html_0f182b4b7805022bcc3f133337d0a75a" style="width: 100.0%; height: 100.0%;">Restoran ID: 09d17dd3-82ea-40f4-876e-c1d33b248e2b</div>`)[0];
+                popup_a94a678844ca37c5ad31d9891bd95a15.setContent(html_0f182b4b7805022bcc3f133337d0a75a);
+            
+        
+
+        marker_e236322a687002d9a93178d2d899d5ca.bindPopup(popup_a94a678844ca37c5ad31d9891bd95a15)
+        ;
+
+        
+    
+    
+            var marker_66659da5a4b9ad4190010e94464d30f6 = L.marker(
+                [50.89689, 4.35851],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_e4bb6677bd1527bc3590ed72270ae0fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_66659da5a4b9ad4190010e94464d30f6.setIcon(icon_e4bb6677bd1527bc3590ed72270ae0fd);
+        
+    
+        var popup_6c104bd07df2ee050c002f08e1fd3bb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f27c7b1d5dac2bc52842b943e4c29155 = $(`<div id="html_f27c7b1d5dac2bc52842b943e4c29155" style="width: 100.0%; height: 100.0%;">Restoran ID: b57ce573-75cb-52bc-b9b5-094073fcc559</div>`)[0];
+                popup_6c104bd07df2ee050c002f08e1fd3bb1.setContent(html_f27c7b1d5dac2bc52842b943e4c29155);
+            
+        
+
+        marker_66659da5a4b9ad4190010e94464d30f6.bindPopup(popup_6c104bd07df2ee050c002f08e1fd3bb1)
+        ;
+
+        
+    
+    
+            var marker_074df5b382e0a387bab2a5c0fb53531e = L.marker(
+                [50.81625, 4.30641],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_e3685990390ee5e70d70ebf2adeab2f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_074df5b382e0a387bab2a5c0fb53531e.setIcon(icon_e3685990390ee5e70d70ebf2adeab2f9);
+        
+    
+        var popup_7b52e0f987b5ae8cb773c330ce5b7421 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_718cb66adf8c1ae29ca2cde72d67f276 = $(`<div id="html_718cb66adf8c1ae29ca2cde72d67f276" style="width: 100.0%; height: 100.0%;">Restoran ID: 654a1f77-85e1-575d-8ca1-d8a3d645c264</div>`)[0];
+                popup_7b52e0f987b5ae8cb773c330ce5b7421.setContent(html_718cb66adf8c1ae29ca2cde72d67f276);
+            
+        
+
+        marker_074df5b382e0a387bab2a5c0fb53531e.bindPopup(popup_7b52e0f987b5ae8cb773c330ce5b7421)
+        ;
+
+        
+    
+    
+            var marker_8c35b745b5d83187cd9fc88f352e9cc0 = L.marker(
+                [50.8186284, 4.3793152],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_87b9f30f32a4874c0d757af21d226542 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8c35b745b5d83187cd9fc88f352e9cc0.setIcon(icon_87b9f30f32a4874c0d757af21d226542);
+        
+    
+        var popup_0d81037a93ae72c65ee7ca07cc4a7608 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_feb4cfc72d4080c3f224b3a86e213eb7 = $(`<div id="html_feb4cfc72d4080c3f224b3a86e213eb7" style="width: 100.0%; height: 100.0%;">Restoran ID: a6de02ab-ce9b-42fb-a029-5d9195e586b2</div>`)[0];
+                popup_0d81037a93ae72c65ee7ca07cc4a7608.setContent(html_feb4cfc72d4080c3f224b3a86e213eb7);
+            
+        
+
+        marker_8c35b745b5d83187cd9fc88f352e9cc0.bindPopup(popup_0d81037a93ae72c65ee7ca07cc4a7608)
+        ;
+
+        
+    
+    
+            var marker_4f07d78a9cf906610b33e4d8b5dbceb0 = L.marker(
+                [50.81936, 4.27905],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_69007bd08af0464a52caf99c9d510ec4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4f07d78a9cf906610b33e4d8b5dbceb0.setIcon(icon_69007bd08af0464a52caf99c9d510ec4);
+        
+    
+        var popup_bfea47a4f565624bf476c6ffed3f10f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_317472704455e2bba921f227776b31b5 = $(`<div id="html_317472704455e2bba921f227776b31b5" style="width: 100.0%; height: 100.0%;">Restoran ID: c1d1bea0-2bf4-5468-9af0-f5db9cd62ac1</div>`)[0];
+                popup_bfea47a4f565624bf476c6ffed3f10f9.setContent(html_317472704455e2bba921f227776b31b5);
+            
+        
+
+        marker_4f07d78a9cf906610b33e4d8b5dbceb0.bindPopup(popup_bfea47a4f565624bf476c6ffed3f10f9)
+        ;
+
+        
+    
+    
+            var marker_84098f09d82bb4a03d8564418c7e6b4e = L.marker(
+                [50.83121, 4.45268],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_edf16bd1ec6d878389b671367f60ad4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_84098f09d82bb4a03d8564418c7e6b4e.setIcon(icon_edf16bd1ec6d878389b671367f60ad4a);
+        
+    
+        var popup_f09aacca23c581721f471291a49453b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08217d8fbd9bf36b7b4a40db12e509f4 = $(`<div id="html_08217d8fbd9bf36b7b4a40db12e509f4" style="width: 100.0%; height: 100.0%;">Restoran ID: 88347783-6286-5f8f-9120-ea56a65f3fa3</div>`)[0];
+                popup_f09aacca23c581721f471291a49453b4.setContent(html_08217d8fbd9bf36b7b4a40db12e509f4);
+            
+        
+
+        marker_84098f09d82bb4a03d8564418c7e6b4e.bindPopup(popup_f09aacca23c581721f471291a49453b4)
+        ;
+
+        
+    
+    
+            var marker_571466df845233c6c80207e7027208b7 = L.marker(
+                [51.04931, 3.73105],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_cbb7df79d57a97a8c6f5b9a50b5bd7f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_571466df845233c6c80207e7027208b7.setIcon(icon_cbb7df79d57a97a8c6f5b9a50b5bd7f9);
+        
+    
+        var popup_d1a370cfe530130ba20514c421714cc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a26e32619051067fac8225075e8d316 = $(`<div id="html_3a26e32619051067fac8225075e8d316" style="width: 100.0%; height: 100.0%;">Restoran ID: 749d3d62-1ada-43d5-82d7-34e03ba13b06</div>`)[0];
+                popup_d1a370cfe530130ba20514c421714cc6.setContent(html_3a26e32619051067fac8225075e8d316);
+            
+        
+
+        marker_571466df845233c6c80207e7027208b7.bindPopup(popup_d1a370cfe530130ba20514c421714cc6)
+        ;
+
+        
+    
+    
+            var marker_3a9382729174e9c8884bd0b2ec1ad0f0 = L.marker(
+                [51.15313, 4.15351],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_9d283499d74754252d3495a88a9e247a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3a9382729174e9c8884bd0b2ec1ad0f0.setIcon(icon_9d283499d74754252d3495a88a9e247a);
+        
+    
+        var popup_e8e181472961c7c4e27d6abb14a0b1b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7acdfe70437c3ad4391cbbf992f101f2 = $(`<div id="html_7acdfe70437c3ad4391cbbf992f101f2" style="width: 100.0%; height: 100.0%;">Restoran ID: a6438c71-93d3-578d-9dc7-a462d1a7dacb</div>`)[0];
+                popup_e8e181472961c7c4e27d6abb14a0b1b3.setContent(html_7acdfe70437c3ad4391cbbf992f101f2);
+            
+        
+
+        marker_3a9382729174e9c8884bd0b2ec1ad0f0.bindPopup(popup_e8e181472961c7c4e27d6abb14a0b1b3)
+        ;
+
+        
+    
+    
+            var marker_b0a8a76e7dd53cbc62314d29d30b3dd2 = L.marker(
+                [50.8684606, 4.31202],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_daf0fb8dee09717bd6fb9eb89b7e1aec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b0a8a76e7dd53cbc62314d29d30b3dd2.setIcon(icon_daf0fb8dee09717bd6fb9eb89b7e1aec);
+        
+    
+        var popup_46ec0264d5be8cb15404db72e6011e8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_855e2ddfef50ddef1c2099c91166bdf5 = $(`<div id="html_855e2ddfef50ddef1c2099c91166bdf5" style="width: 100.0%; height: 100.0%;">Restoran ID: fe4cae7c-9885-4e41-b94f-2b234d85bfe5</div>`)[0];
+                popup_46ec0264d5be8cb15404db72e6011e8f.setContent(html_855e2ddfef50ddef1c2099c91166bdf5);
+            
+        
+
+        marker_b0a8a76e7dd53cbc62314d29d30b3dd2.bindPopup(popup_46ec0264d5be8cb15404db72e6011e8f)
+        ;
+
+        
+    
+    
+            var marker_49a3658780bedb13b6f16666d96cada9 = L.marker(
+                [51.03033, 4.49075],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_fa9fdb524902b0343ede47abcb95a2d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_49a3658780bedb13b6f16666d96cada9.setIcon(icon_fa9fdb524902b0343ede47abcb95a2d3);
+        
+    
+        var popup_378499c8aa32d55378c4c69637692907 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0f176fe2f2ef052a3013f57ff7c30d3 = $(`<div id="html_f0f176fe2f2ef052a3013f57ff7c30d3" style="width: 100.0%; height: 100.0%;">Restoran ID: fbe228b3-9be7-5fc5-a08a-43be64f9bfb8</div>`)[0];
+                popup_378499c8aa32d55378c4c69637692907.setContent(html_f0f176fe2f2ef052a3013f57ff7c30d3);
+            
+        
+
+        marker_49a3658780bedb13b6f16666d96cada9.bindPopup(popup_378499c8aa32d55378c4c69637692907)
+        ;
+
+        
+    
+    
+            var marker_470b74a186b170d7c6710437e9753c89 = L.marker(
+                [51.200447, 4.441138],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_5d262132fc248d68e2801e54a61a26d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_470b74a186b170d7c6710437e9753c89.setIcon(icon_5d262132fc248d68e2801e54a61a26d2);
+        
+    
+        var popup_cf8bb01ae8db35b96837031140161bd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d899f1055bdfa16039fcb0e13b992f8a = $(`<div id="html_d899f1055bdfa16039fcb0e13b992f8a" style="width: 100.0%; height: 100.0%;">Restoran ID: ae2c30ab-142d-4052-a592-cd314c9815bd</div>`)[0];
+                popup_cf8bb01ae8db35b96837031140161bd0.setContent(html_d899f1055bdfa16039fcb0e13b992f8a);
+            
+        
+
+        marker_470b74a186b170d7c6710437e9753c89.bindPopup(popup_cf8bb01ae8db35b96837031140161bd0)
+        ;
+
+        
+    
+    
+            var marker_e67fd19d9a5a1aa741773842a0119e93 = L.marker(
+                [50.85545, 4.31521],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_28b68fbb2f96c0e93e9dfed30613d33d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e67fd19d9a5a1aa741773842a0119e93.setIcon(icon_28b68fbb2f96c0e93e9dfed30613d33d);
+        
+    
+        var popup_7e1e080cced638c0fd7dc10faba45357 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_372b8962a949d62a5269d6726aa3537b = $(`<div id="html_372b8962a949d62a5269d6726aa3537b" style="width: 100.0%; height: 100.0%;">Restoran ID: ddc83b0e-9da6-5e79-96e2-f646e800542b</div>`)[0];
+                popup_7e1e080cced638c0fd7dc10faba45357.setContent(html_372b8962a949d62a5269d6726aa3537b);
+            
+        
+
+        marker_e67fd19d9a5a1aa741773842a0119e93.bindPopup(popup_7e1e080cced638c0fd7dc10faba45357)
+        ;
+
+        
+    
+    
+            var marker_006417dd91777526db212894c3a96b07 = L.marker(
+                [50.68814, 4.31418],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_861988b153a8270fab1e17fda3b9eb80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_006417dd91777526db212894c3a96b07.setIcon(icon_861988b153a8270fab1e17fda3b9eb80);
+        
+    
+        var popup_f280d28b02df4238906777dc9b0126d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b7ae20fd2000953a0c06bdd48400cf6 = $(`<div id="html_7b7ae20fd2000953a0c06bdd48400cf6" style="width: 100.0%; height: 100.0%;">Restoran ID: 084b2c14-d32c-4f41-ba93-72edd24b0a38</div>`)[0];
+                popup_f280d28b02df4238906777dc9b0126d8.setContent(html_7b7ae20fd2000953a0c06bdd48400cf6);
+            
+        
+
+        marker_006417dd91777526db212894c3a96b07.bindPopup(popup_f280d28b02df4238906777dc9b0126d8)
+        ;
+
+        
+    
+    
+            var marker_95942a4691764343a262ea912d3fb15f = L.marker(
+                [51.05796838, 3.724066615],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_5f284341c5299c81385ed195be9f9dd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_95942a4691764343a262ea912d3fb15f.setIcon(icon_5f284341c5299c81385ed195be9f9dd7);
+        
+    
+        var popup_b7dfa67b5b4089987b5b65f823c2cc92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_930a478f8f10e98335ffcb19935b85bd = $(`<div id="html_930a478f8f10e98335ffcb19935b85bd" style="width: 100.0%; height: 100.0%;">Restoran ID: 8d525f76-3a05-4e37-9ae6-e87c0a06437b</div>`)[0];
+                popup_b7dfa67b5b4089987b5b65f823c2cc92.setContent(html_930a478f8f10e98335ffcb19935b85bd);
+            
+        
+
+        marker_95942a4691764343a262ea912d3fb15f.bindPopup(popup_b7dfa67b5b4089987b5b65f823c2cc92)
+        ;
+
+        
+    
+    
+            var marker_d83431d9719c0b01de7fbb3cd717954e = L.marker(
+                [50.8488716, 4.370087],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_eefa29c13b22f69c49b5155fbe9b374e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d83431d9719c0b01de7fbb3cd717954e.setIcon(icon_eefa29c13b22f69c49b5155fbe9b374e);
+        
+    
+        var popup_dc390d98fed32d331b4766ffc92215ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d78dc83b982d44529285a044f81fd67e = $(`<div id="html_d78dc83b982d44529285a044f81fd67e" style="width: 100.0%; height: 100.0%;">primarySlug: limor-pizzeria</div>`)[0];
+                popup_dc390d98fed32d331b4766ffc92215ba.setContent(html_d78dc83b982d44529285a044f81fd67e);
+            
+        
+
+        marker_d83431d9719c0b01de7fbb3cd717954e.bindPopup(popup_dc390d98fed32d331b4766ffc92215ba)
+        ;
+
+        
+    
+    
+            var marker_3ef532067942e879ae11f5fda0442114 = L.marker(
+                [50.84671, 4.4136806],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_cc640d75aef8784ea56e546a8b4a1045 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3ef532067942e879ae11f5fda0442114.setIcon(icon_cc640d75aef8784ea56e546a8b4a1045);
+        
+    
+        var popup_490ca211a493acd25e5b56e8163de116 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c30e558442ad744280aa13cb0675cb3e = $(`<div id="html_c30e558442ad744280aa13cb0675cb3e" style="width: 100.0%; height: 100.0%;">primarySlug: le-cerisier-woluwe-saint-lambert</div>`)[0];
+                popup_490ca211a493acd25e5b56e8163de116.setContent(html_c30e558442ad744280aa13cb0675cb3e);
+            
+        
+
+        marker_3ef532067942e879ae11f5fda0442114.bindPopup(popup_490ca211a493acd25e5b56e8163de116)
+        ;
+
+        
+    
+    
+            var marker_7dd0582b4f2f95bb2ec1bf247bb327e8 = L.marker(
+                [50.8710135, 4.2648025],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_bd6e62f91512705802f7ac2d491f988a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7dd0582b4f2f95bb2ec1bf247bb327e8.setIcon(icon_bd6e62f91512705802f7ac2d491f988a);
+        
+    
+        var popup_3359eec8faf84acbf7982adfe53eaba9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c797fb693ef98dae9881e1f371b7de58 = $(`<div id="html_c797fb693ef98dae9881e1f371b7de58" style="width: 100.0%; height: 100.0%;">primarySlug: mobs-drinks-food</div>`)[0];
+                popup_3359eec8faf84acbf7982adfe53eaba9.setContent(html_c797fb693ef98dae9881e1f371b7de58);
+            
+        
+
+        marker_7dd0582b4f2f95bb2ec1bf247bb327e8.bindPopup(popup_3359eec8faf84acbf7982adfe53eaba9)
+        ;
+
+        
+    
+    
+            var marker_166ee6b397441a4e25dab16c78d3f367 = L.marker(
+                [50.7486131, 3.2118662],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_8e3ab11c4f04534bc1f16e84e5e28c59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_166ee6b397441a4e25dab16c78d3f367.setIcon(icon_8e3ab11c4f04534bc1f16e84e5e28c59);
+        
+    
+        var popup_f50b878a9b0f6144d4620dc1272eed9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55145318ec9c1e7602e35ed4335bedab = $(`<div id="html_55145318ec9c1e7602e35ed4335bedab" style="width: 100.0%; height: 100.0%;">primarySlug: gooo-pizza-mouscron-1</div>`)[0];
+                popup_f50b878a9b0f6144d4620dc1272eed9d.setContent(html_55145318ec9c1e7602e35ed4335bedab);
+            
+        
+
+        marker_166ee6b397441a4e25dab16c78d3f367.bindPopup(popup_f50b878a9b0f6144d4620dc1272eed9d)
+        ;
+
+        
+    
+    
+            var marker_9d5b8f227ed59eac369d037c6d2c0ae7 = L.marker(
+                [51.0025651, 5.7259393],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_57d38140fabf65e660e236f2f76a8015 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9d5b8f227ed59eac369d037c6d2c0ae7.setIcon(icon_57d38140fabf65e660e236f2f76a8015);
+        
+    
+        var popup_7d3075ca5ff628d65ee9062140801296 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b66960340c5030f7eebf8073d114bbd2 = $(`<div id="html_b66960340c5030f7eebf8073d114bbd2" style="width: 100.0%; height: 100.0%;">primarySlug: sultana-kebap</div>`)[0];
+                popup_7d3075ca5ff628d65ee9062140801296.setContent(html_b66960340c5030f7eebf8073d114bbd2);
+            
+        
+
+        marker_9d5b8f227ed59eac369d037c6d2c0ae7.bindPopup(popup_7d3075ca5ff628d65ee9062140801296)
+        ;
+
+        
+    
+    
+            var marker_ccdbacc9a16f3a14cd2c31d02e7a025b = L.marker(
+                [51.2202396, 4.4594739],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_f2f6a716aa89baeb39b19ff7b55f55d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ccdbacc9a16f3a14cd2c31d02e7a025b.setIcon(icon_f2f6a716aa89baeb39b19ff7b55f55d9);
+        
+    
+        var popup_19bce363c6289279bdf4de2614745a38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9d782aad7e983817e34a66c5a3c9d91 = $(`<div id="html_b9d782aad7e983817e34a66c5a3c9d91" style="width: 100.0%; height: 100.0%;">primarySlug: rinascente-eethuis</div>`)[0];
+                popup_19bce363c6289279bdf4de2614745a38.setContent(html_b9d782aad7e983817e34a66c5a3c9d91);
+            
+        
+
+        marker_ccdbacc9a16f3a14cd2c31d02e7a025b.bindPopup(popup_19bce363c6289279bdf4de2614745a38)
+        ;
+
+        
+    
+    
+            var marker_c6040a1c1e6fcb2e718c81320233a0eb = L.marker(
+                [51.20726, 4.4307771],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_ebecee36ef471d18b6df46cd13e2b75d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c6040a1c1e6fcb2e718c81320233a0eb.setIcon(icon_ebecee36ef471d18b6df46cd13e2b75d);
+        
+    
+        var popup_f7d8666a5839cdf5fded03651c7e5e78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8a4035deecf36b16a333839746fca05 = $(`<div id="html_d8a4035deecf36b16a333839746fca05" style="width: 100.0%; height: 100.0%;">primarySlug: frituur-dageraad-2000</div>`)[0];
+                popup_f7d8666a5839cdf5fded03651c7e5e78.setContent(html_d8a4035deecf36b16a333839746fca05);
+            
+        
+
+        marker_c6040a1c1e6fcb2e718c81320233a0eb.bindPopup(popup_f7d8666a5839cdf5fded03651c7e5e78)
+        ;
+
+        
+    
+    
+            var marker_2419f1257d00bc6c15fe22f5e7c38c09 = L.marker(
+                [51.0369563, 2.8714629],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_9618a8d5387d99265d30ab62c490b51c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2419f1257d00bc6c15fe22f5e7c38c09.setIcon(icon_9618a8d5387d99265d30ab62c490b51c);
+        
+    
+        var popup_48f89c051de12a947097194faf378243 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a7ebd38783ee434cb32dcb639a27a48 = $(`<div id="html_9a7ebd38783ee434cb32dcb639a27a48" style="width: 100.0%; height: 100.0%;">primarySlug: pizzeria-lyaz-diksmuide</div>`)[0];
+                popup_48f89c051de12a947097194faf378243.setContent(html_9a7ebd38783ee434cb32dcb639a27a48);
+            
+        
+
+        marker_2419f1257d00bc6c15fe22f5e7c38c09.bindPopup(popup_48f89c051de12a947097194faf378243)
+        ;
+
+        
+    
+    
+            var marker_ecfb4629d46f56acc96746ad4ccb039a = L.marker(
+                [51.2222768, 4.5018069],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_8785723bbbdb4a78ea5bed465758e4d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ecfb4629d46f56acc96746ad4ccb039a.setIcon(icon_8785723bbbdb4a78ea5bed465758e4d6);
+        
+    
+        var popup_b1987782725aec76bcda6db45e1fa343 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_482c4dc659b62cef64d138e07fb5c912 = $(`<div id="html_482c4dc659b62cef64d138e07fb5c912" style="width: 100.0%; height: 100.0%;">primarySlug: letsushi</div>`)[0];
+                popup_b1987782725aec76bcda6db45e1fa343.setContent(html_482c4dc659b62cef64d138e07fb5c912);
+            
+        
+
+        marker_ecfb4629d46f56acc96746ad4ccb039a.bindPopup(popup_b1987782725aec76bcda6db45e1fa343)
+        ;
+
+        
+    
+    
+            var marker_98c9594ac8f3773334d59ee98282dce0 = L.marker(
+                [51.231373, 2.9188015],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_d7977af37d20f402c43de769960f85f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_98c9594ac8f3773334d59ee98282dce0.setIcon(icon_d7977af37d20f402c43de769960f85f8);
+        
+    
+        var popup_bb7d535dec433da9a28eeea05aefce28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7108d5765fb522ffe2cf2c1b2bd7a607 = $(`<div id="html_7108d5765fb522ffe2cf2c1b2bd7a607" style="width: 100.0%; height: 100.0%;">primarySlug: deli-twist-oostende</div>`)[0];
+                popup_bb7d535dec433da9a28eeea05aefce28.setContent(html_7108d5765fb522ffe2cf2c1b2bd7a607);
+            
+        
+
+        marker_98c9594ac8f3773334d59ee98282dce0.bindPopup(popup_bb7d535dec433da9a28eeea05aefce28)
+        ;
+
+        
+    
+    
+            var marker_43d881f278cbed88cdcd60e52c4f0961 = L.marker(
+                [51.0991085, 4.2391931],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_8e51e1173b8d3df105b8eb4b00271c4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_43d881f278cbed88cdcd60e52c4f0961.setIcon(icon_8e51e1173b8d3df105b8eb4b00271c4e);
+        
+    
+        var popup_164317276e187cbe83af43387b463506 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dc01320edd0b9f37bed8fc9794ec5d5 = $(`<div id="html_2dc01320edd0b9f37bed8fc9794ec5d5" style="width: 100.0%; height: 100.0%;">primarySlug: fri-tuur-t-charlotteje</div>`)[0];
+                popup_164317276e187cbe83af43387b463506.setContent(html_2dc01320edd0b9f37bed8fc9794ec5d5);
+            
+        
+
+        marker_43d881f278cbed88cdcd60e52c4f0961.bindPopup(popup_164317276e187cbe83af43387b463506)
+        ;
+
+        
+    
+    
+            var marker_6429b98b19bb95b0466d607da8bf3697 = L.marker(
+                [51.2096769, 4.4522349],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_263bccfb78fd22ef02db32df4ae334f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6429b98b19bb95b0466d607da8bf3697.setIcon(icon_263bccfb78fd22ef02db32df4ae334f6);
+        
+    
+        var popup_12d9ad1e1693270e07c344c30384c973 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5261670c68deb97c7c25100bfcfe760d = $(`<div id="html_5261670c68deb97c7c25100bfcfe760d" style="width: 100.0%; height: 100.0%;">primarySlug: borgerholtse-frit</div>`)[0];
+                popup_12d9ad1e1693270e07c344c30384c973.setContent(html_5261670c68deb97c7c25100bfcfe760d);
+            
+        
+
+        marker_6429b98b19bb95b0466d607da8bf3697.bindPopup(popup_12d9ad1e1693270e07c344c30384c973)
+        ;
+
+        
+    
+    
+            var marker_5cdb239acaf2e2c5beb6ac318245fe7f = L.marker(
+                [50.9298903, 5.3503604],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_ebf5e2a5b4380ba7e72b73b880c760e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5cdb239acaf2e2c5beb6ac318245fe7f.setIcon(icon_ebf5e2a5b4380ba7e72b73b880c760e6);
+        
+    
+        var popup_8b15399c4df067da4e50e53cdb369f32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e3b483f833a35bfdfd65026f410e47b = $(`<div id="html_9e3b483f833a35bfdfd65026f410e47b" style="width: 100.0%; height: 100.0%;">primarySlug: frituur-mona</div>`)[0];
+                popup_8b15399c4df067da4e50e53cdb369f32.setContent(html_9e3b483f833a35bfdfd65026f410e47b);
+            
+        
+
+        marker_5cdb239acaf2e2c5beb6ac318245fe7f.bindPopup(popup_8b15399c4df067da4e50e53cdb369f32)
+        ;
+
+        
+    
+    
+            var marker_32f8b4fd8f2da7ee0a065fa30b6c6a36 = L.marker(
+                [51.2141448, 4.4101504],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_f5053f0037bcbada0efb9fb6b8ac9f82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_32f8b4fd8f2da7ee0a065fa30b6c6a36.setIcon(icon_f5053f0037bcbada0efb9fb6b8ac9f82);
+        
+    
+        var popup_1c9f6a1cd15293c9d5759668abd65d58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45ee8cc8e4cb1fc3aef6f6fd17bdf22e = $(`<div id="html_45ee8cc8e4cb1fc3aef6f6fd17bdf22e" style="width: 100.0%; height: 100.0%;">primarySlug: de-petaat</div>`)[0];
+                popup_1c9f6a1cd15293c9d5759668abd65d58.setContent(html_45ee8cc8e4cb1fc3aef6f6fd17bdf22e);
+            
+        
+
+        marker_32f8b4fd8f2da7ee0a065fa30b6c6a36.bindPopup(popup_1c9f6a1cd15293c9d5759668abd65d58)
+        ;
+
+        
+    
+    
+            var marker_4b7481541cec1b366663da4fd3f83293 = L.marker(
+                [50.8199874, 4.2801238],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_2a2c09f0f70ec3bd71993befc42f777b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4b7481541cec1b366663da4fd3f83293.setIcon(icon_2a2c09f0f70ec3bd71993befc42f777b);
+        
+    
+        var popup_59862af099f75089391e05df468b1531 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2594092e80b81020180bc08059670599 = $(`<div id="html_2594092e80b81020180bc08059670599" style="width: 100.0%; height: 100.0%;">primarySlug: miss-waffle</div>`)[0];
+                popup_59862af099f75089391e05df468b1531.setContent(html_2594092e80b81020180bc08059670599);
+            
+        
+
+        marker_4b7481541cec1b366663da4fd3f83293.bindPopup(popup_59862af099f75089391e05df468b1531)
+        ;
+
+        
+    
+    
+            var marker_af39e7d3e4801f3779dfe1025f440ba3 = L.marker(
+                [50.8697929, 4.3893661],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_1af076b31ad3e53a3c52d3af0b6fe613 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_af39e7d3e4801f3779dfe1025f440ba3.setIcon(icon_1af076b31ad3e53a3c52d3af0b6fe613);
+        
+    
+        var popup_7eac199199694ddd25ac1100195258d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f14f8c0d1b65d95e5c88951a2c09e5d = $(`<div id="html_1f14f8c0d1b65d95e5c88951a2c09e5d" style="width: 100.0%; height: 100.0%;">primarySlug: jbsushibarwok</div>`)[0];
+                popup_7eac199199694ddd25ac1100195258d3.setContent(html_1f14f8c0d1b65d95e5c88951a2c09e5d);
+            
+        
+
+        marker_af39e7d3e4801f3779dfe1025f440ba3.bindPopup(popup_7eac199199694ddd25ac1100195258d3)
+        ;
+
+        
+    
+    
+            var marker_860a8028febeb47454edee101a2e2c4c = L.marker(
+                [50.8284343, 4.3931218],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_ce237cd33a42e07b11666b6fd418a1d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_860a8028febeb47454edee101a2e2c4c.setIcon(icon_ce237cd33a42e07b11666b6fd418a1d9);
+        
+    
+        var popup_a0b03d9e32c9fbc6bcd423a917e5838f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e510bdf646d4910a5f3a876623a023cf = $(`<div id="html_e510bdf646d4910a5f3a876623a023cf" style="width: 100.0%; height: 100.0%;">primarySlug: sushi-wok-1</div>`)[0];
+                popup_a0b03d9e32c9fbc6bcd423a917e5838f.setContent(html_e510bdf646d4910a5f3a876623a023cf);
+            
+        
+
+        marker_860a8028febeb47454edee101a2e2c4c.bindPopup(popup_a0b03d9e32c9fbc6bcd423a917e5838f)
+        ;
+
+        
+    
+    
+            var marker_25fd83b938243d91cf343c14adef3d67 = L.marker(
+                [51.2076189, 4.4280825],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_156b88d761d3d6ed29a49dcb529a699b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_25fd83b938243d91cf343c14adef3d67.setIcon(icon_156b88d761d3d6ed29a49dcb529a699b);
+        
+    
+        var popup_d7d1c6aac29b42f09a473193fdd8c791 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f63025272109f53e7f1b883853a447ff = $(`<div id="html_f63025272109f53e7f1b883853a447ff" style="width: 100.0%; height: 100.0%;">primarySlug: snack-medo</div>`)[0];
+                popup_d7d1c6aac29b42f09a473193fdd8c791.setContent(html_f63025272109f53e7f1b883853a447ff);
+            
+        
+
+        marker_25fd83b938243d91cf343c14adef3d67.bindPopup(popup_d7d1c6aac29b42f09a473193fdd8c791)
+        ;
+
+        
+    
+    
+            var marker_49e18d652ef770cfded284a28184e1cb = L.marker(
+                [50.74363, 3.2168884],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_1224b35648895fef4618bd0137333955 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_49e18d652ef770cfded284a28184e1cb.setIcon(icon_1224b35648895fef4618bd0137333955);
+        
+    
+        var popup_3f8d69513b6722060e33594fcb1e72ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1251c00e57f0e51ba68e4a58e46be87e = $(`<div id="html_1251c00e57f0e51ba68e4a58e46be87e" style="width: 100.0%; height: 100.0%;">primarySlug: pasta-pino</div>`)[0];
+                popup_3f8d69513b6722060e33594fcb1e72ef.setContent(html_1251c00e57f0e51ba68e4a58e46be87e);
+            
+        
+
+        marker_49e18d652ef770cfded284a28184e1cb.bindPopup(popup_3f8d69513b6722060e33594fcb1e72ef)
+        ;
+
+        
+    
+    
+            var marker_dd097241398e769269bc498746651f69 = L.marker(
+                [50.8526276, 4.3314811],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_81382ddf2b241b15d3fb0f3431683ad4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dd097241398e769269bc498746651f69.setIcon(icon_81382ddf2b241b15d3fb0f3431683ad4);
+        
+    
+        var popup_67b0daaf48215719948cacfbd129bb2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96992a82fa3c29f7f0fe07a3a7cfc535 = $(`<div id="html_96992a82fa3c29f7f0fe07a3a7cfc535" style="width: 100.0%; height: 100.0%;">primarySlug: fouad-fish</div>`)[0];
+                popup_67b0daaf48215719948cacfbd129bb2a.setContent(html_96992a82fa3c29f7f0fe07a3a7cfc535);
+            
+        
+
+        marker_dd097241398e769269bc498746651f69.bindPopup(popup_67b0daaf48215719948cacfbd129bb2a)
+        ;
+
+        
+    
+    
+            var marker_7d7c10095cbf3f0d0764190d684a2901 = L.marker(
+                [50.9846626, 4.0511373],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_faf16fa37c58b400fdf3f42eb2540807 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7d7c10095cbf3f0d0764190d684a2901.setIcon(icon_faf16fa37c58b400fdf3f42eb2540807);
+        
+    
+        var popup_823452e24fd2af7395c370393f1b91bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2c51ec7829574a55d67daf26fe5b768 = $(`<div id="html_f2c51ec7829574a55d67daf26fe5b768" style="width: 100.0%; height: 100.0%;">primarySlug: t-frietgenot-gijzegem</div>`)[0];
+                popup_823452e24fd2af7395c370393f1b91bf.setContent(html_f2c51ec7829574a55d67daf26fe5b768);
+            
+        
+
+        marker_7d7c10095cbf3f0d0764190d684a2901.bindPopup(popup_823452e24fd2af7395c370393f1b91bf)
+        ;
+
+        
+    
+    
+            var marker_018df28b1ba275a6e2ad0a5b3cf8b543 = L.marker(
+                [51.2310311, 4.4556895],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_57da04b657a463977adbc23d394dba1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_018df28b1ba275a6e2ad0a5b3cf8b543.setIcon(icon_57da04b657a463977adbc23d394dba1f);
+        
+    
+        var popup_b40f15a791e123c3f69c4a66b6f2b30b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5371444cd09198eb32a968e47e2aaf6a = $(`<div id="html_5371444cd09198eb32a968e47e2aaf6a" style="width: 100.0%; height: 100.0%;">primarySlug: frituur-tosca</div>`)[0];
+                popup_b40f15a791e123c3f69c4a66b6f2b30b.setContent(html_5371444cd09198eb32a968e47e2aaf6a);
+            
+        
+
+        marker_018df28b1ba275a6e2ad0a5b3cf8b543.bindPopup(popup_b40f15a791e123c3f69c4a66b6f2b30b)
+        ;
+
+        
+    
+    
+            var marker_ab62d0a1386a5d6741824ad8ef3ad4af = L.marker(
+                [50.866158, 4.3752147],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_f5a60c9786421670d25f647f58f211f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ab62d0a1386a5d6741824ad8ef3ad4af.setIcon(icon_f5a60c9786421670d25f647f58f211f6);
+        
+    
+        var popup_fe9753cf7e7e2750eaf124eb0075bd92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f093c46c4c7572820ee7d05230313a7 = $(`<div id="html_9f093c46c4c7572820ee7d05230313a7" style="width: 100.0%; height: 100.0%;">primarySlug: palashop</div>`)[0];
+                popup_fe9753cf7e7e2750eaf124eb0075bd92.setContent(html_9f093c46c4c7572820ee7d05230313a7);
+            
+        
+
+        marker_ab62d0a1386a5d6741824ad8ef3ad4af.bindPopup(popup_fe9753cf7e7e2750eaf124eb0075bd92)
+        ;
+
+        
+    
+    
+            var marker_45a9413d9cda720686ece338a67d9f89 = L.marker(
+                [50.827602, 4.3303032],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_4b2c285738e80449bf9307f8033a84ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_45a9413d9cda720686ece338a67d9f89.setIcon(icon_4b2c285738e80449bf9307f8033a84ab);
+        
+    
+        var popup_8fac678f1c4f4fdd89d025566c0f7385 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7112eeb7a5200a4a52cd961ab8ece995 = $(`<div id="html_7112eeb7a5200a4a52cd961ab8ece995" style="width: 100.0%; height: 100.0%;">primarySlug: late-night-pizza</div>`)[0];
+                popup_8fac678f1c4f4fdd89d025566c0f7385.setContent(html_7112eeb7a5200a4a52cd961ab8ece995);
+            
+        
+
+        marker_45a9413d9cda720686ece338a67d9f89.bindPopup(popup_8fac678f1c4f4fdd89d025566c0f7385)
+        ;
+
+        
+    
+    
+            var marker_bd199b39c9672367fbf2dddcb2433de6 = L.marker(
+                [50.8190111, 4.2855443],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_3405a1b24819b81fa8128dbc11cf1164 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bd199b39c9672367fbf2dddcb2433de6.setIcon(icon_3405a1b24819b81fa8128dbc11cf1164);
+        
+    
+        var popup_ac78d6dfb32182801126330cd9791cea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_780cfef77a1c73ad73093d58e21380bd = $(`<div id="html_780cfef77a1c73ad73093d58e21380bd" style="width: 100.0%; height: 100.0%;">primarySlug: chicken-crunch</div>`)[0];
+                popup_ac78d6dfb32182801126330cd9791cea.setContent(html_780cfef77a1c73ad73093d58e21380bd);
+            
+        
+
+        marker_bd199b39c9672367fbf2dddcb2433de6.bindPopup(popup_ac78d6dfb32182801126330cd9791cea)
+        ;
+
+        
+    
+    
+            var marker_88b8587ae6877fda623031015b62bb68 = L.marker(
+                [51.2097506, 3.2247857],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_cc9b9e681b039acb00a7d58e031f3503 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_88b8587ae6877fda623031015b62bb68.setIcon(icon_cc9b9e681b039acb00a7d58e031f3503);
+        
+    
+        var popup_b2d8953f20fe2c855c4bc6fd55fef7d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e8b5009990a62473d153e9f998dfe57 = $(`<div id="html_4e8b5009990a62473d153e9f998dfe57" style="width: 100.0%; height: 100.0%;">primarySlug: brugge-burger</div>`)[0];
+                popup_b2d8953f20fe2c855c4bc6fd55fef7d7.setContent(html_4e8b5009990a62473d153e9f998dfe57);
+            
+        
+
+        marker_88b8587ae6877fda623031015b62bb68.bindPopup(popup_b2d8953f20fe2c855c4bc6fd55fef7d7)
+        ;
+
+        
+    
+    
+            var marker_0b4aa8cd6d9809862603901711080c66 = L.marker(
+                [51.1867237, 4.3865355],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_6bddc869bde0717be2cb5cffda21a54a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0b4aa8cd6d9809862603901711080c66.setIcon(icon_6bddc869bde0717be2cb5cffda21a54a);
+        
+    
+        var popup_826c0e97a78c2e9b5ebe6be538513a8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01a7075a8fc2442a03259a50f4b5bdfa = $(`<div id="html_01a7075a8fc2442a03259a50f4b5bdfa" style="width: 100.0%; height: 100.0%;">primarySlug: restaurant-medina-1</div>`)[0];
+                popup_826c0e97a78c2e9b5ebe6be538513a8c.setContent(html_01a7075a8fc2442a03259a50f4b5bdfa);
+            
+        
+
+        marker_0b4aa8cd6d9809862603901711080c66.bindPopup(popup_826c0e97a78c2e9b5ebe6be538513a8c)
+        ;
+
+        
+    
+    
+            var marker_4b5556f63747690e384d3d6cf6463b8d = L.marker(
+                [51.323402, 4.9608445],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_e0ec0297c0cc0babd18c5786ee9856f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4b5556f63747690e384d3d6cf6463b8d.setIcon(icon_e0ec0297c0cc0babd18c5786ee9856f1);
+        
+    
+        var popup_83d76bfa28871682c1f37da491909ef0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65b589aec053a49416468569b8f05947 = $(`<div id="html_65b589aec053a49416468569b8f05947" style="width: 100.0%; height: 100.0%;">primarySlug: jd-corner</div>`)[0];
+                popup_83d76bfa28871682c1f37da491909ef0.setContent(html_65b589aec053a49416468569b8f05947);
+            
+        
+
+        marker_4b5556f63747690e384d3d6cf6463b8d.bindPopup(popup_83d76bfa28871682c1f37da491909ef0)
+        ;
+
+        
+    
+    
+            var marker_955f86625b829ade11cb649171bc865d = L.marker(
+                [51.21779, 4.426575],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_aca44b164d4ead499aa549605bfd7ac9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_955f86625b829ade11cb649171bc865d.setIcon(icon_aca44b164d4ead499aa549605bfd7ac9);
+        
+    
+        var popup_517a458994840be52c7a5952336be3f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25f01e9f4672d04edc3259055e05a220 = $(`<div id="html_25f01e9f4672d04edc3259055e05a220" style="width: 100.0%; height: 100.0%;">primarySlug: bakkerij-mouhssine</div>`)[0];
+                popup_517a458994840be52c7a5952336be3f5.setContent(html_25f01e9f4672d04edc3259055e05a220);
+            
+        
+
+        marker_955f86625b829ade11cb649171bc865d.bindPopup(popup_517a458994840be52c7a5952336be3f5)
+        ;
+
+        
+    
+    
+            var marker_4b9a69cd5ee36e82eb70e1b1b03b2cd0 = L.marker(
+                [51.1992501, 4.4287476],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_b030d6f881457e15d389dfcc380bc26b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4b9a69cd5ee36e82eb70e1b1b03b2cd0.setIcon(icon_b030d6f881457e15d389dfcc380bc26b);
+        
+    
+        var popup_b66712f02be8be7c8e82750fe27b4028 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddf27aa8fb3d40241132e7e62fa5c158 = $(`<div id="html_ddf27aa8fb3d40241132e7e62fa5c158" style="width: 100.0%; height: 100.0%;">primarySlug: frituur-statie-antwerpen</div>`)[0];
+                popup_b66712f02be8be7c8e82750fe27b4028.setContent(html_ddf27aa8fb3d40241132e7e62fa5c158);
+            
+        
+
+        marker_4b9a69cd5ee36e82eb70e1b1b03b2cd0.bindPopup(popup_b66712f02be8be7c8e82750fe27b4028)
+        ;
+
+        
+    
+    
+            var marker_b079ef38f6dfea9394a5718be3fd9243 = L.marker(
+                [50.850334, 3.3029273],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_39d673d773d03adf6e98f9815b959910 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b079ef38f6dfea9394a5718be3fd9243.setIcon(icon_39d673d773d03adf6e98f9815b959910);
+        
+    
+        var popup_8b6c3a882e7785bc118feebc8949dcb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cffe182ca2ad7be15e96c7faee52ac9 = $(`<div id="html_8cffe182ca2ad7be15e96c7faee52ac9" style="width: 100.0%; height: 100.0%;">primarySlug: rettes-burgerbar</div>`)[0];
+                popup_8b6c3a882e7785bc118feebc8949dcb6.setContent(html_8cffe182ca2ad7be15e96c7faee52ac9);
+            
+        
+
+        marker_b079ef38f6dfea9394a5718be3fd9243.bindPopup(popup_8b6c3a882e7785bc118feebc8949dcb6)
+        ;
+
+        
+    
+    
+            var marker_563be1ad4feec26e592b61d82a328d8e = L.marker(
+                [51.049253, 3.7310976],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_34fb3c49ad2b017f53cff05022af25f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_563be1ad4feec26e592b61d82a328d8e.setIcon(icon_34fb3c49ad2b017f53cff05022af25f2);
+        
+    
+        var popup_c6d88b2c1344a7e44ffa6f31fcff0759 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99e9a5c0ff15e7779b7c103ca83b40a0 = $(`<div id="html_99e9a5c0ff15e7779b7c103ca83b40a0" style="width: 100.0%; height: 100.0%;">primarySlug: frituur-t-zuid-gent</div>`)[0];
+                popup_c6d88b2c1344a7e44ffa6f31fcff0759.setContent(html_99e9a5c0ff15e7779b7c103ca83b40a0);
+            
+        
+
+        marker_563be1ad4feec26e592b61d82a328d8e.bindPopup(popup_c6d88b2c1344a7e44ffa6f31fcff0759)
+        ;
+
+        
+    
+    
+            var marker_f2c366d8dc755132713ea770db252a1e = L.marker(
+                [50.9911311, 3.8307237],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_1adef7597c7a474479d42da04ed69a3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f2c366d8dc755132713ea770db252a1e.setIcon(icon_1adef7597c7a474479d42da04ed69a3d);
+        
+    
+        var popup_514f6e7c4422dfcccd5aa01baa538b76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60af2bb00bc2d4c58441b4aa948df4ca = $(`<div id="html_60af2bb00bc2d4c58441b4aa948df4ca" style="width: 100.0%; height: 100.0%;">primarySlug: ediz-pizza-pita</div>`)[0];
+                popup_514f6e7c4422dfcccd5aa01baa538b76.setContent(html_60af2bb00bc2d4c58441b4aa948df4ca);
+            
+        
+
+        marker_f2c366d8dc755132713ea770db252a1e.bindPopup(popup_514f6e7c4422dfcccd5aa01baa538b76)
+        ;
+
+        
+    
+    
+            var marker_631051b7af675cb5922929fb95f9893e = L.marker(
+                [50.8605512, 5.6178644],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_1ce312afc9c81a2aa0eeaa098a97687e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_631051b7af675cb5922929fb95f9893e.setIcon(icon_1ce312afc9c81a2aa0eeaa098a97687e);
+        
+    
+        var popup_98098d631d1cdef81c12579c41272f83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11e3a8c2dc922a4b51c3e597a007179d = $(`<div id="html_11e3a8c2dc922a4b51c3e597a007179d" style="width: 100.0%; height: 100.0%;">primarySlug: frituur-grillroom-dalia</div>`)[0];
+                popup_98098d631d1cdef81c12579c41272f83.setContent(html_11e3a8c2dc922a4b51c3e597a007179d);
+            
+        
+
+        marker_631051b7af675cb5922929fb95f9893e.bindPopup(popup_98098d631d1cdef81c12579c41272f83)
+        ;
+
+        
+    
+    
+            var marker_c4ffd7b0e6311ae76bec8ddf9a0304b0 = L.marker(
+                [50.8312407, 4.4527344],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_0a9abe27738354089b82423634bc8c97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c4ffd7b0e6311ae76bec8ddf9a0304b0.setIcon(icon_0a9abe27738354089b82423634bc8c97);
+        
+    
+        var popup_24fbeab8c8ee706a6ebc6a0c64e43669 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f33ef125dbf57f3f67dafeca83f304aa = $(`<div id="html_f33ef125dbf57f3f67dafeca83f304aa" style="width: 100.0%; height: 100.0%;">primarySlug: restaurant-gabriel</div>`)[0];
+                popup_24fbeab8c8ee706a6ebc6a0c64e43669.setContent(html_f33ef125dbf57f3f67dafeca83f304aa);
+            
+        
+
+        marker_c4ffd7b0e6311ae76bec8ddf9a0304b0.bindPopup(popup_24fbeab8c8ee706a6ebc6a0c64e43669)
+        ;
+
+        
+    
+    
+            var marker_776d35738197085395717a135fc2bbb7 = L.marker(
+                [51.0402796, 3.7254715],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_3b2182451fadd7061c1c71f2937507f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_776d35738197085395717a135fc2bbb7.setIcon(icon_3b2182451fadd7061c1c71f2937507f8);
+        
+    
+        var popup_ae9da7a89858551baa7b69aa4a684765 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b38a5279d6fdf9e7f7fb820b4792b02 = $(`<div id="html_3b38a5279d6fdf9e7f7fb820b4792b02" style="width: 100.0%; height: 100.0%;">primarySlug: andromeda</div>`)[0];
+                popup_ae9da7a89858551baa7b69aa4a684765.setContent(html_3b38a5279d6fdf9e7f7fb820b4792b02);
+            
+        
+
+        marker_776d35738197085395717a135fc2bbb7.bindPopup(popup_ae9da7a89858551baa7b69aa4a684765)
+        ;
+
+        
+    
+    
+            var marker_bf88b37248ee960758fe451a354b77c8 = L.marker(
+                [50.8092535, 4.9340347],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_01115909f609664e409bed34da082aa2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bf88b37248ee960758fe451a354b77c8.setIcon(icon_01115909f609664e409bed34da082aa2);
+        
+    
+        var popup_14e1d38b7bc638ba781ffe97fdf73bcf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55a7749643b60d949cb377f2fcf02e55 = $(`<div id="html_55a7749643b60d949cb377f2fcf02e55" style="width: 100.0%; height: 100.0%;">primarySlug: pasta-mamma-mia</div>`)[0];
+                popup_14e1d38b7bc638ba781ffe97fdf73bcf.setContent(html_55a7749643b60d949cb377f2fcf02e55);
+            
+        
+
+        marker_bf88b37248ee960758fe451a354b77c8.bindPopup(popup_14e1d38b7bc638ba781ffe97fdf73bcf)
+        ;
+
+        
+    
+    
+            var marker_6616911228ca6193abb292269230eb62 = L.marker(
+                [50.8897114, 4.5524114],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_c663804ede4c9e352b9fad5076a72b2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6616911228ca6193abb292269230eb62.setIcon(icon_c663804ede4c9e352b9fad5076a72b2d);
+        
+    
+        var popup_a7cd0aee4f012854e340c5cd702d9fbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ac5237ac4c43d3681cf4590c1949fd6 = $(`<div id="html_8ac5237ac4c43d3681cf4590c1949fd6" style="width: 100.0%; height: 100.0%;">primarySlug: boston-pizza-burgers-2</div>`)[0];
+                popup_a7cd0aee4f012854e340c5cd702d9fbe.setContent(html_8ac5237ac4c43d3681cf4590c1949fd6);
+            
+        
+
+        marker_6616911228ca6193abb292269230eb62.bindPopup(popup_a7cd0aee4f012854e340c5cd702d9fbe)
+        ;
+
+        
+    
+    
+            var marker_c8595105823eb6adcac3764615f07c15 = L.marker(
+                [50.872543, 4.3328896],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_2643e0f18119fd4e8677a96319cdd6bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c8595105823eb6adcac3764615f07c15.setIcon(icon_2643e0f18119fd4e8677a96319cdd6bb);
+        
+    
+        var popup_dc2fc31cb2f671dff396aafe34b7b1bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c39d5d242056034615eb89d904fe0152 = $(`<div id="html_c39d5d242056034615eb89d904fe0152" style="width: 100.0%; height: 100.0%;">primarySlug: saporito</div>`)[0];
+                popup_dc2fc31cb2f671dff396aafe34b7b1bb.setContent(html_c39d5d242056034615eb89d904fe0152);
+            
+        
+
+        marker_c8595105823eb6adcac3764615f07c15.bindPopup(popup_dc2fc31cb2f671dff396aafe34b7b1bb)
+        ;
+
+        
+    
+    
+            var marker_170989c8410f272ac1b806c3364e7a0b = L.marker(
+                [50.6878477, 4.3122046],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_6034bd3b2eb98d4707de374c8df66eba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_170989c8410f272ac1b806c3364e7a0b.setIcon(icon_6034bd3b2eb98d4707de374c8df66eba);
+        
+    
+        var popup_1b73a2d9fe8ee3c5128199e421e81c51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e554f5ab0361a14cc0c470edc8c2477 = $(`<div id="html_1e554f5ab0361a14cc0c470edc8c2477" style="width: 100.0%; height: 100.0%;">primarySlug: wok-style-original</div>`)[0];
+                popup_1b73a2d9fe8ee3c5128199e421e81c51.setContent(html_1e554f5ab0361a14cc0c470edc8c2477);
+            
+        
+
+        marker_170989c8410f272ac1b806c3364e7a0b.bindPopup(popup_1b73a2d9fe8ee3c5128199e421e81c51)
+        ;
+
+        
+    
+    
+            var marker_82eeb1a8518afd2372193d3c48b3661d = L.marker(
+                [51.0302832, 4.4908398],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_ab4f319c58b25eab51ef48917aeeb3fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_82eeb1a8518afd2372193d3c48b3661d.setIcon(icon_ab4f319c58b25eab51ef48917aeeb3fa);
+        
+    
+        var popup_794a44ff3f6a5fd8399ba51a8e515773 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f8556d00b0b118fbe283e61677ae5c2 = $(`<div id="html_4f8556d00b0b118fbe283e61677ae5c2" style="width: 100.0%; height: 100.0%;">primarySlug: friethuis-1958</div>`)[0];
+                popup_794a44ff3f6a5fd8399ba51a8e515773.setContent(html_4f8556d00b0b118fbe283e61677ae5c2);
+            
+        
+
+        marker_82eeb1a8518afd2372193d3c48b3661d.bindPopup(popup_794a44ff3f6a5fd8399ba51a8e515773)
+        ;
+
+        
+    
+    
+            var marker_6fe66202e5e29b0eb03ee1741e9a6088 = L.marker(
+                [51.1383749, 4.3776236],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_a6f9fce9f71910623cc7a9d8dc6880e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6fe66202e5e29b0eb03ee1741e9a6088.setIcon(icon_a6f9fce9f71910623cc7a9d8dc6880e8);
+        
+    
+        var popup_b154f2671345975c943d8a611cdba6f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abdcf0bdb1923f1d2dbda90062fb005b = $(`<div id="html_abdcf0bdb1923f1d2dbda90062fb005b" style="width: 100.0%; height: 100.0%;">primarySlug: binx</div>`)[0];
+                popup_b154f2671345975c943d8a611cdba6f8.setContent(html_abdcf0bdb1923f1d2dbda90062fb005b);
+            
+        
+
+        marker_6fe66202e5e29b0eb03ee1741e9a6088.bindPopup(popup_b154f2671345975c943d8a611cdba6f8)
+        ;
+
+        
+    
+    
+            var marker_c4aa77c9c28fe6ba9f1cecaee2d52d50 = L.marker(
+                [51.0270157, 4.4797877],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_cf078126b7c2e0564e3a3d4d7fb56840 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c4aa77c9c28fe6ba9f1cecaee2d52d50.setIcon(icon_cf078126b7c2e0564e3a3d4d7fb56840);
+        
+    
+        var popup_a77297ca98c31284a7fcefb52f077614 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36b51969b3e1dc167ed9eaad18b7d248 = $(`<div id="html_36b51969b3e1dc167ed9eaad18b7d248" style="width: 100.0%; height: 100.0%;">primarySlug: lunchroom</div>`)[0];
+                popup_a77297ca98c31284a7fcefb52f077614.setContent(html_36b51969b3e1dc167ed9eaad18b7d248);
+            
+        
+
+        marker_c4aa77c9c28fe6ba9f1cecaee2d52d50.bindPopup(popup_a77297ca98c31284a7fcefb52f077614)
+        ;
+
+        
+    
+    
+            var marker_c5cfc5cc8fde3a48d99cdd572a14c676 = L.marker(
+                [50.8850101, 4.3295731],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_8bbfa2513d9cf9c377c0bcd4ccf0aa63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c5cfc5cc8fde3a48d99cdd572a14c676.setIcon(icon_8bbfa2513d9cf9c377c0bcd4ccf0aa63);
+        
+    
+        var popup_cc18bed0474f169f12a07f6c37aa998a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f42f872ad683d0b0e08351a852a9156 = $(`<div id="html_8f42f872ad683d0b0e08351a852a9156" style="width: 100.0%; height: 100.0%;">primarySlug: sos-pasta</div>`)[0];
+                popup_cc18bed0474f169f12a07f6c37aa998a.setContent(html_8f42f872ad683d0b0e08351a852a9156);
+            
+        
+
+        marker_c5cfc5cc8fde3a48d99cdd572a14c676.bindPopup(popup_cc18bed0474f169f12a07f6c37aa998a)
+        ;
+
+        
+    
+    
+            var marker_fcc719bf0f7b99e2b8965b4b3e58ff8f = L.marker(
+                [51.126846, 4.2169275],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_b36605255469511aa079e5de6c060476 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fcc719bf0f7b99e2b8965b4b3e58ff8f.setIcon(icon_b36605255469511aa079e5de6c060476);
+        
+    
+        var popup_3c07209040d0697bc5ee8337fb6eaddc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c30ad15066d03102ea5b65c226e385e7 = $(`<div id="html_c30ad15066d03102ea5b65c226e385e7" style="width: 100.0%; height: 100.0%;">primarySlug: frituur-cindy</div>`)[0];
+                popup_3c07209040d0697bc5ee8337fb6eaddc.setContent(html_c30ad15066d03102ea5b65c226e385e7);
+            
+        
+
+        marker_fcc719bf0f7b99e2b8965b4b3e58ff8f.bindPopup(popup_3c07209040d0697bc5ee8337fb6eaddc)
+        ;
+
+        
+    
+    
+            var marker_9f31b889587ad4d71bb514cc6e57539a = L.marker(
+                [51.0730633, 5.2227106],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_c0a37958d3b28c378402e901b1d60e24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9f31b889587ad4d71bb514cc6e57539a.setIcon(icon_c0a37958d3b28c378402e901b1d60e24);
+        
+    
+        var popup_b84071b078a96bb56886d1eb3adc0d6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1605a2a6298965df6f81aa930c5c2484 = $(`<div id="html_1605a2a6298965df6f81aa930c5c2484" style="width: 100.0%; height: 100.0%;">primarySlug: frituur-de-mijn-beringen</div>`)[0];
+                popup_b84071b078a96bb56886d1eb3adc0d6d.setContent(html_1605a2a6298965df6f81aa930c5c2484);
+            
+        
+
+        marker_9f31b889587ad4d71bb514cc6e57539a.bindPopup(popup_b84071b078a96bb56886d1eb3adc0d6d)
+        ;
+
+        
+    
+    
+            var marker_a9edb1bd1aab9cc180f6c2ddb4d80232 = L.marker(
+                [51.2110179, 4.4344252],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_d0f7d8ac0f22432e97ca4878e87591e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a9edb1bd1aab9cc180f6c2ddb4d80232.setIcon(icon_d0f7d8ac0f22432e97ca4878e87591e0);
+        
+    
+        var popup_1ed1bfbe2e0d288fde4d8a7a37cf8660 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdd7ace5459599b30d8188e73e4a99ce = $(`<div id="html_cdd7ace5459599b30d8188e73e4a99ce" style="width: 100.0%; height: 100.0%;">primarySlug: frituur-t-hoekske-borgerhout</div>`)[0];
+                popup_1ed1bfbe2e0d288fde4d8a7a37cf8660.setContent(html_cdd7ace5459599b30d8188e73e4a99ce);
+            
+        
+
+        marker_a9edb1bd1aab9cc180f6c2ddb4d80232.bindPopup(popup_1ed1bfbe2e0d288fde4d8a7a37cf8660)
+        ;
+
+        
+    
+    
+            var marker_af87e868d6dd4fe3d9891620db52f115 = L.marker(
+                [50.683765, 4.2970257],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_aaed783fde3f2c3dfde54a049387d696 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_af87e868d6dd4fe3d9891620db52f115.setIcon(icon_aaed783fde3f2c3dfde54a049387d696);
+        
+    
+        var popup_b5df17f206963c8f62c23627052c3cde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d603795e8cf51d162bf0c62346b6579 = $(`<div id="html_4d603795e8cf51d162bf0c62346b6579" style="width: 100.0%; height: 100.0%;">primarySlug: boul-lauli-burger</div>`)[0];
+                popup_b5df17f206963c8f62c23627052c3cde.setContent(html_4d603795e8cf51d162bf0c62346b6579);
+            
+        
+
+        marker_af87e868d6dd4fe3d9891620db52f115.bindPopup(popup_b5df17f206963c8f62c23627052c3cde)
+        ;
+
+        
+    
+    
+            var marker_63317ca34c878ac151c503e664d49dc4 = L.marker(
+                [50.8554394, 4.3152015],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_4da0226263e8b2c3c7a6ae4dbdcda460 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_63317ca34c878ac151c503e664d49dc4.setIcon(icon_4da0226263e8b2c3c7a6ae4dbdcda460);
+        
+    
+        var popup_999578c3b46d8493c4ff2857f769547d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f500ebcf16559fae568bbde0d3433a95 = $(`<div id="html_f500ebcf16559fae568bbde0d3433a95" style="width: 100.0%; height: 100.0%;">primarySlug: taiyaki-sushi-molenbeek-saint-jean</div>`)[0];
+                popup_999578c3b46d8493c4ff2857f769547d.setContent(html_f500ebcf16559fae568bbde0d3433a95);
+            
+        
+
+        marker_63317ca34c878ac151c503e664d49dc4.bindPopup(popup_999578c3b46d8493c4ff2857f769547d)
+        ;
+
+        
+    
+    
+            var marker_576ef99d96077ca6911b87431a0094b2 = L.marker(
+                [51.1893564, 4.4310628],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_14d25df96a9f75b83333fd953adde1cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_576ef99d96077ca6911b87431a0094b2.setIcon(icon_14d25df96a9f75b83333fd953adde1cb);
+        
+    
+        var popup_c5e9e8b71bb06179c354a6e19f4c227c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49746e856fc480deb0f31c37a971d072 = $(`<div id="html_49746e856fc480deb0f31c37a971d072" style="width: 100.0%; height: 100.0%;">primarySlug: frituur-binnis</div>`)[0];
+                popup_c5e9e8b71bb06179c354a6e19f4c227c.setContent(html_49746e856fc480deb0f31c37a971d072);
+            
+        
+
+        marker_576ef99d96077ca6911b87431a0094b2.bindPopup(popup_c5e9e8b71bb06179c354a6e19f4c227c)
+        ;
+
+        
+    
+    
+            var marker_fa6b2a1c4f63ec2cccbbe4cf764c8634 = L.marker(
+                [50.8243166, 4.3434771],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_7de1b8d809df03a9165027b1fa85f481 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fa6b2a1c4f63ec2cccbbe4cf764c8634.setIcon(icon_7de1b8d809df03a9165027b1fa85f481);
+        
+    
+        var popup_42b349d48a131ca1643db3c15215c97d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea9b048958ebad1869b83f48f5e9c53a = $(`<div id="html_ea9b048958ebad1869b83f48f5e9c53a" style="width: 100.0%; height: 100.0%;">primarySlug: saveurs-du-monde-saint-gilles</div>`)[0];
+                popup_42b349d48a131ca1643db3c15215c97d.setContent(html_ea9b048958ebad1869b83f48f5e9c53a);
+            
+        
+
+        marker_fa6b2a1c4f63ec2cccbbe4cf764c8634.bindPopup(popup_42b349d48a131ca1643db3c15215c97d)
+        ;
+
+        
+    
+    
+            var marker_ef5cc676ba15bf91291744519ab52d25 = L.marker(
+                [51.0911136, 4.3695147],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_5487c70062b3f45a12dc9b5d81fb5fa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ef5cc676ba15bf91291744519ab52d25.setIcon(icon_5487c70062b3f45a12dc9b5d81fb5fa0);
+        
+    
+        var popup_90186638b91e72af3190e63c8dec5dcc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cd45e6bb85d4b7a7e90af20fc16145a = $(`<div id="html_6cd45e6bb85d4b7a7e90af20fc16145a" style="width: 100.0%; height: 100.0%;">primarySlug: friet-n-chips</div>`)[0];
+                popup_90186638b91e72af3190e63c8dec5dcc.setContent(html_6cd45e6bb85d4b7a7e90af20fc16145a);
+            
+        
+
+        marker_ef5cc676ba15bf91291744519ab52d25.bindPopup(popup_90186638b91e72af3190e63c8dec5dcc)
+        ;
+
+        
+    
+    
+            var marker_16f971711fb171ff119c8af703f1e760 = L.marker(
+                [51.2034689, 4.4637907],
+                {}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+        
+    
+            var icon_f1c461da6b80dabf2b20ee48a38c1e81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_16f971711fb171ff119c8af703f1e760.setIcon(icon_f1c461da6b80dabf2b20ee48a38c1e81);
+        
+    
+        var popup_5fc2f907bb7a309b8138c77495f6ad52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a9aa458a6038efe9ac3122ea35f3b25 = $(`<div id="html_5a9aa458a6038efe9ac3122ea35f3b25" style="width: 100.0%; height: 100.0%;">primarySlug: frittur-sint-rochus</div>`)[0];
+                popup_5fc2f907bb7a309b8138c77495f6ad52.setContent(html_5a9aa458a6038efe9ac3122ea35f3b25);
+            
+        
+
+        marker_16f971711fb171ff119c8af703f1e760.bindPopup(popup_5fc2f907bb7a309b8138c77495f6ad52)
+        ;
+
+        
+    
+    
+            var layer_control_cc5701a28d2f78016299490d99a3cc55_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e35dfb73713d33404ead02291be137ed,
+                },
+                overlays :  {
+                    "Bel\u00e7ika S\u0131n\u0131rlar\u0131" : geo_json_7c26ad0f4308653b9668c4d724629c2e,
+                },
+            };
+            let layer_control_cc5701a28d2f78016299490d99a3cc55 = L.control.layers(
+                layer_control_cc5701a28d2f78016299490d99a3cc55_layers.base_layers,
+                layer_control_cc5701a28d2f78016299490d99a3cc55_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_348c59fc0fcdddb2aad999f79c5d4f00);
+
+        
+</script>
+</html>
