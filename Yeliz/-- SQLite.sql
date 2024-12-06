@@ -281,3 +281,13 @@ GROUP BY
     SUBSTR(restaurants.location__address, -4)
 ORDER BY 
     halal_mitems DESC;
+
+
+
+-- Yeni
+SELECT DISTINCT restaurants.id, restaurants.latitude, restaurants.longitude, restaurants.postal_code
+FROM restaurants
+JOIN menu_items ON restaurants.id = menu_items .restaurant_id
+WHERE LOWER(menu_items.name) LIKE '%halal%';
+
+PRAGMA table_info(menu_items);
