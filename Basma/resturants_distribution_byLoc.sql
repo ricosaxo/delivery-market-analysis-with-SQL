@@ -12,33 +12,44 @@ ORDER BY
 	number_of_resturants DESC;
 ---------------------------------------
 --take_away
-SELECT
-    COUNT(DISTINCT restaurants.primarySlug) AS number_of_resturants,
-    locations.postalCode as postal_code
-FROM
-    restaurants
-    JOIN locations_to_restaurants ON restaurants.primarySlug = locations_to_restaurants.restaurant_id
-    JOIN locations ON locations_to_restaurants.location_id = locations."ID"
-GROUP BY
-    locations.postalCode
-ORDER BY
+SELECT 
+    COUNT(inner_query.number_restaurants) AS number_of_resturants,
+    inner_query.postal_code
+FROM (
+    SELECT 
+        COUNT(DISTINCT tw.restaurants."primarySlug") AS number_restaurants,
+        tw.locations.postalCode AS postal_code,
+        tw.restaurants.name
+    FROM 
+        tw.restaurants
+    INNER JOIN
+        tw.locations_to_restaurants
+    ON
+        tw.restaurants.primarySlug = tw.locations_to_restaurants.restaurant_id
+    INNER JOIN
+        tw.locations
+    ON
+        tw.locations_to_restaurants.location_id = tw.locations.ID
+    WHERE
+        tw.locations.postalCode IS NOT NULL
+    GROUP BY 
+        tw.restaurants.name, tw.restaurants.address
+) AS inner_query
+GROUP BY 
+    inner_query.postal_code
+ORDER BY 
     number_of_resturants DESC;
 -----------------------------------------------------------
 --ubereats
 SELECT
-	count(DISTINCT restaurants.id) AS number_of_resturants , locations.region AS postal_code
-FROM
-	restaurants
-	JOIN locations_to_restaurants ON restaurants.id = locations_to_restaurants.restaurant_id
-	JOIN locations ON locations_to_restaurants.location_id = locations.id
-GROUP BY
-	locations.region
-Order by number_of_resturants DESC
-
-update restaurants
-set postal_code =
-
-select * from restaurants where postal_code like '%L%'
-update restaurants
-set postal_code ='3000'
-where postal_code = '3000LEUVEN'
+                    COUNT(DISTINCT ue.restaurants.id) AS number_of_restaurants,
+                    SUBSTR(ue.restaurants.location__address, -4) AS postal_code
+            FROM
+                ue.restaurants
+            WHERE
+                LENGTH(SUBSTR(ue.restaurants.location__address, -4)) = 4
+                AND SUBSTR(ue.restaurants.location__address, -4) GLOB '[0-9][0-9][0-9][0-9]'
+            GROUP BY
+                postal_code
+            ORDER BY
+                number_of_restaurants DESC;
