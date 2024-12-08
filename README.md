@@ -12,10 +12,56 @@ The analysis is based on three SQLite databases:
 2. **Deliveroo Database**
 3. **Takeaway Database**
 ```
+## 📊 Technologies Used
+This project utilizes the following technologies:
+```
+Python
+Pandas
+SQLite
+```
 
 ## 📦 Project structure
 ```
-
+.
+├── Basma
+│   ├── basma.ipynb
+│   ├── basma.py
+│   ├── resturants_distribution_byLoc.sql
+│   └── usingtemptable.sql
+├── ER_schema_deliveroo.png
+├── ER_schema_takeaway.png
+├── ER_schema_ubereats.png
+├── KeyQuestions.ipynb
+├── PresentationQuestions.ipynb
+├── README.md
+├── README_project.md
+├── Requirements.txt
+├── Rik
+│   ├── PresentationQuestions_RIK.ipynb
+│   ├── Rik_SQLite.sql
+│   ├── deliveroo copy.db
+│   └── rik_notebook.ipynb
+├── Urson
+│   ├── databases_uc
+│   │   ├── deliveroo.db
+│   │   ├── deliveroo_db
+│   │   ├── takeaway.db
+│   │   └── ubereats.db
+│   ├── deliveroo_urson.sql
+│   ├── takeaway_urson.sql
+│   ├── uber_eats_urson.sql
+│   ├── urson.ipynb
+│   ├── workbook2_uc.ipynb
+│   └── workbook_pizza.ipynb
+├── Yeliz
+│   ├── -- SQLite.sql
+│   ├── belgium_halal_restaurants.html
+│   ├── yeliz.ipynb
+│   └── yeliz.py
+└── databases
+    ├── deliveroo.db
+    ├── takeaway.db
+    └── ubereats.db
 ```
 
 
@@ -34,13 +80,13 @@ Team: Group
 3. Which are the top 10 pizza restaurants by rating?
 4. Map locations offering kapsalons and their average price.
 5. Compare restaurant distributions across UberEats, Deliveroo, and Takeaway.
-    What are some of the market trends?
+   
 
 ## Additional Questions (Open-ended)
 - How do delivery fees vary across platforms and locations?
 - Which restaurants have the best price-to-rating ratio?
 - Where are the delivery ‘dead zones’—areas with minimal restaurant coverage?
 - How does the availability of vegetarian and vegan dishes vary by area?
+- How does the Halal restaurants vary by afrea?
 - How do ratings of similar restaurants differ across Uber Eats, Deliveroo, and Takeaway?
 - Identify the World Hummus Order (WHO); top 3 hummus serving restaurants.
-- Come up with 2 original analyses.
