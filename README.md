@@ -5,25 +5,15 @@ The Delivery Market Analysis project aims to explore trends, customer preference
 and market dynamics in the food delivery space in Belgium. We have been tasked with analyzing 
 databases provided by a consultant to uncover actionable insights for restaurant partners and consumers.
 
-## 📊 Data Sources
-```
-The analysis is based on three SQLite databases:
-1. **Uber Eats Database**
-2. **Deliveroo Database**
-3. **Takeaway Database**
-```
-## 📊 Technologies Used
-This project utilizes the following technologies:
-```
-Python
-Pandas
-SQLite
-```
+## 📊 Overview to the project
+Access to meals has been redefined, with unparalleled convenience and diverse dining options now at our fingertips. This project explores food delivery platforms in Belgium, offering valuable insights:
+Consumer Preferences: Highlighting top-rated restaurants across key food categories to help users make informed dining choices.
+Platform Comparisons: Assessing the strengths and weaknesses of each platform, including pricing, delivery costs, and the relationship between price and ratings.
+Regional Trends: Investigating patterns in cities and regions across Belgium to identify service gaps and local preferences.
+By delivering a comprehensive overview of these platforms, this analysis aims to enhance the food delivery experience, making it more tailored and user-friendly. Whether you're comparing platforms or exploring market trends, this project simplifies navigating Belgium's food delivery landscape.
 
 ## 📦 Project structure
 ```
-.
-
 ├── DB Schemas
     ├── ER_schema_deliveroo.png
     ├── ER_schema_takeaway.png
@@ -43,14 +33,15 @@ SQLite
 ├── Yeliz
 
 ```
+## Here Some of our Analysis
 
 
-## Project Details
+## Project Timeline
 ```
 Repository: delivery-market-analysis-with-SQL
 Duration: 5 Days
 Team: Group
 
 ```
-## Here Some of our Analysis 
+
 
