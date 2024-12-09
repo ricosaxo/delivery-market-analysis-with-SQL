@@ -1,18 +1,20 @@
 # Delivery Market Analysis With SQL
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
 ##  Description
-The Delivery Market Analysis project aims to explore trends, customer preferences, 
-and market dynamics in the food delivery space in Belgium. We have been tasked with analyzing 
-databases provided by a consultant to uncover actionable insights for restaurant partners and consumers.
+The Delivery Market Analysis project focuses on exploring trends, customer preferences, and market dynamics within Belgium's food delivery industry, specifically analyzing three major platforms: TakeAway, UberEats, and Deliveroo. This analysis utilizes databases provided by a consultant to uncover actionable insights for restaurant partners and consumers, with the goal of improving user experiences and supporting strategic decision-making.
 
 ## 📊 Overview to the project
-Access to meals has been redefined, with unparalleled convenience and diverse dining options now at our fingertips. This project explores food delivery platforms in Belgium, offering valuable insights:
-Consumer Preferences: Highlighting top-rated restaurants across key food categories to help users make informed dining choices.
-Platform Comparisons: Assessing the strengths and weaknesses of each platform, including pricing, delivery costs, and the relationship between price and ratings.
-Regional Trends: Investigating patterns in cities and regions across Belgium to identify service gaps and local preferences.
-By delivering a comprehensive overview of these platforms, this analysis aims to enhance the food delivery experience, making it more tailored and user-friendly. Whether you're comparing platforms or exploring market trends, this project simplifies navigating Belgium's food delivery landscape.
+Access to meals has been revolutionized by platforms like TakeAway, UberEats, and Deliveroo, offering unparalleled convenience and diverse dining options. This project provides valuable insights into these platforms by analyzing:
 
-## 📦 Project structure
+**Consumer Preferences**: Highlighting the top-rated restaurants across key food categories on each platform to help users make informed dining choices.
+
+**Platform Comparisons**: Assessing the strengths and weaknesses of TakeAway, UberEats, and Deliveroo, including pricing structures, delivery costs, and the relationship between price and ratings.
+
+**Regional Trends**: Investigating patterns across cities and regions in Belgium to identify service gaps and local preferences for each platform.
+By delivering a comprehensive overview of these platforms, this analysis aims to enhance the food delivery experience for users, helping them navigate the market more effectively while exploring the unique offerings of TakeAway, UberEats, and Deliveroo.
+## 📦 Repo structure
 ```
 ├── DB Schemas
     ├── ER_schema_deliveroo.png
@@ -58,14 +60,10 @@ By delivering a comprehensive overview of these platforms, this analysis aims to
 
 #### For more Graghs and Details You can Visit our Repo
 
-## Project Timeline
-```
-Repository: delivery-market-analysis-with-SQL
-Duration: 5 Days
-Team: Group
+## ⏱️ Timeline
+This project was done in 5 days including studying the theory and implementing the code.
 
-```
-## 📌 Personal Situation
+## 📌  Situation
 This project was done as part of our AI training program at BeCode.
 
 
