@@ -1,6 +1,5 @@
 # Delivery Market Analysis With SQL
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Header Image](analysisScreens/Header_Image.png)
 
 ## 📝 Description  
 The **Delivery Market Analysis** project dives into trends, customer preferences, and market dynamics in Belgium’s food delivery industry. 
