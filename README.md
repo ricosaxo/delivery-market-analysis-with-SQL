@@ -2,18 +2,20 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
-##  Description
-The Delivery Market Analysis project focuses on exploring trends, customer preferences, and market dynamics within Belgium's food delivery industry, specifically analyzing three major platforms: TakeAway, UberEats, and Deliveroo. This analysis utilizes databases provided by a consultant to uncover actionable insights for restaurant partners and consumers, with the goal of improving user experiences and supporting strategic decision-making.
+## 📝 Description  
+The **Delivery Market Analysis** project dives into trends, customer preferences, and market dynamics in Belgium’s food delivery industry. 
+It specifically analyzes the performance of three leading platforms: **TakeAway**, **UberEats**, and **Deliveroo**. Leveraging real-world databases, the analysis provides actionable insights for restaurant partners and consumers, ultimately improving user experience and guiding strategic decisions.
 
-## 📊 Overview to the project
-Access to meals has been revolutionized by platforms like TakeAway, UberEats, and Deliveroo, offering unparalleled convenience and diverse dining options. This project provides valuable insights into these platforms by analyzing:
+---
 
-**Consumer Preferences**: Highlighting the top-rated restaurants across key food categories on each platform to help users make informed dining choices.
+## 📊 Project Highlights  
 
-**Platform Comparisons**: Assessing the strengths and weaknesses of TakeAway, UberEats, and Deliveroo, including pricing structures, delivery costs, and the relationship between price and ratings.
+- **Consumer Preferences**: Identifies the top-rated restaurants across various food categories, helping users make informed dining decisions.  
+- **Platform Comparisons**: Evaluates the strengths and weaknesses of TakeAway, UberEats, and Deliveroo in terms of pricing, delivery fees, and the price-to-rating relationship.  
+- **Regional Trends**: Explores regional patterns to identify service gaps and local food preferences across Belgium.  
 
-**Regional Trends**: Investigating patterns across cities and regions in Belgium to identify service gaps and local preferences for each platform.
-By delivering a comprehensive overview of these platforms, this analysis aims to enhance the food delivery experience for users, helping them navigate the market more effectively while exploring the unique offerings of TakeAway, UberEats, and Deliveroo.
+This project offers a comprehensive overview of these platforms to enhance the food delivery experience for consumers while providing valuable insights for market stakeholders.
+
 ## 📦 Repo structure
 ```
 ├── DB Schemas
@@ -37,35 +39,54 @@ By delivering a comprehensive overview of these platforms, this analysis aims to
 ```
 ## 📊 Visual Insights
 
-### Total Number of Restaurants                   
-<img src="analysisScreens/ResturantsDistributionThrowTheApp.jpg" alt="Geographical Coverage" width="500">
+### **Platform Comparisons and Insights**  
 
-### Geographical Coverage
-<img src="analysisScreens/TotalNumberOfResturants.png" alt="Total Number of Restaurants" width="500">
+<table>
+  <tr>
+    <td align="center">
+      <img src="analysisScreens/TotalNumberOfResturants.png" alt="Total Number of Restaurants" width="400">
+    </td>
+    <td align="center">
+      <img src="analysisScreens/ResturantsDistributionThrowTheApp.jpg" alt="Geographical Coverage" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="analysisScreens/Halal.jpg" alt="Distribution of Halal Restaurants" width="400">
+    </td>
+    <td align="center">
+      <img src="analysisScreens/Rating_Deliveroo_TakeAway.jpg" alt="Deliveroo vs. TakeAway" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="analysisScreens/Low%20Price%20Buckets.jpg" alt="Low Price Buckets" width="400">
+    </td>
+    <td align="center">
+      <img src="analysisScreens/High%20price%20buckets.jpg" alt="High Price Buckets" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="analysisScreens/Premium%20Price%20Bucket.jpg" alt="Premium Price Buckets" width="400">
+    </td>
+  </tr>
+</table>
 
-### Distribution of Halal Restaurants
-<img src="analysisScreens/Halal.jpg" alt="Distribution of Halal Restaurants" width="500">
+---
 
-### 5. Deliveroo vs. TakeAway Comparison
-<img src="analysisScreens/Rating_Deliveroo_TakeAway.jpg" alt="Deliveroo vs. TakeAway" width="500">
-
-### Low Price Buckets (<10€)
-<img src="analysisScreens/Low%20Price%20Buckets.jpg" alt="Low Price Buckets" width="500">
-
-### High Price Buckets (20–30€)
-<img src="analysisScreens/High%20price%20buckets.jpg" alt="High Price Buckets" width="500">
-
-### Premium Price Buckets (>30€)
-<img src="analysisScreens/Premium%20Price%20Bucket.jpg" alt="Premium Price Buckets" width="500">
-
-#### For more Graghs and Details You can Visit our Repo
+#### For additional graphs and detailed insights, please visit our repository.
 
 ## ⏱️ Timeline
 This project was done in 5 days including studying the theory and implementing the code.
 
-## 📌  Situation
-This project was done as part of our AI training program at BeCode.
+## 📌 Context  
+This project was developed as part of the **AI training program** at **BeCode Academy**, providing hands-on experience in SQL and data analysis.
 
 
-### Connect with Us!
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/basma-salem-ba45a1113)
+## 🌐 Connect with Us!  
+
+[![Basma's LinkedIn](https://img.shields.io/badge/Basma-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/basma-salem-ba45a1113)  
+[![Urson's LinkedIn](https://img.shields.io/badge/Urson-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()  
+[![Rik's LinkedIn](https://img.shields.io/badge/Rik-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
+[![Yeliz's LinkedIn](https://img.shields.io/badge/Yeliz-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
